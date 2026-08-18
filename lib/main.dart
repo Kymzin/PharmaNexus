@@ -69,14 +69,20 @@ class PharmaNexusApp extends StatelessWidget {
 
 // ---------- Dados ----------
 class Med {
-  final String nome, classe, funcao, uso, macete;
+  final String nome, classe, funcao, uso, macete, principioAtivo;
   final bool controlado;
+
+  /// true quando o nome do registro é um nome comercial, não a substância.
+  final bool ehMarca;
   final List<String> sintomas;
-  Med(this.nome, this.classe, this.funcao, this.uso, this.macete, this.controlado, this.sintomas);
+  Med(this.nome, this.classe, this.funcao, this.uso, this.macete, this.principioAtivo,
+      this.controlado, this.ehMarca, this.sintomas);
 
   factory Med.fromJson(Map<String, dynamic> j) => Med(
         j['nome'], j['classe'], j['funcao'], j['uso_principal'], j['macete'],
-        j['controlado'] == true, List<String>.from(j['sintomas'] ?? []),
+        j['principio_ativo'] ?? '',
+        j['controlado'] == true, j['marca'] == true,
+        List<String>.from(j['sintomas'] ?? []),
       );
 }
 
@@ -409,8 +415,28 @@ class MedCard extends StatelessWidget {
           ]),
           subtitle: Padding(
             padding: const EdgeInsets.only(top: 2),
-            child: Text(med.classe,
-                style: TextStyle(fontSize: 13, color: PxColors.petrol.withOpacity(0.9))),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(med.classe,
+                    style: TextStyle(fontSize: 13, color: PxColors.petrol.withOpacity(0.9))),
+                if (med.ehMarca)
+                  Padding(
+                    padding: const EdgeInsets.only(top: 3),
+                    child: Row(children: [
+                      const Icon(Icons.science_outlined, size: 13, color: PxColors.cyan),
+                      const SizedBox(width: 4),
+                      Expanded(
+                        child: Text(med.principioAtivo,
+                            style: TextStyle(
+                                fontSize: 12,
+                                fontWeight: FontWeight.w600,
+                                color: PxColors.deepBlue.withOpacity(0.75))),
+                      ),
+                    ]),
+                  ),
+              ],
+            ),
           ),
           children: [
             Padding(
@@ -418,6 +444,7 @@ class MedCard extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
+                  if (med.principioAtivo.isNotEmpty) _field('Princípio ativo', med.principioAtivo),
                   _field('Função', med.funcao),
                   _field('Principal uso', med.uso),
                   Container(
@@ -503,7 +530,9 @@ class _BibliotecaPageState extends State<BibliotecaPage> {
       if (_filtro == 2 && !m.controlado) return false;
       if (_busca.isEmpty) return true;
       final q = _removeAccents(_busca.toLowerCase());
-      return _removeAccents('${m.nome} ${m.classe} ${m.funcao} ${m.uso}'.toLowerCase()).contains(q);
+      return _removeAccents(
+              '${m.nome} ${m.principioAtivo} ${m.classe} ${m.funcao} ${m.uso}'.toLowerCase())
+          .contains(q);
     }).toList();
 
     return Column(children: [
@@ -512,7 +541,7 @@ class _BibliotecaPageState extends State<BibliotecaPage> {
         child: TextField(
           onChanged: (v) => setState(() => _busca = v),
           decoration: InputDecoration(
-            hintText: 'Buscar medicamento, classe ou uso…',
+            hintText: 'Buscar por nome, princípio ativo, classe ou uso…',
             prefixIcon: const Icon(Icons.search, color: PxColors.petrol),
             filled: true,
             fillColor: Colors.white,
