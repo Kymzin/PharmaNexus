@@ -1,0 +1,29 @@
+name: pharmanexux
+description: A conexão inteligente do conhecimento farmacológico.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: ^0.14.3
+
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: "assets/icon/icon.png"
+  adaptive_icon_background: "#123B5D"
+  adaptive_icon_foreground: "assets/icon/icon_fg.png"
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/data/
+    - assets/icon/
