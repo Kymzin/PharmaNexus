@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
 
 // ============================================================
-// PharmaNexux — a conexão inteligente do conhecimento farmacológico
+// PharmaNexus — a conexão inteligente do conhecimento farmacológico
 // ============================================================
 
 // ---------- Paleta ----------
@@ -18,15 +18,15 @@ class PxColors {
   static const controlledBg = Color(0xFFFBEDE8);
 }
 
-void main() => runApp(const PharmaNexuxApp());
+void main() => runApp(const PharmaNexusApp());
 
-class PharmaNexuxApp extends StatelessWidget {
-  const PharmaNexuxApp({super.key});
+class PharmaNexusApp extends StatelessWidget {
+  const PharmaNexusApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'PharmaNexux',
+      title: 'PharmaNexus',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         useMaterial3: true,
@@ -199,7 +199,7 @@ class _SplashGateState extends State<SplashGate> {
               children: [
                 const NexusLogo(size: 96),
                 const SizedBox(height: 20),
-                const Text('PharmaNexux',
+                const Text('PharmaNexus',
                     style: TextStyle(
                         fontFamily: 'Manrope',
                         fontSize: 32,
@@ -555,7 +555,7 @@ class _AssistentePageState extends State<AssistentePage> {
             borderRadius: BorderRadius.circular(12),
           ),
           child: const Text(
-            'Selecione os sintomas/quadro do paciente fictício. O PharmaNexux cruza a seleção '
+            'Selecione os sintomas/quadro do paciente fictício. O PharmaNexus cruza a seleção '
             'com a apostila e mostra os medicamentos relacionados — com a justificativa. '
             'Ferramenta de estudo: não substitui avaliação profissional.',
             style: TextStyle(fontSize: 12.5, color: PxColors.deepBlue, height: 1.45),
@@ -798,7 +798,7 @@ class _QuizPageState extends State<QuizPage> {
           child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
             const NexusLogo(size: 72, color: PxColors.petrol),
             const SizedBox(height: 18),
-            const Text('Quiz PharmaNexux',
+            const Text('Quiz PharmaNexus',
                 style: TextStyle(
                     fontFamily: 'Manrope',
                     fontSize: 24,
