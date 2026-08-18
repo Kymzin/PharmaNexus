@@ -1,206 +1,860 @@
 {
-  "casos": [
-    {
-      "id": 1,
-      "titulo": "Febre no pronto atendimento",
-      "nivel": "Básico",
-      "cenario": "Paciente de 32 anos chega ao pronto atendimento com febre de 38,9 °C e dor de cabeça moderada há 1 dia. Sem outras queixas, sem alergias conhecidas.",
-      "pergunta": "Qual medicamento da apostila é o mais indicado para o controle imediato da febre e da dor?",
-      "opcoes": ["Dipirona", "Morfina", "Ceftriaxona", "Omeprazol"],
-      "correta": 0,
-      "explicacao": "A Dipirona é analgésico e antitérmico: alivia dor de leve a moderada e reduz a febre rapidamente. Morfina é para dor muito intensa, Ceftriaxona é antibiótico (não trata febre em si) e Omeprazol atua na acidez gástrica. Macete: 'Febre baixa e a dor desaparece logo!'"
-    },
-    {
-      "id": 2,
-      "titulo": "Cólica renal intensa",
-      "nivel": "Básico",
-      "cenario": "Paciente de 45 anos com cólica renal, dor abdominal intensa em cólica, agitado, sem febre.",
-      "pergunta": "Entre as opções, qual medicamento une efeito antiespasmódico E analgésico para esse quadro?",
-      "opcoes": ["Buscopan Simples", "Buscopan Composto", "Simeticona", "Metoclopramida"],
-      "correta": 1,
-      "explicacao": "O Buscopan Composto combina antiespasmódico + analgésico: relaxa a musculatura lisa e alivia a dor ao mesmo tempo — ideal para cólicas com dor intensa. O Buscopan Simples só relaxa o músculo, sem efeito analgésico próprio. Macete: 'Composto: acalma a contração e também tira a dor!'"
-    },
-    {
-      "id": 3,
-      "titulo": "Crise de asma na emergência",
-      "nivel": "Básico",
-      "cenario": "Jovem de 19 anos chega com falta de ar, chiado no peito e dificuldade para falar frases completas. Histórico de asma.",
-      "pergunta": "Qual medicamento deve ser usado para abrir as vias aéreas nesse momento?",
-      "opcoes": ["Salbutamol", "Fluconazol", "Furosemida", "Enoxaparina"],
-      "correta": 0,
-      "explicacao": "O Salbutamol é broncodilatador: relaxa os músculos das vias aéreas e facilita a passagem do ar — primeira escolha em crise de asma. Fluconazol é antifúngico, Furosemida é diurético e Enoxaparina é anticoagulante. Macete: 'Abre os brônquios, respiração fica mais fácil!'"
-    },
-    {
-      "id": 4,
-      "titulo": "Choque anafilático",
-      "nivel": "Intermediário",
-      "cenario": "Paciente de 28 anos, após receber contraste, apresenta inchaço de lábios, falta de ar grave, queda de pressão e placas vermelhas pelo corpo. Quadro compatível com choque anafilático.",
-      "pergunta": "Qual é o medicamento de emergência prioritário nesse cenário?",
-      "opcoes": ["Prometazina", "Hidrocortisona", "Epinefrina", "Dexametasona"],
-      "correta": 2,
-      "explicacao": "A Epinefrina é o medicamento de emergência para choque anafilático: aumenta batimentos, eleva a pressão e abre as vias aéreas. Corticoides (Hidrocortisona, Dexametasona) e antialérgicos (Prometazina) são coadjuvantes, mas não substituem a epinefrina na emergência. Macete: 'Remédio de emergência que salva vidas!'"
-    },
-    {
-      "id": 5,
-      "titulo": "Suspeita de meningite",
-      "nivel": "Intermediário",
-      "cenario": "Paciente de 22 anos com febre alta, rigidez de nuca e vômitos. A equipe médica suspeita de meningite bacteriana e solicita antibiótico de amplo espectro com boa penetração.",
-      "pergunta": "Qual antibiótico da apostila tem a meningite como um de seus principais usos?",
-      "opcoes": ["Azitromicina", "Ceftriaxona", "Cefalotina", "Benzetacil"],
-      "correta": 1,
-      "explicacao": "A Ceftriaxona (cefalosporina de 3ª geração) tem ação ampla e é usada em meningite, pneumonia e infecções abdominais, ósseas e urinárias. Cefalotina (1ª geração) é mais usada em profilaxia cirúrgica; Azitromicina e Benzetacil não são escolha para meningite. Macete: 'Age em vários locais, uma vez ao dia na maioria dos casos!'"
-    },
-    {
-      "id": 6,
-      "titulo": "Pré-operatório de cirurgia limpa",
-      "nivel": "Básico",
-      "cenario": "Paciente será submetido a cirurgia ortopédica eletiva. O protocolo pede antibiótico profilático antes da incisão para prevenir infecção do sítio cirúrgico.",
-      "pergunta": "Qual medicamento é o padrão citado na apostila para profilaxia cirúrgica?",
-      "opcoes": ["Vancomicina", "Meropenem", "Cefazolina", "Metronidazol"],
-      "correta": 2,
-      "explicacao": "A Cefazolina (cefalosporina de 1ª geração) é o padrão para evitar infecção no período operatório, com ação potente contra Gram-positivas. Vancomicina e Meropenem são reservados para infecções graves/resistentes. Macete: 'Padrão para evitar infecção no período operatório!'"
-    },
-    {
-      "id": 7,
-      "titulo": "Crise convulsiva em andamento",
-      "nivel": "Intermediário",
-      "cenario": "Paciente de 35 anos em crise convulsiva tônico-clônica há 3 minutos na sala de emergência.",
-      "pergunta": "Qual medicamento da classe dos benzodiazepínicos é indicado para interromper a crise?",
-      "opcoes": ["Fluoxetina", "Diazepam", "Haloperidol", "Flumazenil"],
-      "correta": 1,
-      "explicacao": "O Diazepam (benzodiazepínico) acalma, relaxa músculos e interrompe convulsões — indicado em crises convulsivas agudas. Fluoxetina é antidepressivo, Haloperidol é antipsicótico e Flumazenil é justamente o antídoto dos benzodiazepínicos. Macete: 'Acalma, relaxa e segura a crise!'"
-    },
-    {
-      "id": 8,
-      "titulo": "Pressão despencando na UTI",
-      "nivel": "Avançado",
-      "cenario": "Paciente séptico na UTI evolui com pressão arterial muito baixa que não responde à reposição de volume. A equipe decide iniciar droga vasoativa em bomba de infusão.",
-      "pergunta": "Qual vasopressor é usado quando a pressão baixa grave não responde a outras medidas?",
-      "opcoes": ["Norepinefrina", "Atropina", "Clonidina", "Nitroprussiato"],
-      "correta": 0,
-      "explicacao": "A Norepinefrina aumenta a resistência dos vasos e eleva a pressão de forma constante — usada em choque circulatório que não responde a outras medidas. Atropina trata bradicardia; Clonidina e Nitroprussiato REDUZEM a pressão (fariam o oposto!). Macete: 'Mantém a pressão estável em situações de risco!'"
-    },
-    {
-      "id": 9,
-      "titulo": "Crise hipertensiva em gestante",
-      "nivel": "Avançado",
-      "cenario": "Gestante de 34 semanas com pressão arterial 180x120 mmHg e cefaleia. A equipe precisa reduzir a pressão com um medicamento considerado seguro na gestação.",
-      "pergunta": "Qual anti-hipertensivo da apostila é citado como opção inclusive para gestantes?",
-      "opcoes": ["Nitroprussiato", "Clonidina", "Furosemida", "Hidralazina"],
-      "correta": 3,
-      "explicacao": "A Hidralazina relaxa os vasos e reduz a pressão, sendo citada na apostila para crises hipertensivas graves 'inclusive em gestantes'. Macete: 'Vaso relaxa e a pressão baixa com segurança!'"
-    },
-    {
-      "id": 10,
-      "titulo": "Vômitos pós-quimioterapia",
-      "nivel": "Básico",
-      "cenario": "Paciente oncológico apresenta náuseas e vômitos intensos após sessão de quimioterapia.",
-      "pergunta": "Qual antiemético bloqueia os sinais que causam náusea e vômito, sendo usado em vômitos por medicamentos?",
-      "opcoes": ["Ondansetrona", "Omeprazol", "Simeticona", "Buscopan Simples"],
-      "correta": 0,
-      "explicacao": "A Ondansetrona é antiemético que bloqueia os sinais de náusea e vômito — indicada em vômitos por cirurgia, medicamentos ou doenças. Omeprazol reduz acidez, Simeticona trata gases e Buscopan Simples trata espasmos. Macete: 'Acaba com o enjoo e evita o vômito!'"
-    },
-    {
-      "id": 11,
-      "titulo": "Overdose de opioide",
-      "nivel": "Avançado",
-      "cenario": "Paciente encontrado sonolento, com respiração muito lenta e pupilas puntiformes após uso excessivo de morfina para dor crônica.",
-      "pergunta": "Qual antídoto específico reverte a depressão respiratória por opioides?",
-      "opcoes": ["Flumazenil", "Naloxona", "Fitomenadiona", "Atropina"],
-      "correta": 1,
-      "explicacao": "A Naloxona é o antídoto específico dos opioides: reverte rapidamente intoxicação e depressão respiratória por morfina, tramadol e similares. O Flumazenil é antídoto de benzodiazepínicos (cuidado para não confundir os dois!). Macete: 'Acorda e reverte o efeito dos remédios para dor forte!'"
-    },
-    {
-      "id": 12,
-      "titulo": "Sedação para endoscopia",
-      "nivel": "Intermediário",
-      "cenario": "Paciente será submetido a endoscopia digestiva e precisa de sedação rápida e de curta duração para o exame.",
-      "pergunta": "Qual benzodiazepínico de ação curta é o mais adequado para sedação em exames?",
-      "opcoes": ["Diazepam", "Quetiapina", "Midazolam", "Fenitoína"],
-      "correta": 2,
-      "explicacao": "O Midazolam é benzodiazepínico de ação curta: sedação rápida que dura pouco tempo — ideal para exames e procedimentos. O Diazepam tem ação mais prolongada. Macete: 'Sedo rápido, dura pouco tempo no organismo!'"
-    },
-    {
-      "id": 13,
-      "titulo": "Prevenção de trombose no leito",
-      "nivel": "Intermediário",
-      "cenario": "Paciente acamado no pós-operatório de grande cirurgia, com risco elevado de trombose venosa profunda. Prescrita profilaxia com anticoagulante de aplicação subcutânea e menor risco de sangramento.",
-      "pergunta": "Qual anticoagulante corresponde a essa descrição?",
-      "opcoes": ["Heparina", "Ácido tranexâmico", "Enoxaparina", "Fitomenadiona"],
-      "correta": 2,
-      "explicacao": "A Enoxaparina é anticoagulante de baixo peso molecular: previne e trata trombose com MENOR risco de sangramento. O Ácido tranexâmico e a Fitomenadiona fazem o oposto (ajudam a estancar sangramentos). Macete: 'Evita coágulos, com menor risco de sangramento!'"
-    },
-    {
-      "id": 14,
-      "titulo": "Infecção hospitalar resistente",
-      "nivel": "Avançado",
-      "cenario": "Paciente internado há 20 dias desenvolve infecção grave na corrente sanguínea por bactéria Gram-positiva resistente, sem resposta aos antibióticos iniciais.",
-      "pergunta": "Qual antibiótico é reservado para infecções graves que não respondem a outros?",
-      "opcoes": ["Amoxicilina + Clavulanato", "Vancomicina", "Azitromicina", "Cefalotina"],
-      "correta": 1,
-      "explicacao": "A Vancomicina (glicopeptídeo) é muito potente contra Gram-positivas resistentes e reservada para infecções graves sem resposta a outros antibióticos. Macete: 'Usada quando outros remédios não resolvem!'"
-    },
-    {
-      "id": 15,
-      "titulo": "Agitação psicomotora na enfermaria",
-      "nivel": "Intermediário",
-      "cenario": "Paciente internado apresenta agitação intensa, delírios e alucinações, colocando em risco a própria segurança e a da equipe.",
-      "pergunta": "Qual antipsicótico é classicamente usado para agitação psicomotora no ambiente hospitalar?",
-      "opcoes": ["Haloperidol", "Fluoxetina", "Tramadol", "Dexmedetomidina"],
-      "correta": 0,
-      "explicacao": "O Haloperidol é antipsicótico usado para agitação psicomotora e distúrbios psiquiátricos no hospital: controla agitação, delírios e alucinações. Macete: 'Acalma a agitação e organiza o pensamento!'"
-    },
-    {
-      "id": 16,
-      "titulo": "Intubação de emergência",
-      "nivel": "Avançado",
-      "cenario": "Paciente com insuficiência respiratória grave precisa ser intubado. Após o sedativo, a equipe solicita um medicamento para relaxar a musculatura e facilitar a passagem da cânula.",
-      "pergunta": "Qual relaxante muscular despolarizante facilita a intubação traqueal?",
-      "opcoes": ["Propofol", "Suxametônio", "Etomidato", "Lidocaína"],
-      "correta": 1,
-      "explicacao": "O Suxametônio provoca paralisia temporária da musculatura esquelética, facilitando a intubação. Propofol e Etomidato são anestésicos (induzem o sono, mas não relaxam a musculatura dessa forma). Macete: 'Relaxa o músculo para colocar a cânula com segurança!'"
-    },
-    {
-      "id": 17,
-      "titulo": "Insuficiência cardíaca descompensada",
-      "nivel": "Avançado",
-      "cenario": "Paciente com insuficiência cardíaca aguda evolui para choque cardiogênico: coração sem força para bombear o sangue adequadamente.",
-      "pergunta": "Qual agente inotrópico aumenta a força de contração do coração nesse cenário?",
-      "opcoes": ["Amiodarona", "Deslanol", "Dobutamina", "Atropina"],
-      "correta": 2,
-      "explicacao": "A Dobutamina é inotrópico positivo: aumenta a força de contração do coração e melhora o fluxo sanguíneo — indicada em insuficiência cardíaca aguda e choque cardiogênico. O Deslanol também fortalece o coração, mas seu uso típico é insuficiência cardíaca crônica e fibrilação atrial. Macete: 'Ajuda o coração a bombear sangue com mais força!'"
-    },
-    {
-      "id": 18,
-      "titulo": "Refluxo e queimação",
-      "nivel": "Básico",
-      "cenario": "Paciente relata queimação no estômago e refluxo frequente há semanas, com piora após refeições.",
-      "pergunta": "Qual medicamento reduz fortemente a produção de ácido no estômago?",
-      "opcoes": ["Metoclopramida", "Bromoprida", "Simeticona", "Omeprazol"],
-      "correta": 3,
-      "explicacao": "O Omeprazol é inibidor da bomba de prótons: reduz fortemente a produção de ácido, tratando úlceras e refluxo. Metoclopramida e Bromoprida aceleram o esvaziamento gástrico (procinéticos), e Simeticona trata gases. Macete: 'Apaga o fogo do ácido no estômago!'"
-    }
-  ],
-  "quiz": [
-    {"pergunta": "Qual é a classe da Dipirona?", "opcoes": ["Analgésico e antitérmico", "AINE", "Opioide", "Corticosteroide"], "correta": 0, "explicacao": "Dipirona é analgésico e antitérmico: alivia dor leve a moderada e reduz a febre rapidamente."},
-    {"pergunta": "\"Contra vírus — não serve para infecções por bactérias!\" é o macete de qual medicamento?", "opcoes": ["Fluconazol", "Aciclovir", "Metronidazol", "Vancomicina"], "correta": 1, "explicacao": "Aciclovir é antiviral, usado em herpes, varicela e zóster. Fluconazol é o antifúngico ('Contra fungos — não serve para bactérias!')."},
-    {"pergunta": "Qual antibiótico é considerado 'de última linha', para casos mais sérios?", "opcoes": ["Amoxicilina + Clavulanato", "Cefalotina", "Meronem (Meropenem)", "Azitromicina"], "correta": 2, "explicacao": "O Meropenem é carbapenêmico de amplo espectro, usado em infecções hospitalares graves, sepse e meningite. Macete: 'Antibiótico de última linha, usado em casos mais sérios!'"},
-    {"pergunta": "Qual a diferença do Buscopan Composto para o Simples?", "opcoes": ["O Composto tem antibiótico", "O Composto tem analgésico associado", "O Simples é mais forte", "Não há diferença"], "correta": 1, "explicacao": "O Composto une antiespasmódico + analgésico; o Simples só relaxa a musculatura lisa, sem tirar a dor sozinho."},
-    {"pergunta": "Flumazenil é antídoto de qual classe de medicamentos?", "opcoes": ["Opioides", "Benzodiazepínicos", "Corticosteroides", "Anticoagulantes"], "correta": 1, "explicacao": "Flumazenil reverte o efeito dos benzodiazepínicos (diazepam, midazolam). O antídoto dos opioides é a Naloxona."},
-    {"pergunta": "Naloxona reverte os efeitos de qual grupo?", "opcoes": ["Analgésicos opioides", "Benzodiazepínicos", "Antipsicóticos", "Anestésicos locais"], "correta": 0, "explicacao": "Naloxona é o antídoto específico dos opioides: reverte intoxicação e depressão respiratória por morfina, tramadol e similares."},
-    {"pergunta": "Qual cefalosporina é de 4ª geração?", "opcoes": ["Cefalotina", "Cefazolina", "Ceftriaxona", "Cefepima"], "correta": 3, "explicacao": "Cefepima é de 4ª geração ('mais abrangente, usada em casos mais complexos'). Cefalotina e Cefazolina são de 1ª; Ceftriaxona é de 3ª."},
-    {"pergunta": "\"Manda o excesso de água para fora do corpo!\" refere-se a qual medicamento?", "opcoes": ["Furosemida", "Hidralazina", "Enoxaparina", "Fitomenadiona"], "correta": 0, "explicacao": "Furosemida é diurético de alça: aumenta fortemente a eliminação de água e sal pelos rins."},
-    {"pergunta": "Qual medicamento é usado em bradicardia grave (coração muito lento)?", "opcoes": ["Amiodarona", "Atropina", "Clonidina", "Deslanol"], "correta": 1, "explicacao": "A Atropina acelera os batimentos cardíacos — indicada em bradicardia grave. Macete: 'Coração muito devagar? Muita secreção? Atropina resolve!'"},
-    {"pergunta": "Fentanila é mais ou menos potente que a morfina?", "opcoes": ["Mais potente, dura menos tempo", "Menos potente, dura mais tempo", "Igual em tudo", "Não é opioide"], "correta": 0, "explicacao": "Macete da Fentanila: 'Mais potente que a morfina, dura menos tempo no corpo!'"},
-    {"pergunta": "Qual corticosteroide tem 'ação rápida e mais suave entre os corticoides'?", "opcoes": ["Dexametasona", "Metilprednisolona", "Hidrocortisona", "Prednisona"], "correta": 2, "explicacao": "A Hidrocortisona reduz inflamação e alergias de forma rápida — macete: 'Ação rápida e mais suave entre os corticoides!'"},
-    {"pergunta": "Tramadol é classificado como:", "opcoes": ["Opioide de potência moderada", "AINE", "Opioide mais forte que a morfina", "Analgésico comum"], "correta": 0, "explicacao": "Tramadol é opioide de potência moderada: 'Mais forte que analgésicos comuns, menos potente que a morfina!'"},
-    {"pergunta": "Qual medicamento precisa ficar protegido da luz?", "opcoes": ["Nitroprussiato", "Norepinefrina", "Dopamina", "Heparina"], "correta": 0, "explicacao": "Macete do Nitroprussiato: 'Age rápido, mas precisa ficar protegido da luz!'"},
-    {"pergunta": "Metronidazol age principalmente contra:", "opcoes": ["Vírus", "Fungos", "Bactérias anaeróbias e parasitas", "Somente Gram-positivas"], "correta": 2, "explicacao": "Metronidazol elimina bactérias anaeróbias e parasitas: 'Age contra bactérias que vivem sem oxigênio!'"},
-    {"pergunta": "Qual antiemético também é procinético (acelera o esvaziamento do estômago)?", "opcoes": ["Ondansetrona", "Metoclopramida", "Prometazina", "Simeticona"], "correta": 1, "explicacao": "Metoclopramida (assim como a Bromoprida) é procinético/antiemético: 'Faz o estômago trabalhar melhor!'"},
-    {"pergunta": "Benzetacil tem como característica marcante:", "opcoes": ["Ação prolongada com uma dose só", "Tratamento de 3 a 5 dias", "Uso apenas venoso em UTI", "Ser antifúngico"], "correta": 0, "explicacao": "Benzetacil (Penicilina Benzatina): 'Uma dose só e dura muito tempo no corpo!' Tratamento curto de 3-5 dias é o macete da Azitromicina."},
-    {"pergunta": "Qual sedativo NÃO deprime a respiração, sendo usado na UTI?", "opcoes": ["Propofol", "Midazolam", "Dexmedetomidina", "Etomidato"], "correta": 2, "explicacao": "Dexmedetomidina induz sedação leve a moderada sem queda na respiração: 'Acalma e seda, sem parar a respiração!'"},
-    {"pergunta": "Fitomenadiona é qual vitamina?", "opcoes": ["Vitamina C", "Vitamina K", "Complexo B", "Vitamina D"], "correta": 1, "explicacao": "Fitomenadiona é a Vitamina K, essencial para a coagulação: 'Ajuda o sangue a ficar firme e estancar o sangramento!'"},
-    {"pergunta": "Oxacilina é indicada especialmente quando:", "opcoes": ["A penicilina comum não funciona", "Há infecção viral", "O paciente tem alergia a antibióticos", "Há infecção fúngica"], "correta": 0, "explicacao": "Oxacilina age contra estafilococos resistentes: 'Serve quando a penicilina comum não funciona!'"},
-    {"pergunta": "Medicamentos controlados exigem:", "opcoes": ["Apenas receita comum", "Receita especial, controle de estoque e registro de saída", "Nenhum controle em hospital", "Somente autorização verbal"], "correta": 1, "explicacao": "Conforme as observações da apostila: medicamentos controlados seguem legislação específica, com receita especial, controle de estoque e registro de saída."}
-  ]
+ "casos": [
+  {
+   "id": 1,
+   "titulo": "Febre no pronto atendimento",
+   "nivel": "Básico",
+   "cenario": "Paciente de 32 anos chega ao pronto atendimento com febre de 38,9 °C e dor de cabeça moderada há 1 dia. Sem outras queixas, sem alergias conhecidas.",
+   "pergunta": "Qual medicamento da apostila é o mais indicado para o controle imediato da febre e da dor?",
+   "opcoes": [
+    "Dipirona",
+    "Morfina",
+    "Ceftriaxona",
+    "Omeprazol"
+   ],
+   "correta": 0,
+   "explicacao": "A Dipirona é analgésico e antitérmico: alivia dor de leve a moderada e reduz a febre rapidamente. Morfina é para dor muito intensa, Ceftriaxona é antibiótico (não trata febre em si) e Omeprazol atua na acidez gástrica. Macete: 'Febre baixa e a dor desaparece logo!'"
+  },
+  {
+   "id": 2,
+   "titulo": "Cólica renal intensa",
+   "nivel": "Básico",
+   "cenario": "Paciente de 45 anos com cólica renal, dor abdominal intensa em cólica, agitado, sem febre.",
+   "pergunta": "Entre as opções, qual medicamento une efeito antiespasmódico E analgésico para esse quadro?",
+   "opcoes": [
+    "Buscopan Simples",
+    "Buscopan Composto",
+    "Simeticona",
+    "Metoclopramida"
+   ],
+   "correta": 1,
+   "explicacao": "O Buscopan Composto combina antiespasmódico + analgésico: relaxa a musculatura lisa e alivia a dor ao mesmo tempo — ideal para cólicas com dor intensa. O Buscopan Simples só relaxa o músculo, sem efeito analgésico próprio. Macete: 'Composto: acalma a contração e também tira a dor!'"
+  },
+  {
+   "id": 3,
+   "titulo": "Crise de asma na emergência",
+   "nivel": "Básico",
+   "cenario": "Jovem de 19 anos chega com falta de ar, chiado no peito e dificuldade para falar frases completas. Histórico de asma.",
+   "pergunta": "Qual medicamento deve ser usado para abrir as vias aéreas nesse momento?",
+   "opcoes": [
+    "Salbutamol",
+    "Fluconazol",
+    "Furosemida",
+    "Enoxaparina"
+   ],
+   "correta": 0,
+   "explicacao": "O Salbutamol é broncodilatador: relaxa os músculos das vias aéreas e facilita a passagem do ar — primeira escolha em crise de asma. Fluconazol é antifúngico, Furosemida é diurético e Enoxaparina é anticoagulante. Macete: 'Abre os brônquios, respiração fica mais fácil!'"
+  },
+  {
+   "id": 4,
+   "titulo": "Choque anafilático",
+   "nivel": "Intermediário",
+   "cenario": "Paciente de 28 anos, após receber contraste, apresenta inchaço de lábios, falta de ar grave, queda de pressão e placas vermelhas pelo corpo. Quadro compatível com choque anafilático.",
+   "pergunta": "Qual é o medicamento de emergência prioritário nesse cenário?",
+   "opcoes": [
+    "Prometazina",
+    "Hidrocortisona",
+    "Epinefrina",
+    "Dexametasona"
+   ],
+   "correta": 2,
+   "explicacao": "A Epinefrina é o medicamento de emergência para choque anafilático: aumenta batimentos, eleva a pressão e abre as vias aéreas. Corticoides (Hidrocortisona, Dexametasona) e antialérgicos (Prometazina) são coadjuvantes, mas não substituem a epinefrina na emergência. Macete: 'Remédio de emergência que salva vidas!'"
+  },
+  {
+   "id": 5,
+   "titulo": "Suspeita de meningite",
+   "nivel": "Intermediário",
+   "cenario": "Paciente de 22 anos com febre alta, rigidez de nuca e vômitos. A equipe médica suspeita de meningite bacteriana e solicita antibiótico de amplo espectro com boa penetração.",
+   "pergunta": "Qual antibiótico da apostila tem a meningite como um de seus principais usos?",
+   "opcoes": [
+    "Azitromicina",
+    "Ceftriaxona",
+    "Cefalotina",
+    "Benzetacil"
+   ],
+   "correta": 1,
+   "explicacao": "A Ceftriaxona (cefalosporina de 3ª geração) tem ação ampla e é usada em meningite, pneumonia e infecções abdominais, ósseas e urinárias. Cefalotina (1ª geração) é mais usada em profilaxia cirúrgica; Azitromicina e Benzetacil não são escolha para meningite. Macete: 'Age em vários locais, uma vez ao dia na maioria dos casos!'"
+  },
+  {
+   "id": 6,
+   "titulo": "Pré-operatório de cirurgia limpa",
+   "nivel": "Básico",
+   "cenario": "Paciente será submetido a cirurgia ortopédica eletiva. O protocolo pede antibiótico profilático antes da incisão para prevenir infecção do sítio cirúrgico.",
+   "pergunta": "Qual medicamento é o padrão citado na apostila para profilaxia cirúrgica?",
+   "opcoes": [
+    "Vancomicina",
+    "Meropenem",
+    "Cefazolina",
+    "Metronidazol"
+   ],
+   "correta": 2,
+   "explicacao": "A Cefazolina (cefalosporina de 1ª geração) é o padrão para evitar infecção no período operatório, com ação potente contra Gram-positivas. Vancomicina e Meropenem são reservados para infecções graves/resistentes. Macete: 'Padrão para evitar infecção no período operatório!'"
+  },
+  {
+   "id": 7,
+   "titulo": "Crise convulsiva em andamento",
+   "nivel": "Intermediário",
+   "cenario": "Paciente de 35 anos em crise convulsiva tônico-clônica há 3 minutos na sala de emergência.",
+   "pergunta": "Qual medicamento da classe dos benzodiazepínicos é indicado para interromper a crise?",
+   "opcoes": [
+    "Fluoxetina",
+    "Diazepam",
+    "Haloperidol",
+    "Flumazenil"
+   ],
+   "correta": 1,
+   "explicacao": "O Diazepam (benzodiazepínico) acalma, relaxa músculos e interrompe convulsões — indicado em crises convulsivas agudas. Fluoxetina é antidepressivo, Haloperidol é antipsicótico e Flumazenil é justamente o antídoto dos benzodiazepínicos. Macete: 'Acalma, relaxa e segura a crise!'"
+  },
+  {
+   "id": 8,
+   "titulo": "Pressão despencando na UTI",
+   "nivel": "Avançado",
+   "cenario": "Paciente séptico na UTI evolui com pressão arterial muito baixa que não responde à reposição de volume. A equipe decide iniciar droga vasoativa em bomba de infusão.",
+   "pergunta": "Qual vasopressor é usado quando a pressão baixa grave não responde a outras medidas?",
+   "opcoes": [
+    "Norepinefrina",
+    "Atropina",
+    "Clonidina",
+    "Nitroprussiato"
+   ],
+   "correta": 0,
+   "explicacao": "A Norepinefrina aumenta a resistência dos vasos e eleva a pressão de forma constante — usada em choque circulatório que não responde a outras medidas. Atropina trata bradicardia; Clonidina e Nitroprussiato REDUZEM a pressão (fariam o oposto!). Macete: 'Mantém a pressão estável em situações de risco!'"
+  },
+  {
+   "id": 9,
+   "titulo": "Crise hipertensiva em gestante",
+   "nivel": "Avançado",
+   "cenario": "Gestante de 34 semanas com pressão arterial 180x120 mmHg e cefaleia. A equipe precisa reduzir a pressão com um medicamento considerado seguro na gestação.",
+   "pergunta": "Qual anti-hipertensivo da apostila é citado como opção inclusive para gestantes?",
+   "opcoes": [
+    "Nitroprussiato",
+    "Clonidina",
+    "Furosemida",
+    "Hidralazina"
+   ],
+   "correta": 3,
+   "explicacao": "A Hidralazina relaxa os vasos e reduz a pressão, sendo citada na apostila para crises hipertensivas graves 'inclusive em gestantes'. Macete: 'Vaso relaxa e a pressão baixa com segurança!'"
+  },
+  {
+   "id": 10,
+   "titulo": "Vômitos pós-quimioterapia",
+   "nivel": "Básico",
+   "cenario": "Paciente oncológico apresenta náuseas e vômitos intensos após sessão de quimioterapia.",
+   "pergunta": "Qual antiemético bloqueia os sinais que causam náusea e vômito, sendo usado em vômitos por medicamentos?",
+   "opcoes": [
+    "Ondansetrona",
+    "Omeprazol",
+    "Simeticona",
+    "Buscopan Simples"
+   ],
+   "correta": 0,
+   "explicacao": "A Ondansetrona é antiemético que bloqueia os sinais de náusea e vômito — indicada em vômitos por cirurgia, medicamentos ou doenças. Omeprazol reduz acidez, Simeticona trata gases e Buscopan Simples trata espasmos. Macete: 'Acaba com o enjoo e evita o vômito!'"
+  },
+  {
+   "id": 11,
+   "titulo": "Overdose de opioide",
+   "nivel": "Avançado",
+   "cenario": "Paciente encontrado sonolento, com respiração muito lenta e pupilas puntiformes após uso excessivo de morfina para dor crônica.",
+   "pergunta": "Qual antídoto específico reverte a depressão respiratória por opioides?",
+   "opcoes": [
+    "Flumazenil",
+    "Naloxona",
+    "Fitomenadiona",
+    "Atropina"
+   ],
+   "correta": 1,
+   "explicacao": "A Naloxona é o antídoto específico dos opioides: reverte rapidamente intoxicação e depressão respiratória por morfina, tramadol e similares. O Flumazenil é antídoto de benzodiazepínicos (cuidado para não confundir os dois!). Macete: 'Acorda e reverte o efeito dos remédios para dor forte!'"
+  },
+  {
+   "id": 12,
+   "titulo": "Sedação para endoscopia",
+   "nivel": "Intermediário",
+   "cenario": "Paciente será submetido a endoscopia digestiva e precisa de sedação rápida e de curta duração para o exame.",
+   "pergunta": "Qual benzodiazepínico de ação curta é o mais adequado para sedação em exames?",
+   "opcoes": [
+    "Diazepam",
+    "Quetiapina",
+    "Midazolam",
+    "Fenitoína"
+   ],
+   "correta": 2,
+   "explicacao": "O Midazolam é benzodiazepínico de ação curta: sedação rápida que dura pouco tempo — ideal para exames e procedimentos. O Diazepam tem ação mais prolongada. Macete: 'Sedo rápido, dura pouco tempo no organismo!'"
+  },
+  {
+   "id": 13,
+   "titulo": "Prevenção de trombose no leito",
+   "nivel": "Intermediário",
+   "cenario": "Paciente acamado no pós-operatório de grande cirurgia, com risco elevado de trombose venosa profunda. Prescrita profilaxia com anticoagulante de aplicação subcutânea e menor risco de sangramento.",
+   "pergunta": "Qual anticoagulante corresponde a essa descrição?",
+   "opcoes": [
+    "Heparina",
+    "Ácido tranexâmico",
+    "Enoxaparina",
+    "Fitomenadiona"
+   ],
+   "correta": 2,
+   "explicacao": "A Enoxaparina é anticoagulante de baixo peso molecular: previne e trata trombose com MENOR risco de sangramento. O Ácido tranexâmico e a Fitomenadiona fazem o oposto (ajudam a estancar sangramentos). Macete: 'Evita coágulos, com menor risco de sangramento!'"
+  },
+  {
+   "id": 14,
+   "titulo": "Infecção hospitalar resistente",
+   "nivel": "Avançado",
+   "cenario": "Paciente internado há 20 dias desenvolve infecção grave na corrente sanguínea por bactéria Gram-positiva resistente, sem resposta aos antibióticos iniciais.",
+   "pergunta": "Qual antibiótico é reservado para infecções graves que não respondem a outros?",
+   "opcoes": [
+    "Amoxicilina + Clavulanato",
+    "Vancomicina",
+    "Azitromicina",
+    "Cefalotina"
+   ],
+   "correta": 1,
+   "explicacao": "A Vancomicina (glicopeptídeo) é muito potente contra Gram-positivas resistentes e reservada para infecções graves sem resposta a outros antibióticos. Macete: 'Usada quando outros remédios não resolvem!'"
+  },
+  {
+   "id": 15,
+   "titulo": "Agitação psicomotora na enfermaria",
+   "nivel": "Intermediário",
+   "cenario": "Paciente internado apresenta agitação intensa, delírios e alucinações, colocando em risco a própria segurança e a da equipe.",
+   "pergunta": "Qual antipsicótico é classicamente usado para agitação psicomotora no ambiente hospitalar?",
+   "opcoes": [
+    "Haloperidol",
+    "Fluoxetina",
+    "Tramadol",
+    "Dexmedetomidina"
+   ],
+   "correta": 0,
+   "explicacao": "O Haloperidol é antipsicótico usado para agitação psicomotora e distúrbios psiquiátricos no hospital: controla agitação, delírios e alucinações. Macete: 'Acalma a agitação e organiza o pensamento!'"
+  },
+  {
+   "id": 16,
+   "titulo": "Intubação de emergência",
+   "nivel": "Avançado",
+   "cenario": "Paciente com insuficiência respiratória grave precisa ser intubado. Após o sedativo, a equipe solicita um medicamento para relaxar a musculatura e facilitar a passagem da cânula.",
+   "pergunta": "Qual relaxante muscular despolarizante facilita a intubação traqueal?",
+   "opcoes": [
+    "Propofol",
+    "Suxametônio",
+    "Etomidato",
+    "Lidocaína"
+   ],
+   "correta": 1,
+   "explicacao": "O Suxametônio provoca paralisia temporária da musculatura esquelética, facilitando a intubação. Propofol e Etomidato são anestésicos (induzem o sono, mas não relaxam a musculatura dessa forma). Macete: 'Relaxa o músculo para colocar a cânula com segurança!'"
+  },
+  {
+   "id": 17,
+   "titulo": "Insuficiência cardíaca descompensada",
+   "nivel": "Avançado",
+   "cenario": "Paciente com insuficiência cardíaca aguda evolui para choque cardiogênico: coração sem força para bombear o sangue adequadamente.",
+   "pergunta": "Qual agente inotrópico aumenta a força de contração do coração nesse cenário?",
+   "opcoes": [
+    "Amiodarona",
+    "Deslanol",
+    "Dobutamina",
+    "Atropina"
+   ],
+   "correta": 2,
+   "explicacao": "A Dobutamina é inotrópico positivo: aumenta a força de contração do coração e melhora o fluxo sanguíneo — indicada em insuficiência cardíaca aguda e choque cardiogênico. O Deslanol também fortalece o coração, mas seu uso típico é insuficiência cardíaca crônica e fibrilação atrial. Macete: 'Ajuda o coração a bombear sangue com mais força!'"
+  },
+  {
+   "id": 18,
+   "titulo": "Refluxo e queimação",
+   "nivel": "Básico",
+   "cenario": "Paciente relata queimação no estômago e refluxo frequente há semanas, com piora após refeições.",
+   "pergunta": "Qual medicamento reduz fortemente a produção de ácido no estômago?",
+   "opcoes": [
+    "Metoclopramida",
+    "Bromoprida",
+    "Simeticona",
+    "Omeprazol"
+   ],
+   "correta": 3,
+   "explicacao": "O Omeprazol é inibidor da bomba de prótons: reduz fortemente a produção de ácido, tratando úlceras e refluxo. Metoclopramida e Bromoprida aceleram o esvaziamento gástrico (procinéticos), e Simeticona trata gases. Macete: 'Apaga o fogo do ácido no estômago!'"
+  },
+  {
+   "id": 19,
+   "titulo": "Sangramento pós-cirúrgico",
+   "nivel": "Intermediário",
+   "cenario": "Paciente no pós-operatório imediato apresenta sangramento acima do esperado no local da incisão. O médico prescreve um antifibrinolítico para estabilizar o coágulo.",
+   "pergunta": "Qual medicamento foi prescrito?",
+   "opcoes": [
+    "Enoxaparina",
+    "Ácido tranexâmico",
+    "Heparina",
+    "Protamina"
+   ],
+   "correta": 1,
+   "explicacao": "O Ácido tranexâmico é antifibrinolítico: estabiliza os coágulos já formados, reduzindo o sangramento. Não confundir com Enoxaparina e Heparina, que são anticoagulantes e fazem o efeito contrário. Macete: “Segura o sangramento e evita perda de sangue!”"
+  },
+  {
+   "id": 20,
+   "titulo": "Bradicardia grave",
+   "nivel": "Básico",
+   "cenario": "Paciente internado apresenta frequência cardíaca muito baixa (bradicardia sintomática) e excesso de secreções nas vias aéreas antes de um procedimento.",
+   "pergunta": "Qual medicamento anticolinérgico é indicado?",
+   "opcoes": [
+    "Metoprolol",
+    "Atropina",
+    "Amiodarona",
+    "Propranolol"
+   ],
+   "correta": 1,
+   "explicacao": "A Atropina é anticolinérgica: acelera os batimentos cardíacos e reduz secreções. Metoprolol e Propranolol são betabloqueadores — reduziriam ainda mais a frequência, piorando o quadro. Macete: “Coração muito devagar? Muita secreção? Atropina resolve!”"
+  },
+  {
+   "id": 21,
+   "titulo": "Infecção urinária hospitalar resistente",
+   "nivel": "Intermediário",
+   "cenario": "Paciente com infecção urinária grave causada por bactéria Gram-negativa resistente aos antibióticos comuns. A equipe opta por um aminoglicosídeo potente.",
+   "pergunta": "Qual antibiótico é indicado?",
+   "opcoes": [
+    "Amicacina",
+    "Cefalexina",
+    "Nitrofurantoína",
+    "Azitromicina"
+   ],
+   "correta": 0,
+   "explicacao": "A Amicacina é aminoglicosídeo reservado para infecções graves, resistentes ou hospitalares, especialmente por Gram-negativas. Cefalexina e Nitrofurantoína servem para infecções urinárias simples. Macete: “Para bactérias difíceis que outros remédios não combatem!”"
+  },
+  {
+   "id": 22,
+   "titulo": "Dor oncológica intensa",
+   "nivel": "Intermediário",
+   "cenario": "Paciente com câncer avançado apresenta dor muito intensa, não controlada por analgésicos comuns nem por opioides de menor potência.",
+   "pergunta": "Qual opioide potente costuma ser indicado?",
+   "opcoes": [
+    "Tramadol",
+    "Codeína",
+    "Morfina",
+    "Dipirona"
+   ],
+   "correta": 2,
+   "explicacao": "A Morfina é o analgésico de escolha para dor muito intensa, incluindo dor oncológica. Tramadol e Codeína são opioides de menor potência, já insuficientes nesse caso. Macete: “Para dores fortes que outros remédios não aliviam!”"
+  },
+  {
+   "id": 23,
+   "titulo": "Sangramento por excesso de Heparina",
+   "nivel": "Avançado",
+   "cenario": "Paciente em uso de Heparina para prevenção de trombose apresenta sangramento importante, e os exames confirmam excesso do efeito anticoagulante.",
+   "pergunta": "Qual antídoto específico reverte esse efeito?",
+   "opcoes": [
+    "Protamina",
+    "Fitomenadiona (Vitamina K)",
+    "Ácido tranexâmico",
+    "Naloxona"
+   ],
+   "correta": 0,
+   "explicacao": "A Protamina neutraliza diretamente o efeito anticoagulante da Heparina. A Fitomenadiona (Vitamina K) reverte anticoagulantes orais, não a Heparina. Macete: “Desfaz o efeito da Heparina em caso de sangramento!”"
+  },
+  {
+   "id": 24,
+   "titulo": "Pré-eclâmpsia",
+   "nivel": "Avançado",
+   "cenario": "Gestante com pressão arterial muito elevada e risco de convulsões (eclâmpsia). A equipe administra um eletrólito com efeito anticonvulsivante.",
+   "pergunta": "Qual medicamento é utilizado para prevenir as convulsões?",
+   "opcoes": [
+    "Diazepam",
+    "Fenitoína",
+    "Sulfato de magnésio",
+    "Cloreto de potássio"
+   ],
+   "correta": 2,
+   "explicacao": "O Sulfato de magnésio reduz a excitabilidade neuromuscular e é o padrão-ouro na prevenção de convulsões na pré-eclâmpsia/eclâmpsia. Macete: “Protege contra convulsões na gestante com pré-eclâmpsia!”"
+  },
+  {
+   "id": 25,
+   "titulo": "Hipercalemia grave",
+   "nivel": "Avançado",
+   "cenario": "Exame laboratorial mostra potássio muito elevado no sangue, com alterações do ritmo cardíaco visíveis no monitor.",
+   "pergunta": "Qual medicamento protege o coração enquanto o potássio é corrigido?",
+   "opcoes": [
+    "Cloreto de potássio",
+    "Gluconato de cálcio",
+    "Furosemida",
+    "Bicarbonato de sódio"
+   ],
+   "correta": 1,
+   "explicacao": "O Gluconato de cálcio não baixa o potássio, mas estabiliza a membrana das células cardíacas, protegendo o coração do risco de arritmia grave. O Cloreto de potássio seria o oposto — pioraria o quadro. Macete: “Protetor do coração quando o potássio está muito alto!”"
+  },
+  {
+   "id": 26,
+   "titulo": "Infecção fúngica sistêmica",
+   "nivel": "Avançado",
+   "cenario": "Paciente imunossuprimido desenvolve infecção fúngica grave disseminada pelo corpo, exigindo tratamento potente com monitorização da função renal.",
+   "pergunta": "Qual antifúngico costuma ser indicado nesses casos?",
+   "opcoes": [
+    "Nistatina",
+    "Fluconazol",
+    "Anfotericina B",
+    "Metronidazol"
+   ],
+   "correta": 2,
+   "explicacao": "A Anfotericina B é muito eficaz contra fungos em infecções sistêmicas graves, mas exige acompanhamento da função renal. A Nistatina age só por contato (mucosas) e o Metronidazol nem é antifúngico. Macete: “Forte contra fungos, mas exige monitorar os rins!”"
+  },
+  {
+   "id": 27,
+   "titulo": "Sedação excessiva por benzodiazepínico",
+   "nivel": "Intermediário",
+   "cenario": "Paciente recebeu Midazolam para um procedimento e permanece muito sedado, com risco de depressão respiratória, mesmo após o término do exame.",
+   "pergunta": "Qual antídoto específico reverte esse efeito?",
+   "opcoes": [
+    "Naloxona",
+    "Flumazenil",
+    "Protamina",
+    "N-acetilcisteína"
+   ],
+   "correta": 1,
+   "explicacao": "O Flumazenil reverte rapidamente o efeito dos benzodiazepínicos (midazolam, diazepam). A Naloxona é o antídoto dos opioides — não confundir os dois! Macete: “Desfaz o efeito do diazepam e similares!”"
+  },
+  {
+   "id": 28,
+   "titulo": "Crise de angina",
+   "nivel": "Intermediário",
+   "cenario": "Paciente relata dor forte no peito, característica de angina, durante crise aguda de dor precordial.",
+   "pergunta": "Qual vasodilatador coronariano alivia rapidamente a dor?",
+   "opcoes": [
+    "Nitroglicerina",
+    "Nitroprussiato",
+    "Anlodipino",
+    "Losartana"
+   ],
+   "correta": 0,
+   "explicacao": "A Nitroglicerina relaxa os vasos do coração, melhorando o fluxo sanguíneo e aliviando a dor da angina rapidamente. O Nitroprussiato é vasodilatador para crises hipertensivas graves; Anlodipino e Losartana são de uso contínuo. Macete: “Alivia a dor no peito abrindo as artérias do coração!”"
+  },
+  {
+   "id": 29,
+   "titulo": "Asma refratária",
+   "nivel": "Avançado",
+   "cenario": "Paciente em crise de asma não melhora após múltiplas doses de broncodilatador de primeira linha (Salbutamol) associado ao ipratrópio.",
+   "pergunta": "Qual broncodilatador de reserva pode ser considerado?",
+   "opcoes": [
+    "Beclometasona",
+    "Budesonida",
+    "Aminofilina",
+    "Prometazina"
+   ],
+   "correta": 2,
+   "explicacao": "A Aminofilina (xantina) é reservada para quando os broncodilatadores de primeira linha não bastam. Beclometasona e Budesonida são corticoides inalatórios de manutenção — não são medicamentos “de crise”. Macete: “Reserva para quando o Salbutamol não é suficiente!”"
+  },
+  {
+   "id": 30,
+   "titulo": "Overdose de paracetamol",
+   "nivel": "Avançado",
+   "cenario": "Paciente é levado à emergência após ingestão de dose excessiva de paracetamol, com risco de lesão hepática grave.",
+   "pergunta": "Qual antídoto específico protege o fígado nesse caso?",
+   "opcoes": [
+    "Flumazenil",
+    "N-acetilcisteína",
+    "Naloxona",
+    "Protamina"
+   ],
+   "correta": 1,
+   "explicacao": "A N-acetilcisteína, além de mucolítica, é o antídoto de escolha na intoxicação por paracetamol, protegendo o fígado do dano. Macete: “Desfaz o muco grosso e salva o fígado da overdose de paracetamol!”"
+  },
+  {
+   "id": 31,
+   "titulo": "Hipoglicemia grave",
+   "nivel": "Intermediário",
+   "cenario": "Paciente diabético é encontrado inconsciente, com glicemia muito baixa, e não é possível oferecer alimento por via oral com segurança.",
+   "pergunta": "Qual hormônio deve ser administrado para elevar rapidamente a glicose?",
+   "opcoes": [
+    "Insulina Regular",
+    "Metformina",
+    "Glucagon",
+    "Glibenclamida"
+   ],
+   "correta": 2,
+   "explicacao": "O Glucagon age de forma oposta à insulina, elevando rapidamente a glicose — ideal quando o paciente não pode comer. Insulina, Metformina e Glibenclamida BAIXAM a glicose e agravariam o quadro. Macete: “O ‘contrário’ da insulina — sobe a glicose rápido!”"
+  },
+  {
+   "id": 32,
+   "titulo": "Infecção hospitalar multirresistente",
+   "nivel": "Avançado",
+   "cenario": "Paciente com infecção grave por bactéria Gram-negativa multirresistente não responde a nenhum dos antibióticos convencionais testados.",
+   "pergunta": "Qual antibiótico de última linha pode ser considerado?",
+   "opcoes": [
+    "Colistina",
+    "Cefalotina",
+    "Azitromicina",
+    "Amoxicilina + Clavulanato"
+   ],
+   "correta": 0,
+   "explicacao": "A Colistina (assim como a Polimixina B) é polipeptídica, reservada para casos extremos em que praticamente nenhum outro antibiótico é eficaz contra Gram-negativos multirresistentes. Macete: “Última opção quando nada mais funciona!”"
+  }
+ ],
+ "quiz": [
+  {
+   "pergunta": "Qual é a classe da Dipirona?",
+   "opcoes": [
+    "Analgésico e antitérmico",
+    "AINE",
+    "Opioide",
+    "Corticosteroide"
+   ],
+   "correta": 0,
+   "explicacao": "Dipirona é analgésico e antitérmico: alivia dor leve a moderada e reduz a febre rapidamente."
+  },
+  {
+   "pergunta": "\"Contra vírus — não serve para infecções por bactérias!\" é o macete de qual medicamento?",
+   "opcoes": [
+    "Fluconazol",
+    "Aciclovir",
+    "Metronidazol",
+    "Vancomicina"
+   ],
+   "correta": 1,
+   "explicacao": "Aciclovir é antiviral, usado em herpes, varicela e zóster. Fluconazol é o antifúngico ('Contra fungos — não serve para bactérias!')."
+  },
+  {
+   "pergunta": "Qual antibiótico é considerado 'de última linha', para casos mais sérios?",
+   "opcoes": [
+    "Amoxicilina + Clavulanato",
+    "Cefalotina",
+    "Meronem (Meropenem)",
+    "Azitromicina"
+   ],
+   "correta": 2,
+   "explicacao": "O Meropenem é carbapenêmico de amplo espectro, usado em infecções hospitalares graves, sepse e meningite. Macete: 'Antibiótico de última linha, usado em casos mais sérios!'"
+  },
+  {
+   "pergunta": "Qual a diferença do Buscopan Composto para o Simples?",
+   "opcoes": [
+    "O Composto tem antibiótico",
+    "O Composto tem analgésico associado",
+    "O Simples é mais forte",
+    "Não há diferença"
+   ],
+   "correta": 1,
+   "explicacao": "O Composto une antiespasmódico + analgésico; o Simples só relaxa a musculatura lisa, sem tirar a dor sozinho."
+  },
+  {
+   "pergunta": "Flumazenil é antídoto de qual classe de medicamentos?",
+   "opcoes": [
+    "Opioides",
+    "Benzodiazepínicos",
+    "Corticosteroides",
+    "Anticoagulantes"
+   ],
+   "correta": 1,
+   "explicacao": "Flumazenil reverte o efeito dos benzodiazepínicos (diazepam, midazolam). O antídoto dos opioides é a Naloxona."
+  },
+  {
+   "pergunta": "Naloxona reverte os efeitos de qual grupo?",
+   "opcoes": [
+    "Analgésicos opioides",
+    "Benzodiazepínicos",
+    "Antipsicóticos",
+    "Anestésicos locais"
+   ],
+   "correta": 0,
+   "explicacao": "Naloxona é o antídoto específico dos opioides: reverte intoxicação e depressão respiratória por morfina, tramadol e similares."
+  },
+  {
+   "pergunta": "Qual cefalosporina é de 4ª geração?",
+   "opcoes": [
+    "Cefalotina",
+    "Cefazolina",
+    "Ceftriaxona",
+    "Cefepima"
+   ],
+   "correta": 3,
+   "explicacao": "Cefepima é de 4ª geração ('mais abrangente, usada em casos mais complexos'). Cefalotina e Cefazolina são de 1ª; Ceftriaxona é de 3ª."
+  },
+  {
+   "pergunta": "\"Manda o excesso de água para fora do corpo!\" refere-se a qual medicamento?",
+   "opcoes": [
+    "Furosemida",
+    "Hidralazina",
+    "Enoxaparina",
+    "Fitomenadiona"
+   ],
+   "correta": 0,
+   "explicacao": "Furosemida é diurético de alça: aumenta fortemente a eliminação de água e sal pelos rins."
+  },
+  {
+   "pergunta": "Qual medicamento é usado em bradicardia grave (coração muito lento)?",
+   "opcoes": [
+    "Amiodarona",
+    "Atropina",
+    "Clonidina",
+    "Deslanol"
+   ],
+   "correta": 1,
+   "explicacao": "A Atropina acelera os batimentos cardíacos — indicada em bradicardia grave. Macete: 'Coração muito devagar? Muita secreção? Atropina resolve!'"
+  },
+  {
+   "pergunta": "Fentanila é mais ou menos potente que a morfina?",
+   "opcoes": [
+    "Mais potente, dura menos tempo",
+    "Menos potente, dura mais tempo",
+    "Igual em tudo",
+    "Não é opioide"
+   ],
+   "correta": 0,
+   "explicacao": "Macete da Fentanila: 'Mais potente que a morfina, dura menos tempo no corpo!'"
+  },
+  {
+   "pergunta": "Qual corticosteroide tem 'ação rápida e mais suave entre os corticoides'?",
+   "opcoes": [
+    "Dexametasona",
+    "Metilprednisolona",
+    "Hidrocortisona",
+    "Prednisona"
+   ],
+   "correta": 2,
+   "explicacao": "A Hidrocortisona reduz inflamação e alergias de forma rápida — macete: 'Ação rápida e mais suave entre os corticoides!'"
+  },
+  {
+   "pergunta": "Tramadol é classificado como:",
+   "opcoes": [
+    "Opioide de potência moderada",
+    "AINE",
+    "Opioide mais forte que a morfina",
+    "Analgésico comum"
+   ],
+   "correta": 0,
+   "explicacao": "Tramadol é opioide de potência moderada: 'Mais forte que analgésicos comuns, menos potente que a morfina!'"
+  },
+  {
+   "pergunta": "Qual medicamento precisa ficar protegido da luz?",
+   "opcoes": [
+    "Nitroprussiato",
+    "Norepinefrina",
+    "Dopamina",
+    "Heparina"
+   ],
+   "correta": 0,
+   "explicacao": "Macete do Nitroprussiato: 'Age rápido, mas precisa ficar protegido da luz!'"
+  },
+  {
+   "pergunta": "Metronidazol age principalmente contra:",
+   "opcoes": [
+    "Vírus",
+    "Fungos",
+    "Bactérias anaeróbias e parasitas",
+    "Somente Gram-positivas"
+   ],
+   "correta": 2,
+   "explicacao": "Metronidazol elimina bactérias anaeróbias e parasitas: 'Age contra bactérias que vivem sem oxigênio!'"
+  },
+  {
+   "pergunta": "Qual antiemético também é procinético (acelera o esvaziamento do estômago)?",
+   "opcoes": [
+    "Ondansetrona",
+    "Metoclopramida",
+    "Prometazina",
+    "Simeticona"
+   ],
+   "correta": 1,
+   "explicacao": "Metoclopramida (assim como a Bromoprida) é procinético/antiemético: 'Faz o estômago trabalhar melhor!'"
+  },
+  {
+   "pergunta": "Benzetacil tem como característica marcante:",
+   "opcoes": [
+    "Ação prolongada com uma dose só",
+    "Tratamento de 3 a 5 dias",
+    "Uso apenas venoso em UTI",
+    "Ser antifúngico"
+   ],
+   "correta": 0,
+   "explicacao": "Benzetacil (Penicilina Benzatina): 'Uma dose só e dura muito tempo no corpo!' Tratamento curto de 3-5 dias é o macete da Azitromicina."
+  },
+  {
+   "pergunta": "Qual sedativo NÃO deprime a respiração, sendo usado na UTI?",
+   "opcoes": [
+    "Propofol",
+    "Midazolam",
+    "Dexmedetomidina",
+    "Etomidato"
+   ],
+   "correta": 2,
+   "explicacao": "Dexmedetomidina induz sedação leve a moderada sem queda na respiração: 'Acalma e seda, sem parar a respiração!'"
+  },
+  {
+   "pergunta": "Fitomenadiona é qual vitamina?",
+   "opcoes": [
+    "Vitamina C",
+    "Vitamina K",
+    "Complexo B",
+    "Vitamina D"
+   ],
+   "correta": 1,
+   "explicacao": "Fitomenadiona é a Vitamina K, essencial para a coagulação: 'Ajuda o sangue a ficar firme e estancar o sangramento!'"
+  },
+  {
+   "pergunta": "Oxacilina é indicada especialmente quando:",
+   "opcoes": [
+    "A penicilina comum não funciona",
+    "Há infecção viral",
+    "O paciente tem alergia a antibióticos",
+    "Há infecção fúngica"
+   ],
+   "correta": 0,
+   "explicacao": "Oxacilina age contra estafilococos resistentes: 'Serve quando a penicilina comum não funciona!'"
+  },
+  {
+   "pergunta": "Medicamentos controlados exigem:",
+   "opcoes": [
+    "Apenas receita comum",
+    "Receita especial, controle de estoque e registro de saída",
+    "Nenhum controle em hospital",
+    "Somente autorização verbal"
+   ],
+   "correta": 1,
+   "explicacao": "Conforme as observações da apostila: medicamentos controlados seguem legislação específica, com receita especial, controle de estoque e registro de saída."
+  },
+  {
+   "pergunta": "Qual antibiótico glicopeptídeo é usado quando outros não resolvem infecções por Gram-positivos resistentes?",
+   "opcoes": [
+    "Amoxicilina + Clavulanato",
+    "Vancomicina",
+    "Azitromicina",
+    "Cefalexina"
+   ],
+   "correta": 1,
+   "explicacao": "A Vancomicina é glicopeptídeo potente contra Gram-positivos resistentes, reservada para casos graves."
+  },
+  {
+   "pergunta": "Em um paciente com choque cardiogênico, qual medicamento é um agente inotrópico positivo?",
+   "opcoes": [
+    "Furosemida",
+    "Dobutamina",
+    "Losartana",
+    "Espironolactona"
+   ],
+   "correta": 1,
+   "explicacao": "A Dobutamina aumenta a força de contração do coração, sendo usada em choque cardiogênico e insuficiência cardíaca aguda."
+  },
+  {
+   "pergunta": "Qual destes é um diurético poupador de potássio?",
+   "opcoes": [
+    "Furosemida",
+    "Hidroclorotiazida",
+    "Espironolactona",
+    "Manitol"
+   ],
+   "correta": 2,
+   "explicacao": "A Espironolactona elimina água sem causar perda significativa de potássio: “Tira água do corpo, mas segura o potássio!”"
+  },
+  {
+   "pergunta": "A Amiodarona, medicamento controlado, é usada principalmente para:",
+   "opcoes": [
+    "Controlar arritmias cardíacas graves",
+    "Tratar infecções respiratórias",
+    "Reduzir a coagulação sanguínea",
+    "Aliviar dor pós-operatória"
+   ],
+   "correta": 0,
+   "explicacao": "A Amiodarona é antiarrítmico potente, usado em arritmias graves e resistentes."
+  },
+  {
+   "pergunta": "Fentanila e Morfina pertencem a qual classe de medicamentos?",
+   "opcoes": [
+    "Benzodiazepínicos",
+    "Anti-inflamatórios não esteroidais",
+    "Analgésicos opioides",
+    "Antipsicóticos"
+   ],
+   "correta": 2,
+   "explicacao": "Ambos são analgésicos opioides potentes, usados para dor intensa."
+  },
+  {
+   "pergunta": "Qual é o uso principal do Omeprazol?",
+   "opcoes": [
+    "Reduzir a pressão arterial",
+    "Reduzir a produção de ácido no estômago",
+    "Tratar infecção urinária",
+    "Controlar arritmias"
+   ],
+   "correta": 1,
+   "explicacao": "É inibidor da bomba de prótons, usado em úlceras e refluxo gastroesofágico."
+  },
+  {
+   "pergunta": "Qual das opções abaixo NÃO é um corticosteroide?",
+   "opcoes": [
+    "Dexametasona",
+    "Hidrocortisona",
+    "Prednisona",
+    "Furosemida"
+   ],
+   "correta": 3,
+   "explicacao": "A Furosemida é diurético de alça, não corticosteroide."
+  },
+  {
+   "pergunta": "Qual medicamento reverte especificamente o sangramento causado por excesso de Heparina?",
+   "opcoes": [
+    "Protamina",
+    "Fitomenadiona (Vitamina K)",
+    "Ácido tranexâmico",
+    "Enoxaparina"
+   ],
+   "correta": 0,
+   "explicacao": "A Protamina neutraliza diretamente o efeito anticoagulante da Heparina."
+  },
+  {
+   "pergunta": "O Propofol é usado principalmente para:",
+   "opcoes": [
+    "Tratar infecções bacterianas",
+    "Indução e manutenção de anestesia geral",
+    "Controlar a pressão arterial cronicamente",
+    "Tratar diabetes"
+   ],
+   "correta": 1,
+   "explicacao": "É anestésico geral de ação curta, usado na indução anestésica e na sedação contínua em UTI."
+  },
+  {
+   "pergunta": "Qual destes é um antipsicótico atípico?",
+   "opcoes": [
+    "Haloperidol",
+    "Quetiapina",
+    "Diazepam",
+    "Fenitoína"
+   ],
+   "correta": 1,
+   "explicacao": "A Quetiapina é antipsicótico atípico; o Haloperidol é típico (clássico)."
+  },
+  {
+   "pergunta": "A Digoxina pertence a qual classe farmacológica?",
+   "opcoes": [
+    "Glicosídeo cardíaco",
+    "Antibiótico",
+    "Anticoagulante",
+    "Corticosteroide"
+   ],
+   "correta": 0,
+   "explicacao": "É glicosídeo cardíaco, usado em insuficiência cardíaca e fibrilação atrial — atenção à toxicidade."
+  },
+  {
+   "pergunta": "Levofloxacino e Ciprofloxacino pertencem à classe das:",
+   "opcoes": [
+    "Fluoroquinolonas",
+    "Penicilinas",
+    "Macrolídeos",
+    "Cefalosporinas"
+   ],
+   "correta": 0,
+   "explicacao": "Ambos são fluoroquinolonas, usadas em infecções urinárias e respiratórias."
+  },
+  {
+   "pergunta": "Qual bloqueador neuromuscular despolarizante é usado para intubação rápida?",
+   "opcoes": [
+    "Rocurônio",
+    "Suxametônio",
+    "Atracúrio",
+    "Pancurônio"
+   ],
+   "correta": 1,
+   "explicacao": "O Suxametônio é o único despolarizante da lista, de ação ultrarrápida. Rocurônio, Atracúrio e Pancurônio são não despolarizantes."
+  },
+  {
+   "pergunta": "Qual é a função principal da Simeticona?",
+   "opcoes": [
+    "Reduzir gases e distensão abdominal",
+    "Tratar infecções intestinais",
+    "Reduzir a pressão arterial",
+    "Sedar o paciente"
+   ],
+   "correta": 0,
+   "explicacao": "Quebra as bolhas de gás no intestino, aliviando distensão abdominal e desconforto."
+  }
+ ]
 }
