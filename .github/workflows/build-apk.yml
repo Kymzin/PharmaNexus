@@ -1,4 +1,4 @@
-name: Compilar APK do PharmaNexux
+name: Compilar PharmaNexus (APK, Web e Windows)
 
 on:
   push:
@@ -7,9 +7,12 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 jobs:
-  build:
+  # ================= ANDROID (APK) =================
+  android:
     runs-on: ubuntu-latest
     steps:
       - name: Baixar o código
@@ -22,8 +25,12 @@ jobs:
 
       - name: Gerar estrutura Android
         run: |
-          flutter create . --platforms android --project-name pharmanexux --org com.hmservices
+          flutter create . --platforms android --project-name pharmanexus --org com.hmservices
           git checkout -- .
+
+      - name: Definir nome exibido do app (PharmaNexus)
+        run: |
+          sed -i 's/android:label="[^"]*"/android:label="PharmaNexus"/' android/app/src/main/AndroidManifest.xml
 
       - name: Baixar fontes Inter e Manrope (opcional)
         continue-on-error: true
@@ -55,15 +62,137 @@ jobs:
       - name: Guardar APK como artefato
         uses: actions/upload-artifact@v4
         with:
-          name: PharmaNexux-APK
+          name: PharmaNexus-APK
           path: build/app/outputs/flutter-apk/app-release.apk
 
       - name: Publicar APK na página de Releases
         uses: softprops/action-gh-release@v2
         with:
           tag_name: v1.0-latest
-          name: PharmaNexux — APK mais recente
+          name: PharmaNexus — versão mais recente
           body: |
-            APK do PharmaNexux gerado automaticamente.
-            Baixe o arquivo app-release.apk abaixo e instale no Android.
+            Arquivos do PharmaNexus gerados automaticamente.
+            - app-release.apk → Android
+            - PharmaNexus-Windows.zip → Windows (extraia e abra pharmanexus.exe)
           files: build/app/outputs/flutter-apk/app-release.apk
+
+  # ================= WEB (GitHub Pages) =================
+  web:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar o código
+        uses: actions/checkout@v4
+
+      - name: Instalar Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+
+      - name: Gerar estrutura Web
+        run: |
+          flutter create . --platforms web --project-name pharmanexus --org com.hmservices
+          git checkout -- .
+
+      - name: Título da página (PharmaNexus)
+        continue-on-error: true
+        run: |
+          sed -i 's|<title>[^<]*</title>|<title>PharmaNexus</title>|' web/index.html
+          sed -i 's/"name": "pharmanexus"/"name": "PharmaNexus"/; s/"short_name": "pharmanexus"/"short_name": "PharmaNexus"/' web/manifest.json
+
+      - name: Baixar fontes Inter e Manrope (opcional)
+        continue-on-error: true
+        run: |
+          mkdir -p fonts
+          curl -fsSL -o "fonts/Inter.ttf" "https://raw.githubusercontent.com/google/fonts/main/ofl/inter/Inter%5Bopsz%2Cwght%5D.ttf"
+          curl -fsSL -o "fonts/Manrope.ttf" "https://raw.githubusercontent.com/google/fonts/main/ofl/manrope/Manrope%5Bwght%5D.ttf"
+          {
+            echo ''
+            echo '  fonts:'
+            echo '    - family: Inter'
+            echo '      fonts:'
+            echo '        - asset: fonts/Inter.ttf'
+            echo '    - family: Manrope'
+            echo '      fonts:'
+            echo '        - asset: fonts/Manrope.ttf'
+          } >> pubspec.yaml
+
+      - name: Instalar dependências
+        run: flutter pub get
+
+      - name: Gerar ícones (web)
+        continue-on-error: true
+        run: dart run flutter_launcher_icons
+
+      - name: Compilar versão Web
+        run: flutter build web --release --base-href "/${{ github.event.repository.name }}/"
+
+      - name: Publicar no GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: build/web
+          publish_branch: gh-pages
+
+  # ================= WINDOWS (.exe) =================
+  windows:
+    runs-on: windows-latest
+    needs: android
+    steps:
+      - name: Baixar o código
+        uses: actions/checkout@v4
+
+      - name: Instalar Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+
+      - name: Gerar estrutura Windows
+        shell: bash
+        run: |
+          flutter create . --platforms windows --project-name pharmanexus --org com.hmservices
+          git checkout -- .
+
+      - name: Baixar fontes Inter e Manrope (opcional)
+        continue-on-error: true
+        shell: bash
+        run: |
+          mkdir -p fonts
+          curl -fsSL -o "fonts/Inter.ttf" "https://raw.githubusercontent.com/google/fonts/main/ofl/inter/Inter%5Bopsz%2Cwght%5D.ttf"
+          curl -fsSL -o "fonts/Manrope.ttf" "https://raw.githubusercontent.com/google/fonts/main/ofl/manrope/Manrope%5Bwght%5D.ttf"
+          {
+            echo ''
+            echo '  fonts:'
+            echo '    - family: Inter'
+            echo '      fonts:'
+            echo '        - asset: fonts/Inter.ttf'
+            echo '    - family: Manrope'
+            echo '      fonts:'
+            echo '        - asset: fonts/Manrope.ttf'
+          } >> pubspec.yaml
+
+      - name: Instalar dependências
+        run: flutter pub get
+
+      - name: Gerar ícones (windows)
+        continue-on-error: true
+        run: dart run flutter_launcher_icons
+
+      - name: Compilar versão Windows
+        run: flutter build windows --release
+
+      - name: Compactar em zip
+        shell: pwsh
+        run: Compress-Archive -Path build/windows/x64/runner/Release/* -DestinationPath PharmaNexus-Windows.zip
+
+      - name: Guardar como artefato
+        uses: actions/upload-artifact@v4
+        with:
+          name: PharmaNexus-Windows
+          path: PharmaNexus-Windows.zip
+
+      - name: Publicar na página de Releases
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v1.0-latest
+          name: PharmaNexus — versão mais recente
+          files: PharmaNexus-Windows.zip
