@@ -1,1 +1,69 @@
+name: Compilar APK do PharmaNexux
 
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar o código
+        uses: actions/checkout@v4
+
+      - name: Instalar Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+
+      - name: Gerar estrutura Android
+        run: |
+          flutter create . --platforms android --project-name pharmanexux --org com.hmservices
+          git checkout -- .
+
+      - name: Baixar fontes Inter e Manrope (opcional)
+        continue-on-error: true
+        run: |
+          mkdir -p fonts
+          curl -fsSL -o "fonts/Inter.ttf" "https://raw.githubusercontent.com/google/fonts/main/ofl/inter/Inter%5Bopsz%2Cwght%5D.ttf"
+          curl -fsSL -o "fonts/Manrope.ttf" "https://raw.githubusercontent.com/google/fonts/main/ofl/manrope/Manrope%5Bwght%5D.ttf"
+          {
+            echo ''
+            echo '  fonts:'
+            echo '    - family: Inter'
+            echo '      fonts:'
+            echo '        - asset: fonts/Inter.ttf'
+            echo '    - family: Manrope'
+            echo '      fonts:'
+            echo '        - asset: fonts/Manrope.ttf'
+          } >> pubspec.yaml
+
+      - name: Instalar dependências
+        run: flutter pub get
+
+      - name: Gerar ícone do aplicativo
+        continue-on-error: true
+        run: dart run flutter_launcher_icons
+
+      - name: Compilar APK (release)
+        run: flutter build apk --release
+
+      - name: Guardar APK como artefato
+        uses: actions/upload-artifact@v4
+        with:
+          name: PharmaNexux-APK
+          path: build/app/outputs/flutter-apk/app-release.apk
+
+      - name: Publicar APK na página de Releases
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v1.0-latest
+          name: PharmaNexux — APK mais recente
+          body: |
+            APK do PharmaNexux gerado automaticamente.
+            Baixe o arquivo app-release.apk abaixo e instale no Android.
+          files: build/app/outputs/flutter-apk/app-release.apk
