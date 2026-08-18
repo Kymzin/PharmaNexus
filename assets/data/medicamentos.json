@@ -382,7 +382,8 @@
    "sintomas": [
     "deficiencia_vitaminica",
     "cicatrizacao"
-   ]
+   ],
+   "principio_ativo": "Ácido ascórbico (vitamina C)"
   },
   {
    "nome": "Ácido tranexâmico",
@@ -393,7 +394,8 @@
    "macete": "Segura o sangramento e evita perda de sangue!",
    "sintomas": [
     "sangramento"
-   ]
+   ],
+   "principio_ativo": "Ácido tranexâmico"
   },
   {
    "nome": "Aciclovir",
@@ -404,7 +406,8 @@
    "macete": "Contra vírus — não serve para infecções por bactérias!",
    "sintomas": [
     "infeccao_viral_herpes"
-   ]
+   ],
+   "principio_ativo": "Aciclovir (aciclovir sódico, forma injetável)"
   },
   {
    "nome": "Amicacina",
@@ -418,7 +421,8 @@
     "infeccao_respiratoria",
     "infeccao_urinaria",
     "infeccao_ossea"
-   ]
+   ],
+   "principio_ativo": "Sulfato de amicacina"
   },
   {
    "nome": "Amoxicilina + Clavulanato",
@@ -433,7 +437,8 @@
     "infeccao_pele",
     "infeccao_dentaria",
     "infeccao_abdominal"
-   ]
+   ],
+   "principio_ativo": "Amoxicilina tri-hidratada + clavulanato de potássio"
   },
   {
    "nome": "Atropina",
@@ -444,7 +449,8 @@
    "macete": "Coração muito devagar? Muita secreção? Atropina resolve!",
    "sintomas": [
     "bradicardia"
-   ]
+   ],
+   "principio_ativo": "Sulfato de atropina"
   },
   {
    "nome": "Azitromicina",
@@ -457,7 +463,8 @@
     "infeccao_respiratoria",
     "infeccao_garganta_ouvido",
     "infeccao_pele"
-   ]
+   ],
+   "principio_ativo": "Azitromicina di-hidratada"
   },
   {
    "nome": "Benzetacil (Penicilina Benzatina)",
@@ -469,7 +476,9 @@
    "sintomas": [
     "sifilis_estreptococo",
     "infeccao_garganta_ouvido"
-   ]
+   ],
+   "principio_ativo": "Benzilpenicilina benzatina (penicilina G benzatina)",
+   "marca": true
   },
   {
    "nome": "Bromoprida",
@@ -481,7 +490,8 @@
    "sintomas": [
     "nausea_vomito",
     "refluxo_ma_digestao"
-   ]
+   ],
+   "principio_ativo": "Cloridrato de bromoprida"
   },
   {
    "nome": "Buscopan Composto",
@@ -493,7 +503,9 @@
    "sintomas": [
     "colica",
     "dor_leve"
-   ]
+   ],
+   "principio_ativo": "Butilbrometo de escopolamina + dipirona sódica",
+   "marca": true
   },
   {
    "nome": "Buscopan Simples",
@@ -504,7 +516,9 @@
    "macete": "Simples: só relaxa o músculo, não tira a dor sozinho!",
    "sintomas": [
     "colica"
-   ]
+   ],
+   "principio_ativo": "Butilbrometo de escopolamina (hioscina)",
+   "marca": true
   },
   {
    "nome": "Cefalotina",
@@ -516,7 +530,8 @@
    "sintomas": [
     "profilaxia_cirurgica",
     "infeccao_pele"
-   ]
+   ],
+   "principio_ativo": "Cefalotina sódica"
   },
   {
    "nome": "Cefazolina",
@@ -529,7 +544,8 @@
     "profilaxia_cirurgica",
     "infeccao_pele",
     "cicatrizacao"
-   ]
+   ],
+   "principio_ativo": "Cefazolina sódica"
   },
   {
    "nome": "Cefepima",
@@ -542,7 +558,8 @@
     "infeccao_grave_hospitalar",
     "infeccao_respiratoria",
     "infeccao_urinaria"
-   ]
+   ],
+   "principio_ativo": "Cloridrato de cefepima"
   },
   {
    "nome": "Ceftriaxona",
@@ -557,7 +574,8 @@
     "infeccao_abdominal",
     "infeccao_ossea",
     "infeccao_urinaria"
-   ]
+   ],
+   "principio_ativo": "Ceftriaxona sódica"
   },
   {
    "nome": "Cetoprofeno",
@@ -572,7 +590,8 @@
     "dor_pos_operatoria",
     "inflamacao",
     "febre"
-   ]
+   ],
+   "principio_ativo": "Cetoprofeno (cetoprofeno trometamol, injetável)"
   },
   {
    "nome": "Ciprofloxacino",
@@ -586,7 +605,8 @@
     "infeccao_respiratoria",
     "infeccao_ossea",
     "infeccao_pele"
-   ]
+   ],
+   "principio_ativo": "Cloridrato de ciprofloxacino (oral) / ciprofloxacino (injetável)"
   },
   {
    "nome": "Clindamicina",
@@ -601,7 +621,8 @@
     "infeccao_dentaria",
     "infeccao_abdominal",
     "infeccao_parasitaria"
-   ]
+   ],
+   "principio_ativo": "Fosfato de clindamicina (injetável) / cloridrato de clindamicina (oral)"
   },
   {
    "nome": "Clonidina",
@@ -613,7 +634,8 @@
    "sintomas": [
     "crise_hipertensiva",
     "dor_cronica"
-   ]
+   ],
+   "principio_ativo": "Cloridrato de clonidina"
   },
   {
    "nome": "Deslanol",
@@ -625,7 +647,9 @@
    "sintomas": [
     "insuficiencia_cardiaca",
     "arritmia"
-   ]
+   ],
+   "principio_ativo": "Deslanosídeo",
+   "marca": true
   },
   {
    "nome": "Dexametasona",
@@ -638,7 +662,8 @@
     "inflamacao",
     "alergia",
     "edema"
-   ]
+   ],
+   "principio_ativo": "Fosfato dissódico de dexametasona (injetável) / acetato de dexametasona"
   },
   {
    "nome": "Diclofenaco",
@@ -653,7 +678,8 @@
     "inflamacao",
     "febre",
     "dor_leve"
-   ]
+   ],
+   "principio_ativo": "Diclofenaco sódico ou diclofenaco potássico"
   },
   {
    "nome": "Dipirona",
@@ -665,7 +691,8 @@
    "sintomas": [
     "febre",
     "dor_leve"
-   ]
+   ],
+   "principio_ativo": "Dipirona sódica (metamizol sódico)"
   },
   {
    "nome": "Dobutamina",
@@ -677,7 +704,8 @@
    "sintomas": [
     "insuficiencia_cardiaca",
     "choque_circulatorio"
-   ]
+   ],
+   "principio_ativo": "Cloridrato de dobutamina"
   },
   {
    "nome": "Dopamina",
@@ -690,7 +718,8 @@
     "choque_circulatorio",
     "hipotensao",
     "insuficiencia_cardiaca"
-   ]
+   ],
+   "principio_ativo": "Cloridrato de dopamina"
   },
   {
    "nome": "Enoxaparina",
@@ -701,7 +730,8 @@
    "macete": "Evita coágulos, com menor risco de sangramento!",
    "sintomas": [
     "trombose"
-   ]
+   ],
+   "principio_ativo": "Enoxaparina sódica"
   },
   {
    "nome": "Epinefrina",
@@ -715,7 +745,8 @@
     "anafilaxia",
     "asma_broncoespasmo",
     "choque_circulatorio"
-   ]
+   ],
+   "principio_ativo": "Hemitartarato de epinefrina (adrenalina)"
   },
   {
    "nome": "Etilefrina",
@@ -726,7 +757,8 @@
    "macete": "Pressão caiu? Ela ajuda a subir e se manter estável!",
    "sintomas": [
     "hipotensao"
-   ]
+   ],
+   "principio_ativo": "Cloridrato de etilefrina"
   },
   {
    "nome": "Fenitoína",
@@ -738,7 +770,8 @@
    "sintomas": [
     "convulsao",
     "arritmia"
-   ]
+   ],
+   "principio_ativo": "Fenitoína sódica"
   },
   {
    "nome": "Fitomenadiona",
@@ -750,7 +783,8 @@
    "sintomas": [
     "sangramento",
     "deficiencia_vitaminica"
-   ]
+   ],
+   "principio_ativo": "Fitomenadiona (vitamina K1)"
   },
   {
    "nome": "Fluconazol",
@@ -761,7 +795,8 @@
    "macete": "Contra fungos — não serve para bactérias!",
    "sintomas": [
     "infeccao_fungica"
-   ]
+   ],
+   "principio_ativo": "Fluconazol"
   },
   {
    "nome": "Furosemida",
@@ -774,7 +809,8 @@
     "edema",
     "insuficiencia_cardiaca",
     "crise_hipertensiva"
-   ]
+   ],
+   "principio_ativo": "Furosemida"
   },
   {
    "nome": "Gentamicina",
@@ -788,7 +824,8 @@
     "infeccao_abdominal",
     "infeccao_grave_hospitalar",
     "infeccao_pele"
-   ]
+   ],
+   "principio_ativo": "Sulfato de gentamicina"
   },
   {
    "nome": "Heparina",
@@ -799,7 +836,8 @@
    "macete": "Sangue mais fluido, evita que coágulos se formem!",
    "sintomas": [
     "trombose"
-   ]
+   ],
+   "principio_ativo": "Heparina sódica"
   },
   {
    "nome": "Hidralazina",
@@ -810,7 +848,8 @@
    "macete": "Vaso relaxa e a pressão baixa com segurança!",
    "sintomas": [
     "crise_hipertensiva"
-   ]
+   ],
+   "principio_ativo": "Cloridrato de hidralazina"
   },
   {
    "nome": "Hidrocortisona",
@@ -824,7 +863,8 @@
     "alergia",
     "choque_circulatorio",
     "anafilaxia"
-   ]
+   ],
+   "principio_ativo": "Succinato sódico de hidrocortisona"
   },
   {
    "nome": "Hyplex B (Complexo B)",
@@ -835,7 +875,9 @@
    "macete": "Mais energia e saúde para os nervos!",
    "sintomas": [
     "deficiencia_vitaminica"
-   ]
+   ],
+   "principio_ativo": "Vitaminas do complexo B: cloridrato de tiamina (B1), fosfato sódico de riboflavina (B2), nicotinamida (B3), dexpantenol (B5) e cloridrato de piridoxina (B6)",
+   "marca": true
   },
   {
    "nome": "Levofloxacino",
@@ -848,7 +890,8 @@
     "infeccao_respiratoria",
     "infeccao_urinaria",
     "infeccao_pele"
-   ]
+   ],
+   "principio_ativo": "Levofloxacino hemi-hidratado"
   },
   {
    "nome": "Lidocaína",
@@ -860,7 +903,8 @@
    "sintomas": [
     "anestesia_local",
     "arritmia"
-   ]
+   ],
+   "principio_ativo": "Cloridrato de lidocaína (com ou sem epinefrina)"
   },
   {
    "nome": "Meronem (Meropenem)",
@@ -873,7 +917,9 @@
     "infeccao_grave_hospitalar",
     "meningite",
     "infeccao_abdominal"
-   ]
+   ],
+   "principio_ativo": "Meropeném tri-hidratado",
+   "marca": true
   },
   {
    "nome": "Metilprednisolona",
@@ -886,7 +932,8 @@
     "inflamacao",
     "alergia",
     "asma_broncoespasmo"
-   ]
+   ],
+   "principio_ativo": "Succinato sódico de metilprednisolona / acetato de metilprednisolona"
   },
   {
    "nome": "Metoclopramida",
@@ -898,7 +945,8 @@
    "sintomas": [
     "nausea_vomito",
     "refluxo_ma_digestao"
-   ]
+   ],
+   "principio_ativo": "Cloridrato de metoclopramida"
   },
   {
    "nome": "Metronidazol",
@@ -910,19 +958,22 @@
    "sintomas": [
     "infeccao_abdominal",
     "infeccao_parasitaria"
-   ]
+   ],
+   "principio_ativo": "Metronidazol / benzoilmetronidazol (suspensão oral)"
   },
   {
    "nome": "Noprosil",
    "controlado": false,
-   "classe": "Analgésico e antitérmico",
-   "funcao": "Alivia dor leve a moderada e reduz a febre",
-   "uso_principal": "Controle de febre e dor em pacientes internados",
-   "macete": "Alívio suave para dor e febre!",
+   "classe": "Procinético / Antiemético (nome comercial)",
+   "funcao": "Acelera o esvaziamento do estômago e reduz náuseas e vômitos",
+   "uso_principal": "Tratamento de enjoos, vômitos, má digestão e refluxo em pacientes internados",
+   "macete": "Noprosil é marca de metoclopramida — antiemético, NÃO analgésico!",
    "sintomas": [
-    "febre",
-    "dor_leve"
-   ]
+    "nausea_vomito",
+    "refluxo_ma_digestao"
+   ],
+   "principio_ativo": "Cloridrato de metoclopramida",
+   "marca": true
   },
   {
    "nome": "Norepinefrina",
@@ -934,7 +985,8 @@
    "sintomas": [
     "choque_circulatorio",
     "hipotensao"
-   ]
+   ],
+   "principio_ativo": "Hemitartarato ou bitartarato de norepinefrina (noradrenalina)"
   },
   {
    "nome": "Omeprazol",
@@ -946,7 +998,8 @@
    "sintomas": [
     "azia_ulcera",
     "refluxo_ma_digestao"
-   ]
+   ],
+   "principio_ativo": "Omeprazol / omeprazol sódico (injetável)"
   },
   {
    "nome": "Ondansetrona",
@@ -957,7 +1010,8 @@
    "macete": "Acaba com o enjoo e evita o vômito!",
    "sintomas": [
     "nausea_vomito"
-   ]
+   ],
+   "principio_ativo": "Cloridrato de ondansetrona di-hidratado"
   },
   {
    "nome": "Oxacilina",
@@ -970,7 +1024,8 @@
     "infeccao_pele",
     "infeccao_ossea",
     "infeccao_grave_hospitalar"
-   ]
+   ],
+   "principio_ativo": "Oxacilina sódica"
   },
   {
    "nome": "Prometazina",
@@ -982,7 +1037,8 @@
    "sintomas": [
     "alergia",
     "nausea_vomito"
-   ]
+   ],
+   "principio_ativo": "Cloridrato de prometazina"
   },
   {
    "nome": "Salbutamol",
@@ -993,7 +1049,8 @@
    "macete": "Abre os brônquios, respiração fica mais fácil!",
    "sintomas": [
     "asma_broncoespasmo"
-   ]
+   ],
+   "principio_ativo": "Sulfato de salbutamol (albuterol)"
   },
   {
    "nome": "Simeticona",
@@ -1004,7 +1061,8 @@
    "macete": "Acaba com o gás e a barriga inchada!",
    "sintomas": [
     "gases"
-   ]
+   ],
+   "principio_ativo": "Simeticona (dimeticona ativada)"
   },
   {
    "nome": "Vancomicina",
@@ -1015,7 +1073,8 @@
    "macete": "Usada quando outros remédios não resolvem!",
    "sintomas": [
     "infeccao_grave_hospitalar"
-   ]
+   ],
+   "principio_ativo": "Cloridrato de vancomicina"
   },
   {
    "nome": "Amiodarona",
@@ -1026,7 +1085,8 @@
    "macete": "Deixa o coração bater no ritmo certo, sem descompassar!",
    "sintomas": [
     "arritmia"
-   ]
+   ],
+   "principio_ativo": "Cloridrato de amiodarona"
   },
   {
    "nome": "Nitroprussiato",
@@ -1038,7 +1098,8 @@
    "sintomas": [
     "crise_hipertensiva",
     "insuficiencia_cardiaca"
-   ]
+   ],
+   "principio_ativo": "Nitroprussiato de sódio di-hidratado"
   },
   {
    "nome": "Clorpromazina",
@@ -1050,7 +1111,8 @@
    "sintomas": [
     "agitacao_psicomotora",
     "ansiedade"
-   ]
+   ],
+   "principio_ativo": "Cloridrato de clorpromazina"
   },
   {
    "nome": "Dexmedetomidina",
@@ -1061,7 +1123,8 @@
    "macete": "Acalma e seda, sem parar a respiração!",
    "sintomas": [
     "sedacao_procedimento"
-   ]
+   ],
+   "principio_ativo": "Cloridrato de dexmedetomidina"
   },
   {
    "nome": "Diazepam",
@@ -1074,7 +1137,8 @@
     "convulsao",
     "ansiedade",
     "dor_muscular_articular"
-   ]
+   ],
+   "principio_ativo": "Diazepam"
   },
   {
    "nome": "Etomidato",
@@ -1085,7 +1149,8 @@
    "macete": "Adormece rápido, seguro para o coração!",
    "sintomas": [
     "sedacao_procedimento"
-   ]
+   ],
+   "principio_ativo": "Etomidato"
   },
   {
    "nome": "Fentanila",
@@ -1098,7 +1163,8 @@
     "dor_intensa",
     "dor_cronica",
     "sedacao_procedimento"
-   ]
+   ],
+   "principio_ativo": "Citrato de fentanila"
   },
   {
    "nome": "Flumazenil",
@@ -1109,7 +1175,8 @@
    "macete": "Desfaz o efeito do diazepam e similares!",
    "sintomas": [
     "intoxicacao_benzo"
-   ]
+   ],
+   "principio_ativo": "Flumazenil"
   },
   {
    "nome": "Fluoxetina",
@@ -1121,7 +1188,8 @@
    "sintomas": [
     "depressao",
     "ansiedade"
-   ]
+   ],
+   "principio_ativo": "Cloridrato de fluoxetina"
   },
   {
    "nome": "Haloperidol",
@@ -1132,7 +1200,8 @@
    "macete": "Acalma a agitação e organiza o pensamento!",
    "sintomas": [
     "agitacao_psicomotora"
-   ]
+   ],
+   "principio_ativo": "Haloperidol / decanoato de haloperidol (ação prolongada)"
   },
   {
    "nome": "Midazolam",
@@ -1145,7 +1214,8 @@
     "sedacao_procedimento",
     "convulsao",
     "ansiedade"
-   ]
+   ],
+   "principio_ativo": "Maleato de midazolam / cloridrato de midazolam"
   },
   {
    "nome": "Morfina",
@@ -1157,7 +1227,8 @@
    "sintomas": [
     "dor_intensa",
     "dor_pos_operatoria"
-   ]
+   ],
+   "principio_ativo": "Sulfato de morfina"
   },
   {
    "nome": "Naloxona",
@@ -1168,7 +1239,8 @@
    "macete": "Acorda e reverte o efeito dos remédios para dor forte!",
    "sintomas": [
     "intoxicacao_opioide"
-   ]
+   ],
+   "principio_ativo": "Cloridrato de naloxona"
   },
   {
    "nome": "Propofol",
@@ -1179,7 +1251,8 @@
    "macete": "Dorme rápido e acorda com facilidade depois!",
    "sintomas": [
     "sedacao_procedimento"
-   ]
+   ],
+   "principio_ativo": "Propofol (emulsão lipídica)"
   },
   {
    "nome": "Quetiapina",
@@ -1191,7 +1264,8 @@
    "sintomas": [
     "agitacao_psicomotora",
     "depressao"
-   ]
+   ],
+   "principio_ativo": "Fumarato de quetiapina"
   },
   {
    "nome": "Suxametônio",
@@ -1202,7 +1276,8 @@
    "macete": "Relaxa o músculo para colocar a cânula com segurança!",
    "sintomas": [
     "intubacao"
-   ]
+   ],
+   "principio_ativo": "Cloreto de suxametônio (succinilcolina)"
   },
   {
    "nome": "Tramadol",
@@ -1215,7 +1290,8 @@
     "dor_intensa",
     "dor_pos_operatoria",
     "dor_cronica"
-   ]
+   ],
+   "principio_ativo": "Cloridrato de tramadol"
   },
   {
    "nome": "Ácido fólico",
@@ -1227,7 +1303,8 @@
    "sintomas": [
     "anemia",
     "deficiencia_vitaminica"
-   ]
+   ],
+   "principio_ativo": "Ácido fólico (folato / vitamina B9)"
   },
   {
    "nome": "Albumina humana",
@@ -1239,7 +1316,8 @@
    "sintomas": [
     "choque_circulatorio",
     "edema"
-   ]
+   ],
+   "principio_ativo": "Albumina humana"
   },
   {
    "nome": "Aminofilina",
@@ -1251,7 +1329,8 @@
    "sintomas": [
     "asma_broncoespasmo",
     "dpoc"
-   ]
+   ],
+   "principio_ativo": "Aminofilina (teofilina + etilenodiamina)"
   },
   {
    "nome": "Ampicilina",
@@ -1264,7 +1343,8 @@
     "infeccao_respiratoria",
     "infeccao_urinaria",
     "meningite"
-   ]
+   ],
+   "principio_ativo": "Ampicilina sódica"
   },
   {
    "nome": "Ampicilina + Sulbactam",
@@ -1277,7 +1357,8 @@
     "infeccao_abdominal",
     "infeccao_respiratoria",
     "infeccao_pele"
-   ]
+   ],
+   "principio_ativo": "Ampicilina sódica + sulbactam sódico"
   },
   {
    "nome": "Anfotericina B",
@@ -1289,7 +1370,8 @@
    "sintomas": [
     "infeccao_fungica",
     "infeccao_grave_hospitalar"
-   ]
+   ],
+   "principio_ativo": "Anfotericina B (desoxicolato ou lipossomal)"
   },
   {
    "nome": "Anlodipino",
@@ -1300,7 +1382,8 @@
    "macete": "Relaxa o vaso todos os dias, uso prolongado!",
    "sintomas": [
     "hipertensao_cronica"
-   ]
+   ],
+   "principio_ativo": "Besilato de anlodipino"
   },
   {
    "nome": "Beclometasona",
@@ -1312,7 +1395,8 @@
    "sintomas": [
     "asma_broncoespasmo",
     "inflamacao"
-   ]
+   ],
+   "principio_ativo": "Dipropionato de beclometasona"
   },
   {
    "nome": "Bicarbonato de sódio",
@@ -1324,7 +1408,8 @@
    "sintomas": [
     "acidose",
     "parada_cardiaca"
-   ]
+   ],
+   "principio_ativo": "Bicarbonato de sódio"
   },
   {
    "nome": "Brometo de ipratrópio",
@@ -1336,7 +1421,8 @@
    "sintomas": [
     "asma_broncoespasmo",
     "dpoc"
-   ]
+   ],
+   "principio_ativo": "Brometo de ipratrópio"
   },
   {
    "nome": "Budesonida",
@@ -1349,7 +1435,8 @@
     "asma_broncoespasmo",
     "dpoc",
     "inflamacao"
-   ]
+   ],
+   "principio_ativo": "Budesonida"
   },
   {
    "nome": "Captopril",
@@ -1361,7 +1448,8 @@
    "sintomas": [
     "hipertensao_cronica",
     "insuficiencia_cardiaca"
-   ]
+   ],
+   "principio_ativo": "Captopril"
   },
   {
    "nome": "Caspofungina",
@@ -1373,7 +1461,8 @@
    "sintomas": [
     "infeccao_fungica",
     "infeccao_grave_hospitalar"
-   ]
+   ],
+   "principio_ativo": "Acetato de caspofungina"
   },
   {
    "nome": "Cefalexina",
@@ -1386,7 +1475,8 @@
     "infeccao_pele",
     "infeccao_garganta_ouvido",
     "infeccao_urinaria"
-   ]
+   ],
+   "principio_ativo": "Cefalexina monoidratada"
   },
   {
    "nome": "Cefuroxima",
@@ -1399,7 +1489,8 @@
     "infeccao_respiratoria",
     "infeccao_urinaria",
     "infeccao_pele"
-   ]
+   ],
+   "principio_ativo": "Cefuroxima sódica (injetável) / axetilcefuroxima (oral)"
   },
   {
    "nome": "Cetorolaco",
@@ -1412,7 +1503,8 @@
     "dor_intensa",
     "dor_pos_operatoria",
     "inflamacao"
-   ]
+   ],
+   "principio_ativo": "Cetorolaco de trometamina"
   },
   {
    "nome": "Cianocobalamina (Vitamina B12)",
@@ -1424,7 +1516,8 @@
    "sintomas": [
     "anemia",
     "deficiencia_vitaminica"
-   ]
+   ],
+   "principio_ativo": "Cianocobalamina"
   },
   {
    "nome": "Claritromicina",
@@ -1436,7 +1529,8 @@
    "sintomas": [
     "infeccao_respiratoria",
     "azia_ulcera"
-   ]
+   ],
+   "principio_ativo": "Claritromicina (lactobionato de claritromicina, injetável)"
   },
   {
    "nome": "Cloreto de potássio",
@@ -1447,7 +1541,8 @@
    "macete": "Repõe o potássio — sempre diluído, nunca em bolus!",
    "sintomas": [
     "reposicao_eletrolitica"
-   ]
+   ],
+   "principio_ativo": "Cloreto de potássio"
   },
   {
    "nome": "Cloreto de sódio hipertônico",
@@ -1459,7 +1554,8 @@
    "sintomas": [
     "reposicao_eletrolitica",
     "pressao_intracraniana"
-   ]
+   ],
+   "principio_ativo": "Cloreto de sódio (soluções a 3%, 10% ou 20%)"
   },
   {
    "nome": "Codeína",
@@ -1471,7 +1567,8 @@
    "sintomas": [
     "dor_leve",
     "tosse"
-   ]
+   ],
+   "principio_ativo": "Fosfato de codeína"
   },
   {
    "nome": "Colistina",
@@ -1482,7 +1579,8 @@
    "macete": "Última opção quando nada mais funciona!",
    "sintomas": [
     "infeccao_grave_hospitalar"
-   ]
+   ],
+   "principio_ativo": "Colistimetato de sódio (polimixina E)"
   },
   {
    "nome": "Digoxina",
@@ -1494,7 +1592,8 @@
    "sintomas": [
     "insuficiencia_cardiaca",
     "arritmia"
-   ]
+   ],
+   "principio_ativo": "Digoxina"
   },
   {
    "nome": "Diltiazem",
@@ -1507,7 +1606,8 @@
     "hipertensao_cronica",
     "angina",
     "arritmia"
-   ]
+   ],
+   "principio_ativo": "Cloridrato de diltiazem"
   },
   {
    "nome": "Domperidona",
@@ -1519,7 +1619,8 @@
    "sintomas": [
     "nausea_vomito",
     "refluxo_ma_digestao"
-   ]
+   ],
+   "principio_ativo": "Domperidona"
   },
   {
    "nome": "Doxiciclina",
@@ -1531,7 +1632,8 @@
    "sintomas": [
     "infeccao_respiratoria",
     "infeccao_pele"
-   ]
+   ],
+   "principio_ativo": "Hiclato de doxiciclina"
   },
   {
    "nome": "Enalapril",
@@ -1543,7 +1645,8 @@
    "sintomas": [
     "hipertensao_cronica",
     "insuficiencia_cardiaca"
-   ]
+   ],
+   "principio_ativo": "Maleato de enalapril"
   },
   {
    "nome": "Espironolactona",
@@ -1556,7 +1659,8 @@
     "insuficiencia_cardiaca",
     "edema",
     "hipertensao_cronica"
-   ]
+   ],
+   "principio_ativo": "Espironolactona"
   },
   {
    "nome": "Ganciclovir",
@@ -1568,7 +1672,8 @@
    "sintomas": [
     "infeccao_viral_herpes",
     "infeccao_grave_hospitalar"
-   ]
+   ],
+   "principio_ativo": "Ganciclovir sódico"
   },
   {
    "nome": "Glibenclamida",
@@ -1579,7 +1684,8 @@
    "macete": "Espreme o pâncreas para soltar mais insulina!",
    "sintomas": [
     "diabetes"
-   ]
+   ],
+   "principio_ativo": "Glibenclamida"
   },
   {
    "nome": "Glucagon",
@@ -1590,7 +1696,8 @@
    "macete": "O 'contrário' da insulina — sobe a glicose rápido!",
    "sintomas": [
     "hipoglicemia"
-   ]
+   ],
+   "principio_ativo": "Glucagon (glucagon humano recombinante)"
   },
   {
    "nome": "Gluconato de cálcio",
@@ -1602,7 +1709,8 @@
    "sintomas": [
     "hipercalemia",
     "reposicao_eletrolitica"
-   ]
+   ],
+   "principio_ativo": "Gluconato de cálcio"
   },
   {
    "nome": "Hidroclorotiazida",
@@ -1614,7 +1722,8 @@
    "sintomas": [
     "hipertensao_cronica",
     "edema"
-   ]
+   ],
+   "principio_ativo": "Hidroclorotiazida"
   },
   {
    "nome": "Ibuprofeno",
@@ -1627,7 +1736,8 @@
     "dor_leve",
     "febre",
     "inflamacao"
-   ]
+   ],
+   "principio_ativo": "Ibuprofeno"
   },
   {
    "nome": "Insulina NPH",
@@ -1638,7 +1748,8 @@
    "macete": "Ação mais longa, para controle do dia a dia!",
    "sintomas": [
     "diabetes"
-   ]
+   ],
+   "principio_ativo": "Insulina humana NPH (isófana)"
   },
   {
    "nome": "Insulina Regular",
@@ -1649,7 +1760,8 @@
    "macete": "Ação rápida para baixar a glicose na emergência!",
    "sintomas": [
     "diabetes"
-   ]
+   ],
+   "principio_ativo": "Insulina humana regular"
   },
   {
    "nome": "Lactulose",
@@ -1660,7 +1772,8 @@
    "macete": "Puxa água para o intestino e ajuda a evacuar!",
    "sintomas": [
     "constipacao"
-   ]
+   ],
+   "principio_ativo": "Lactulose"
   },
   {
    "nome": "Levotiroxina",
@@ -1671,7 +1784,8 @@
    "macete": "Repõe o que a tireoide não está produzindo!",
    "sintomas": [
     "hipotireoidismo"
-   ]
+   ],
+   "principio_ativo": "Levotiroxina sódica"
   },
   {
    "nome": "Linezolida",
@@ -1683,7 +1797,8 @@
    "sintomas": [
     "infeccao_grave_hospitalar",
     "infeccao_pele"
-   ]
+   ],
+   "principio_ativo": "Linezolida"
   },
   {
    "nome": "Loperamida",
@@ -1694,7 +1809,8 @@
    "macete": "Segura o intestino e controla a diarreia!",
    "sintomas": [
     "diarreia"
-   ]
+   ],
+   "principio_ativo": "Cloridrato de loperamida"
   },
   {
    "nome": "Losartana",
@@ -1705,7 +1821,8 @@
    "macete": "Bloqueia o 'sinal' que aumenta a pressão!",
    "sintomas": [
     "hipertensao_cronica"
-   ]
+   ],
+   "principio_ativo": "Losartana potássica"
   },
   {
    "nome": "Manitol",
@@ -1717,7 +1834,8 @@
    "sintomas": [
     "pressao_intracraniana",
     "edema"
-   ]
+   ],
+   "principio_ativo": "Manitol (solução a 20%)"
   },
   {
    "nome": "Metformina",
@@ -1728,7 +1846,8 @@
    "macete": "Primeira escolha oral para diabetes tipo 2!",
    "sintomas": [
     "diabetes"
-   ]
+   ],
+   "principio_ativo": "Cloridrato de metformina"
   },
   {
    "nome": "Metoprolol",
@@ -1740,7 +1859,8 @@
    "sintomas": [
     "hipertensao_cronica",
     "arritmia"
-   ]
+   ],
+   "principio_ativo": "Succinato de metoprolol (liberação prolongada) / tartarato de metoprolol (injetável)"
   },
   {
    "nome": "N-acetilcisteína",
@@ -1752,7 +1872,8 @@
    "sintomas": [
     "secrecao_espessa",
     "intoxicacao_paracetamol"
-   ]
+   ],
+   "principio_ativo": "Acetilcisteína"
   },
   {
    "nome": "Nimesulida",
@@ -1764,7 +1885,8 @@
    "sintomas": [
     "inflamacao",
     "dor_muscular_articular"
-   ]
+   ],
+   "principio_ativo": "Nimesulida"
   },
   {
    "nome": "Nistatina",
@@ -1775,7 +1897,8 @@
    "macete": "Bochecha e trata a candidíase da boca!",
    "sintomas": [
     "infeccao_fungica"
-   ]
+   ],
+   "principio_ativo": "Nistatina"
   },
   {
    "nome": "Nitrofurantoína",
@@ -1786,7 +1909,8 @@
    "macete": "Focada só no trato urinário!",
    "sintomas": [
     "infeccao_urinaria"
-   ]
+   ],
+   "principio_ativo": "Nitrofurantoína"
   },
   {
    "nome": "Nitroglicerina",
@@ -1797,7 +1921,8 @@
    "macete": "Alivia a dor no peito abrindo as artérias do coração!",
    "sintomas": [
     "angina"
-   ]
+   ],
+   "principio_ativo": "Nitroglicerina (trinitrato de glicerila)"
   },
   {
    "nome": "Óleo mineral",
@@ -1808,7 +1933,8 @@
    "macete": "Lubrifica a saída, sem estimular o intestino!",
    "sintomas": [
     "constipacao"
-   ]
+   ],
+   "principio_ativo": "Óleo mineral (parafina líquida)"
   },
   {
    "nome": "Oseltamivir",
@@ -1819,7 +1945,8 @@
    "macete": "Remédio específico contra o vírus da gripe!",
    "sintomas": [
     "gripe"
-   ]
+   ],
+   "principio_ativo": "Fosfato de oseltamivir"
   },
   {
    "nome": "Pantoprazol",
@@ -1831,7 +1958,8 @@
    "sintomas": [
     "azia_ulcera",
     "refluxo_ma_digestao"
-   ]
+   ],
+   "principio_ativo": "Pantoprazol sódico sesqui-hidratado"
   },
   {
    "nome": "Paracetamol",
@@ -1843,7 +1971,8 @@
    "sintomas": [
     "febre",
     "dor_leve"
-   ]
+   ],
+   "principio_ativo": "Paracetamol (acetaminofeno)"
   },
   {
    "nome": "Piperacilina + Tazobactam",
@@ -1855,7 +1984,8 @@
    "sintomas": [
     "infeccao_grave_hospitalar",
     "infeccao_abdominal"
-   ]
+   ],
+   "principio_ativo": "Piperacilina sódica + tazobactam sódico"
   },
   {
    "nome": "Polimixina B",
@@ -1866,7 +1996,8 @@
    "macete": "Reserva para bactérias super resistentes!",
    "sintomas": [
     "infeccao_grave_hospitalar"
-   ]
+   ],
+   "principio_ativo": "Sulfato de polimixina B"
   },
   {
    "nome": "Prednisolona",
@@ -1879,7 +2010,8 @@
     "inflamacao",
     "alergia",
     "asma_broncoespasmo"
-   ]
+   ],
+   "principio_ativo": "Fosfato sódico de prednisolona"
   },
   {
    "nome": "Prednisona",
@@ -1891,7 +2023,8 @@
    "sintomas": [
     "inflamacao",
     "alergia"
-   ]
+   ],
+   "principio_ativo": "Prednisona"
   },
   {
    "nome": "Propranolol",
@@ -1905,7 +2038,8 @@
     "enxaqueca",
     "ansiedade",
     "arritmia"
-   ]
+   ],
+   "principio_ativo": "Cloridrato de propranolol"
   },
   {
    "nome": "Protamina",
@@ -1917,7 +2051,8 @@
    "sintomas": [
     "intoxicacao_heparina",
     "sangramento"
-   ]
+   ],
+   "principio_ativo": "Sulfato ou cloridrato de protamina"
   },
   {
    "nome": "Ranitidina",
@@ -1929,7 +2064,8 @@
    "sintomas": [
     "azia_ulcera",
     "refluxo_ma_digestao"
-   ]
+   ],
+   "principio_ativo": "Cloridrato de ranitidina"
   },
   {
    "nome": "Sinvastatina",
@@ -1940,7 +2076,8 @@
    "macete": "Baixa o colesterol, protege o coração!",
    "sintomas": [
     "colesterol"
-   ]
+   ],
+   "principio_ativo": "Sinvastatina"
   },
   {
    "nome": "Sulfametoxazol + Trimetoprima",
@@ -1952,7 +2089,8 @@
    "sintomas": [
     "infeccao_urinaria",
     "infeccao_respiratoria"
-   ]
+   ],
+   "principio_ativo": "Sulfametoxazol + trimetoprima (cotrimoxazol)"
   },
   {
    "nome": "Sulfato de magnésio",
@@ -1965,7 +2103,8 @@
     "pre_eclampsia",
     "convulsao",
     "reposicao_eletrolitica"
-   ]
+   ],
+   "principio_ativo": "Sulfato de magnésio hepta-hidratado"
   },
   {
    "nome": "Sulfato ferroso",
@@ -1976,7 +2115,8 @@
    "macete": "Repõe o ferro para o sangue se recuperar!",
    "sintomas": [
     "anemia"
-   ]
+   ],
+   "principio_ativo": "Sulfato ferroso hepta-hidratado"
   },
   {
    "nome": "Teicoplanina",
@@ -1987,7 +2127,8 @@
    "macete": "Parente da Vancomicina, dose mais espaçada!",
    "sintomas": [
     "infeccao_grave_hospitalar"
-   ]
+   ],
+   "principio_ativo": "Teicoplanina"
   },
   {
    "nome": "Verapamil",
@@ -2000,7 +2141,8 @@
     "hipertensao_cronica",
     "arritmia",
     "angina"
-   ]
+   ],
+   "principio_ativo": "Cloridrato de verapamil"
   },
   {
    "nome": "Voriconazol",
@@ -2012,7 +2154,8 @@
    "sintomas": [
     "infeccao_fungica",
     "infeccao_grave_hospitalar"
-   ]
+   ],
+   "principio_ativo": "Voriconazol"
   },
   {
    "nome": "Ácido valpróico",
@@ -2025,7 +2168,8 @@
     "convulsao",
     "depressao",
     "enxaqueca"
-   ]
+   ],
+   "principio_ativo": "Ácido valpróico / valproato de sódio / divalproato de sódio"
   },
   {
    "nome": "Alfentanila",
@@ -2037,7 +2181,8 @@
    "sintomas": [
     "dor_intensa",
     "sedacao_procedimento"
-   ]
+   ],
+   "principio_ativo": "Cloridrato de alfentanila"
   },
   {
    "nome": "Amitriptilina",
@@ -2050,7 +2195,8 @@
     "depressao",
     "dor_cronica",
     "enxaqueca"
-   ]
+   ],
+   "principio_ativo": "Cloridrato de amitriptilina"
   },
   {
    "nome": "Atracúrio",
@@ -2062,7 +2208,8 @@
    "sintomas": [
     "intubacao",
     "sedacao_procedimento"
-   ]
+   ],
+   "principio_ativo": "Besilato de atracúrio"
   },
   {
    "nome": "Bupivacaína",
@@ -2073,7 +2220,8 @@
    "macete": "Anestesia local que dura bastante tempo!",
    "sintomas": [
     "anestesia_local"
-   ]
+   ],
+   "principio_ativo": "Cloridrato de bupivacaína (com ou sem epinefrina)"
   },
   {
    "nome": "Buprenorfina",
@@ -2086,7 +2234,8 @@
     "dor_cronica",
     "dor_intensa",
     "dependencia_opioide"
-   ]
+   ],
+   "principio_ativo": "Cloridrato de buprenorfina"
   },
   {
    "nome": "Carbamazepina",
@@ -2099,7 +2248,8 @@
     "convulsao",
     "depressao",
     "dor_cronica"
-   ]
+   ],
+   "principio_ativo": "Carbamazepina"
   },
   {
    "nome": "Cetamina",
@@ -2111,7 +2261,8 @@
    "sintomas": [
     "sedacao_procedimento",
     "dor_intensa"
-   ]
+   ],
+   "principio_ativo": "Cloridrato de cetamina (ketamina)"
   },
   {
    "nome": "Clonazepam",
@@ -2123,7 +2274,8 @@
    "sintomas": [
     "convulsao",
     "ansiedade"
-   ]
+   ],
+   "principio_ativo": "Clonazepam"
   },
   {
    "nome": "Fenobarbital",
@@ -2135,7 +2287,8 @@
    "sintomas": [
     "convulsao",
     "sedacao_procedimento"
-   ]
+   ],
+   "principio_ativo": "Fenobarbital / fenobarbital sódico (injetável)"
   },
   {
    "nome": "Levetiracetam",
@@ -2146,7 +2299,8 @@
    "macete": "Antiepiléptico moderno, poucas interações medicamentosas!",
    "sintomas": [
     "convulsao"
-   ]
+   ],
+   "principio_ativo": "Levetiracetam"
   },
   {
    "nome": "Lorazepam",
@@ -2159,7 +2313,8 @@
     "ansiedade",
     "insonia",
     "sedacao_procedimento"
-   ]
+   ],
+   "principio_ativo": "Lorazepam"
   },
   {
    "nome": "Metadona",
@@ -2171,7 +2326,8 @@
    "sintomas": [
     "dor_cronica",
     "dependencia_opioide"
-   ]
+   ],
+   "principio_ativo": "Cloridrato de metadona"
   },
   {
    "nome": "Olanzapina",
@@ -2184,7 +2340,8 @@
     "psicose",
     "agitacao_psicomotora",
     "depressao"
-   ]
+   ],
+   "principio_ativo": "Olanzapina / pamoato de olanzapina"
   },
   {
    "nome": "Oxicodona",
@@ -2196,7 +2353,8 @@
    "sintomas": [
     "dor_cronica",
     "dor_intensa"
-   ]
+   ],
+   "principio_ativo": "Cloridrato de oxicodona"
   },
   {
    "nome": "Pancurônio",
@@ -2208,7 +2366,8 @@
    "sintomas": [
     "intubacao",
     "sedacao_procedimento"
-   ]
+   ],
+   "principio_ativo": "Brometo de pancurônio"
   },
   {
    "nome": "Risperidona",
@@ -2220,7 +2379,8 @@
    "sintomas": [
     "psicose",
     "agitacao_psicomotora"
-   ]
+   ],
+   "principio_ativo": "Risperidona"
   },
   {
    "nome": "Rocurônio",
@@ -2231,7 +2391,8 @@
    "macete": "Relaxante muscular de ação intermediária, sem 'tremedeira' inicial!",
    "sintomas": [
     "intubacao"
-   ]
+   ],
+   "principio_ativo": "Brometo de rocurônio"
   },
   {
    "nome": "Sertralina",
@@ -2243,7 +2404,8 @@
    "sintomas": [
     "depressao",
     "ansiedade"
-   ]
+   ],
+   "principio_ativo": "Cloridrato de sertralina"
   },
   {
    "nome": "Sufentanila",
@@ -2255,7 +2417,8 @@
    "sintomas": [
     "dor_intensa",
     "sedacao_procedimento"
-   ]
+   ],
+   "principio_ativo": "Citrato de sufentanila"
   }
  ]
 }
