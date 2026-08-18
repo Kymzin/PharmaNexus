@@ -194,6 +194,8 @@ class _SplashGateState extends State<SplashGate> {
         child: Center(
           child: SingleChildScrollView(
             padding: const EdgeInsets.all(28),
+            child: ConstrainedBox(
+            constraints: const BoxConstraints(maxWidth: 560),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -265,6 +267,7 @@ class _SplashGateState extends State<SplashGate> {
                   ),
               ],
             ),
+            ),
           ),
         ),
       ),
@@ -291,6 +294,8 @@ class _HomeShellState extends State<HomeShell> {
       CasosPage(data: widget.data),
       QuizPage(data: widget.data),
     ];
+    final wide = MediaQuery.of(context).size.width >= 900;
+    final body = PxContent(child: pages[_tab]);
     return Scaffold(
       appBar: AppBar(
         title: Row(children: [
@@ -299,19 +304,59 @@ class _HomeShellState extends State<HomeShell> {
           Text(['Biblioteca', 'Assistente de Sintomas', 'Casos Clínicos', 'Quiz'][_tab]),
         ]),
       ),
-      body: pages[_tab],
-      bottomNavigationBar: NavigationBar(
-        selectedIndex: _tab,
-        onDestinationSelected: (i) => setState(() => _tab = i),
-        destinations: const [
-          NavigationDestination(icon: Icon(Icons.menu_book_outlined), selectedIcon: Icon(Icons.menu_book, color: PxColors.petrol), label: 'Biblioteca'),
-          NavigationDestination(icon: Icon(Icons.hub_outlined), selectedIcon: Icon(Icons.hub, color: PxColors.petrol), label: 'Assistente'),
-          NavigationDestination(icon: Icon(Icons.psychology_outlined), selectedIcon: Icon(Icons.psychology, color: PxColors.petrol), label: 'Casos'),
-          NavigationDestination(icon: Icon(Icons.quiz_outlined), selectedIcon: Icon(Icons.quiz, color: PxColors.petrol), label: 'Quiz'),
-        ],
-      ),
+      body: wide
+          ? Row(children: [
+              NavigationRail(
+                selectedIndex: _tab,
+                onDestinationSelected: (i) => setState(() => _tab = i),
+                backgroundColor: Colors.white,
+                indicatorColor: PxColors.cyan.withOpacity(0.18),
+                labelType: NavigationRailLabelType.all,
+                selectedLabelTextStyle: const TextStyle(
+                    fontSize: 12, fontWeight: FontWeight.w700, color: PxColors.deepBlue),
+                unselectedLabelTextStyle:
+                    TextStyle(fontSize: 12, color: PxColors.deepBlue.withOpacity(0.7)),
+                destinations: const [
+                  NavigationRailDestination(icon: Icon(Icons.menu_book_outlined), selectedIcon: Icon(Icons.menu_book, color: PxColors.petrol), label: Text('Biblioteca')),
+                  NavigationRailDestination(icon: Icon(Icons.hub_outlined), selectedIcon: Icon(Icons.hub, color: PxColors.petrol), label: Text('Assistente')),
+                  NavigationRailDestination(icon: Icon(Icons.psychology_outlined), selectedIcon: Icon(Icons.psychology, color: PxColors.petrol), label: Text('Casos')),
+                  NavigationRailDestination(icon: Icon(Icons.quiz_outlined), selectedIcon: Icon(Icons.quiz, color: PxColors.petrol), label: Text('Quiz')),
+                ],
+              ),
+              const VerticalDivider(width: 1),
+              Expanded(child: body),
+            ])
+          : body,
+      bottomNavigationBar: wide
+          ? null
+          : NavigationBar(
+              selectedIndex: _tab,
+              onDestinationSelected: (i) => setState(() => _tab = i),
+              destinations: const [
+                NavigationDestination(icon: Icon(Icons.menu_book_outlined), selectedIcon: Icon(Icons.menu_book, color: PxColors.petrol), label: 'Biblioteca'),
+                NavigationDestination(icon: Icon(Icons.hub_outlined), selectedIcon: Icon(Icons.hub, color: PxColors.petrol), label: 'Assistente'),
+                NavigationDestination(icon: Icon(Icons.psychology_outlined), selectedIcon: Icon(Icons.psychology, color: PxColors.petrol), label: 'Casos'),
+                NavigationDestination(icon: Icon(Icons.quiz_outlined), selectedIcon: Icon(Icons.quiz, color: PxColors.petrol), label: 'Quiz'),
+              ],
+            ),
     );
   }
+}
+
+/// Limita a largura do conteúdo em telas grandes (web/desktop),
+/// mantendo leitura confortável e layout centralizado.
+class PxContent extends StatelessWidget {
+  final Widget child;
+  final double maxWidth;
+  const PxContent({super.key, required this.child, this.maxWidth = 760});
+
+  @override
+  Widget build(BuildContext context) => Center(
+        child: ConstrainedBox(
+          constraints: BoxConstraints(maxWidth: maxWidth),
+          child: child,
+        ),
+      );
 }
 
 // ---------- Widgets compartilhados ----------
@@ -682,7 +727,8 @@ class _CasoDetalheState extends State<CasoDetalhe> {
     final c = widget.caso;
     return Scaffold(
       appBar: AppBar(title: Text('Caso ${c.id}')),
-      body: ListView(
+      body: PxContent(
+          child: ListView(
         padding: const EdgeInsets.all(16),
         children: [
           Text(c.titulo,
@@ -760,7 +806,7 @@ class _CasoDetalheState extends State<CasoDetalhe> {
             ),
           ],
         ],
-      ),
+      )),
     );
   }
 }
