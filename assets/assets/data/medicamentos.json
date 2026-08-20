@@ -369,6 +369,26 @@
    "id": "intoxicacao_heparina",
    "nome": "Sangramento por heparina",
    "grupo": "Emergência"
+  },
+  {
+   "id": "deficit_cognitivo",
+   "nome": "Déficit cognitivo / memória",
+   "grupo": "Neurológico"
+  },
+  {
+   "id": "insuficiencia_venosa",
+   "nome": "Insuficiência venosa / varizes",
+   "grupo": "Cardiovascular"
+  },
+  {
+   "id": "fadiga",
+   "nome": "Fadiga / astenia",
+   "grupo": "Geral"
+  },
+  {
+   "id": "climaterio",
+   "nome": "Climatério / fogachos",
+   "grupo": "Metabólico e Endócrino"
   }
  ],
  "medicamentos": [
@@ -383,7 +403,9 @@
     "deficiencia_vitaminica",
     "cicatrizacao"
    ],
-   "principio_ativo": "Ácido ascórbico (vitamina C)"
+   "principio_ativo": "Ácido ascórbico (vitamina C)",
+   "contraindicacoes": "Hipersensibilidade. Cautela em pacientes com histórico de cálculo renal de oxalato, hemocromatose ou deficiência de G6PD.",
+   "efeitos_colaterais": "Doses altas podem causar diarreia, náusea, azia e aumento do risco de cálculos renais."
   },
   {
    "nome": "Ácido tranexâmico",
@@ -395,7 +417,9 @@
    "sintomas": [
     "sangramento"
    ],
-   "principio_ativo": "Ácido tranexâmico"
+   "principio_ativo": "Ácido tranexâmico",
+   "contraindicacoes": "Trombose ativa (TVP, embolia, AVC), coagulação intravascular disseminada, hematúria de origem no trato urinário alto, hipersensibilidade.",
+   "efeitos_colaterais": "Náuseas, vômitos, diarreia, hipotensão se infusão rápida. Risco de eventos trombóticos e alterações visuais no uso prolongado."
   },
   {
    "nome": "Aciclovir",
@@ -407,7 +431,9 @@
    "sintomas": [
     "infeccao_viral_herpes"
    ],
-   "principio_ativo": "Aciclovir (aciclovir sódico, forma injetável)"
+   "principio_ativo": "Aciclovir (aciclovir sódico, forma injetável)",
+   "contraindicacoes": "Hipersensibilidade ao aciclovir ou valaciclovir. Cautela em insuficiência renal (exige ajuste de dose) e desidratação.",
+   "efeitos_colaterais": "Náuseas, vômitos, cefaleia, flebite no local da infusão. Em doses altas ou infusão rápida: lesão renal e confusão mental."
   },
   {
    "nome": "Amicacina",
@@ -422,7 +448,9 @@
     "infeccao_urinaria",
     "infeccao_ossea"
    ],
-   "principio_ativo": "Sulfato de amicacina"
+   "principio_ativo": "Sulfato de amicacina",
+   "contraindicacoes": "Hipersensibilidade a aminoglicosídeos, miastenia gravis. Cautela em insuficiência renal e uso com outros nefrotóxicos.",
+   "efeitos_colaterais": "Nefrotoxicidade (lesão renal) e ototoxicidade (perda auditiva e alterações de equilíbrio), que podem ser irreversíveis. Bloqueio neuromuscular."
   },
   {
    "nome": "Amoxicilina + Clavulanato",
@@ -438,7 +466,9 @@
     "infeccao_dentaria",
     "infeccao_abdominal"
    ],
-   "principio_ativo": "Amoxicilina tri-hidratada + clavulanato de potássio"
+   "principio_ativo": "Amoxicilina tri-hidratada + clavulanato de potássio",
+   "contraindicacoes": "Alergia a penicilinas ou cefalosporinas, histórico de icterícia/disfunção hepática por amoxicilina-clavulanato.",
+   "efeitos_colaterais": "Diarreia (comum, pelo clavulanato), náuseas, candidíase, rash cutâneo. Raros: colite por C. difficile e hepatotoxicidade."
   },
   {
    "nome": "Atropina",
@@ -450,7 +480,9 @@
    "sintomas": [
     "bradicardia"
    ],
-   "principio_ativo": "Sulfato de atropina"
+   "principio_ativo": "Sulfato de atropina",
+   "contraindicacoes": "Glaucoma de ângulo fechado, hipertrofia prostática com retenção urinária, taquiarritmias, obstrução gastrointestinal, miastenia gravis.",
+   "efeitos_colaterais": "Boca seca, visão borrada, taquicardia, retenção urinária, constipação, confusão mental (principalmente em idosos) e pele quente e seca."
   },
   {
    "nome": "Azitromicina",
@@ -464,7 +496,9 @@
     "infeccao_garganta_ouvido",
     "infeccao_pele"
    ],
-   "principio_ativo": "Azitromicina di-hidratada"
+   "principio_ativo": "Azitromicina di-hidratada",
+   "contraindicacoes": "Hipersensibilidade a macrolídeos, disfunção hepática grave, histórico de prolongamento do intervalo QT.",
+   "efeitos_colaterais": "Náuseas, diarreia, dor abdominal. Raros: prolongamento do QT com risco de arritmia e hepatotoxicidade."
   },
   {
    "nome": "Benzetacil (Penicilina Benzatina)",
@@ -478,7 +512,9 @@
     "infeccao_garganta_ouvido"
    ],
    "principio_ativo": "Benzilpenicilina benzatina (penicilina G benzatina)",
-   "marca": true
+   "marca": true,
+   "contraindicacoes": "Alergia a penicilinas. NUNCA administrar por via intravenosa (risco de parada cardiorrespiratória).",
+   "efeitos_colaterais": "Dor intensa no local da aplicação, reações alérgicas, anafilaxia. Reação de Jarisch-Herxheimer no tratamento da sífilis."
   },
   {
    "nome": "Bromoprida",
@@ -491,7 +527,9 @@
     "nausea_vomito",
     "refluxo_ma_digestao"
    ],
-   "principio_ativo": "Cloridrato de bromoprida"
+   "principio_ativo": "Cloridrato de bromoprida",
+   "contraindicacoes": "Hemorragia, obstrução ou perfuração gastrointestinal, feocromocitoma, epilepsia, hipersensibilidade.",
+   "efeitos_colaterais": "Sonolência, tontura, fadiga. Efeitos extrapiramidais (movimentos involuntários, rigidez), especialmente em jovens e idosos."
   },
   {
    "nome": "Buscopan Composto",
@@ -505,7 +543,9 @@
     "dor_leve"
    ],
    "principio_ativo": "Butilbrometo de escopolamina + dipirona sódica",
-   "marca": true
+   "marca": true,
+   "contraindicacoes": "Glaucoma de ângulo fechado, hipertrofia prostática, obstrução intestinal, miastenia gravis, insuficiência hepática grave (pelo componente analgésico).",
+   "efeitos_colaterais": "Boca seca, visão borrada, taquicardia, retenção urinária, constipação. Pelo componente analgésico: risco de agranulocitose e reações alérgicas."
   },
   {
    "nome": "Buscopan Simples",
@@ -518,7 +558,9 @@
     "colica"
    ],
    "principio_ativo": "Butilbrometo de escopolamina (hioscina)",
-   "marca": true
+   "marca": true,
+   "contraindicacoes": "Glaucoma de ângulo fechado, hipertrofia prostática com retenção urinária, obstrução mecânica do trato gastrointestinal, miastenia gravis.",
+   "efeitos_colaterais": "Boca seca, taquicardia, visão borrada, retenção urinária e constipação."
   },
   {
    "nome": "Cefalotina",
@@ -531,7 +573,9 @@
     "profilaxia_cirurgica",
     "infeccao_pele"
    ],
-   "principio_ativo": "Cefalotina sódica"
+   "principio_ativo": "Cefalotina sódica",
+   "contraindicacoes": "Alergia a cefalosporinas ou reação anafilática prévia a penicilinas.",
+   "efeitos_colaterais": "Dor e flebite no local da aplicação, diarreia, rash, náuseas. Raro: nefrotoxicidade em doses altas."
   },
   {
    "nome": "Cefazolina",
@@ -545,7 +589,9 @@
     "infeccao_pele",
     "cicatrizacao"
    ],
-   "principio_ativo": "Cefazolina sódica"
+   "principio_ativo": "Cefazolina sódica",
+   "contraindicacoes": "Alergia a cefalosporinas ou anafilaxia prévia a penicilinas.",
+   "efeitos_colaterais": "Diarreia, náuseas, rash, dor no local da injeção, elevação transitória de enzimas hepáticas."
   },
   {
    "nome": "Cefepima",
@@ -559,7 +605,9 @@
     "infeccao_respiratoria",
     "infeccao_urinaria"
    ],
-   "principio_ativo": "Cloridrato de cefepima"
+   "principio_ativo": "Cloridrato de cefepima",
+   "contraindicacoes": "Alergia a cefalosporinas. Cautela em insuficiência renal (exige ajuste rigoroso de dose).",
+   "efeitos_colaterais": "Diarreia, rash, náuseas, flebite. Em insuficiência renal sem ajuste: neurotoxicidade com confusão, mioclonias e convulsões."
   },
   {
    "nome": "Ceftriaxona",
@@ -575,7 +623,9 @@
     "infeccao_ossea",
     "infeccao_urinaria"
    ],
-   "principio_ativo": "Ceftriaxona sódica"
+   "principio_ativo": "Ceftriaxona sódica",
+   "contraindicacoes": "Alergia a cefalosporinas. Recém-nascidos com icterícia. NÃO administrar junto com soluções contendo cálcio (risco de precipitação).",
+   "efeitos_colaterais": "Diarreia, rash, elevação de enzimas hepáticas, pseudolitíase biliar (lama biliar). Raro: colite por C. difficile."
   },
   {
    "nome": "Cetoprofeno",
@@ -591,7 +641,9 @@
     "inflamacao",
     "febre"
    ],
-   "principio_ativo": "Cetoprofeno (cetoprofeno trometamol, injetável)"
+   "principio_ativo": "Cetoprofeno (cetoprofeno trometamol, injetável)",
+   "contraindicacoes": "Úlcera péptica ativa, sangramento gastrointestinal, insuficiência renal grave, terceiro trimestre da gestação, asma induzida por AINE.",
+   "efeitos_colaterais": "Dor epigástrica, náuseas, risco de úlcera e sangramento gastrointestinal, lesão renal, retenção de líquidos e elevação da pressão arterial."
   },
   {
    "nome": "Ciprofloxacino",
@@ -606,7 +658,9 @@
     "infeccao_ossea",
     "infeccao_pele"
    ],
-   "principio_ativo": "Cloridrato de ciprofloxacino (oral) / ciprofloxacino (injetável)"
+   "principio_ativo": "Cloridrato de ciprofloxacino (oral) / ciprofloxacino (injetável)",
+   "contraindicacoes": "Hipersensibilidade a quinolonas, histórico de tendinite por quinolona, miastenia gravis. Evitar em crianças e gestantes.",
+   "efeitos_colaterais": "Náuseas, diarreia, cefaleia, tontura. Graves: ruptura de tendão (principalmente o de Aquiles), prolongamento do QT, neuropatia periférica e alterações do SNC."
   },
   {
    "nome": "Clindamicina",
@@ -622,7 +676,9 @@
     "infeccao_abdominal",
     "infeccao_parasitaria"
    ],
-   "principio_ativo": "Fosfato de clindamicina (injetável) / cloridrato de clindamicina (oral)"
+   "principio_ativo": "Fosfato de clindamicina (injetável) / cloridrato de clindamicina (oral)",
+   "contraindicacoes": "Hipersensibilidade a lincosamidas, histórico de colite associada a antibiótico.",
+   "efeitos_colaterais": "Diarreia, náuseas, rash. Risco importante de colite pseudomembranosa por C. difficile — é o antibiótico mais classicamente associado a esse quadro."
   },
   {
    "nome": "Clonidina",
@@ -635,7 +691,9 @@
     "crise_hipertensiva",
     "dor_cronica"
    ],
-   "principio_ativo": "Cloridrato de clonidina"
+   "principio_ativo": "Cloridrato de clonidina",
+   "contraindicacoes": "Bradicardia grave, bloqueio atrioventricular, hipersensibilidade. Nunca suspender abruptamente.",
+   "efeitos_colaterais": "Boca seca, sedação, tontura, bradicardia, hipotensão. Suspensão brusca causa hipertensão rebote grave."
   },
   {
    "nome": "Deslanol",
@@ -649,7 +707,9 @@
     "arritmia"
    ],
    "principio_ativo": "Deslanosídeo",
-   "marca": true
+   "marca": true,
+   "contraindicacoes": "Bloqueio atrioventricular avançado, fibrilação ventricular, cardiomiopatia hipertrófica obstrutiva, intoxicação digitálica.",
+   "efeitos_colaterais": "Náuseas, vômitos, anorexia, alterações visuais (visão amarelada), arritmias. Margem terapêutica estreita — risco alto de intoxicação."
   },
   {
    "nome": "Dexametasona",
@@ -663,7 +723,9 @@
     "alergia",
     "edema"
    ],
-   "principio_ativo": "Fosfato dissódico de dexametasona (injetável) / acetato de dexametasona"
+   "principio_ativo": "Fosfato dissódico de dexametasona (injetável) / acetato de dexametasona",
+   "contraindicacoes": "Infecções fúngicas sistêmicas não tratadas, hipersensibilidade. Cautela em diabetes, úlcera péptica e infecções ativas.",
+   "efeitos_colaterais": "Hiperglicemia, retenção de líquidos, insônia, agitação, aumento do apetite. Uso prolongado: imunossupressão, osteoporose, úlcera e síndrome de Cushing."
   },
   {
    "nome": "Diclofenaco",
@@ -679,7 +741,9 @@
     "febre",
     "dor_leve"
    ],
-   "principio_ativo": "Diclofenaco sódico ou diclofenaco potássico"
+   "principio_ativo": "Diclofenaco sódico ou diclofenaco potássico",
+   "contraindicacoes": "Úlcera péptica ativa, sangramento gastrointestinal, insuficiência cardíaca grave, insuficiência renal, terceiro trimestre da gestação, pós-operatório de revascularização.",
+   "efeitos_colaterais": "Dor epigástrica, náuseas, risco de úlcera e sangramento, lesão renal, elevação da pressão arterial e aumento do risco cardiovascular."
   },
   {
    "nome": "Dipirona",
@@ -692,7 +756,9 @@
     "febre",
     "dor_leve"
    ],
-   "principio_ativo": "Dipirona sódica (metamizol sódico)"
+   "principio_ativo": "Dipirona sódica (metamizol sódico)",
+   "contraindicacoes": "Hipersensibilidade a pirazolonas, discrasias sanguíneas, deficiência de G6PD, porfiria, últimos meses da gestação.",
+   "efeitos_colaterais": "Hipotensão se administrada rápido por via venosa, reações alérgicas. Rara mas grave: agranulocitose (queda severa de defesas)."
   },
   {
    "nome": "Dobutamina",
@@ -705,7 +771,9 @@
     "insuficiencia_cardiaca",
     "choque_circulatorio"
    ],
-   "principio_ativo": "Cloridrato de dobutamina"
+   "principio_ativo": "Cloridrato de dobutamina",
+   "contraindicacoes": "Cardiomiopatia hipertrófica obstrutiva, estenose subaórtica, hipersensibilidade a simpatomiméticos.",
+   "efeitos_colaterais": "Taquicardia, palpitações, arritmias, hipertensão ou hipotensão, cefaleia. Pode aumentar o consumo de oxigênio pelo coração."
   },
   {
    "nome": "Dopamina",
@@ -719,7 +787,9 @@
     "hipotensao",
     "insuficiencia_cardiaca"
    ],
-   "principio_ativo": "Cloridrato de dopamina"
+   "principio_ativo": "Cloridrato de dopamina",
+   "contraindicacoes": "Feocromocitoma, taquiarritmias não corrigidas, fibrilação ventricular, hipovolemia não corrigida.",
+   "efeitos_colaterais": "Taquicardia, arritmias, náuseas, cefaleia. Se extravasar, causa necrose tecidual — exige antídoto local (fentolamina)."
   },
   {
    "nome": "Enoxaparina",
@@ -731,7 +801,9 @@
    "sintomas": [
     "trombose"
    ],
-   "principio_ativo": "Enoxaparina sódica"
+   "principio_ativo": "Enoxaparina sódica",
+   "contraindicacoes": "Sangramento ativo, plaquetopenia induzida por heparina, endocardite bacteriana, hipersensibilidade. Cautela em insuficiência renal grave.",
+   "efeitos_colaterais": "Sangramentos, hematoma no local da aplicação, plaquetopenia, elevação de enzimas hepáticas. Risco de hematoma espinhal em anestesia neuroaxial."
   },
   {
    "nome": "Epinefrina",
@@ -746,7 +818,9 @@
     "asma_broncoespasmo",
     "choque_circulatorio"
    ],
-   "principio_ativo": "Hemitartarato de epinefrina (adrenalina)"
+   "principio_ativo": "Hemitartarato de epinefrina (adrenalina)",
+   "contraindicacoes": "Não há contraindicação absoluta em anafilaxia ou parada cardiorrespiratória. Relativas: taquiarritmias graves, feocromocitoma, hipertensão grave.",
+   "efeitos_colaterais": "Taquicardia, palpitações, hipertensão, tremores, ansiedade, cefaleia, arritmias e isquemia miocárdica. Necrose se extravasar."
   },
   {
    "nome": "Etilefrina",
@@ -758,7 +832,9 @@
    "sintomas": [
     "hipotensao"
    ],
-   "principio_ativo": "Cloridrato de etilefrina"
+   "principio_ativo": "Cloridrato de etilefrina",
+   "contraindicacoes": "Hipertensão, hipertireoidismo, taquiarritmias, glaucoma de ângulo fechado, feocromocitoma.",
+   "efeitos_colaterais": "Taquicardia, palpitações, hipertensão, tremor, ansiedade e cefaleia."
   },
   {
    "nome": "Fenitoína",
@@ -771,7 +847,9 @@
     "convulsao",
     "arritmia"
    ],
-   "principio_ativo": "Fenitoína sódica"
+   "principio_ativo": "Fenitoína sódica",
+   "contraindicacoes": "Bradicardia sinusal, bloqueio atrioventricular, síndrome de Adams-Stokes, hipersensibilidade a hidantoínas.",
+   "efeitos_colaterais": "Nistagmo, ataxia, hiperplasia gengival característica, hirsutismo, rash. Infusão rápida causa hipotensão e arritmias graves."
   },
   {
    "nome": "Fitomenadiona",
@@ -784,7 +862,9 @@
     "sangramento",
     "deficiencia_vitaminica"
    ],
-   "principio_ativo": "Fitomenadiona (vitamina K1)"
+   "principio_ativo": "Fitomenadiona (vitamina K1)",
+   "contraindicacoes": "Hipersensibilidade. Cautela na administração intravenosa (risco de reação anafilactoide).",
+   "efeitos_colaterais": "Reações no local da injeção. Por via intravenosa rápida: rubor, hipotensão, dispneia e reação anafilactoide grave."
   },
   {
    "nome": "Fluconazol",
@@ -796,7 +876,9 @@
    "sintomas": [
     "infeccao_fungica"
    ],
-   "principio_ativo": "Fluconazol"
+   "principio_ativo": "Fluconazol",
+   "contraindicacoes": "Hipersensibilidade a azólicos, uso concomitante com medicamentos que prolongam o QT, gestação em doses altas.",
+   "efeitos_colaterais": "Náuseas, dor abdominal, cefaleia, rash, elevação de enzimas hepáticas e prolongamento do intervalo QT."
   },
   {
    "nome": "Furosemida",
@@ -810,7 +892,9 @@
     "insuficiencia_cardiaca",
     "crise_hipertensiva"
    ],
-   "principio_ativo": "Furosemida"
+   "principio_ativo": "Furosemida",
+   "contraindicacoes": "Anúria, hipovolemia grave, desidratação, hipocalemia grave não corrigida, hipersensibilidade a sulfonamidas.",
+   "efeitos_colaterais": "Hipocalemia, hiponatremia, desidratação, hipotensão, elevação de ureia e creatinina. Ototoxicidade se infusão rápida ou dose alta."
   },
   {
    "nome": "Gentamicina",
@@ -825,7 +909,9 @@
     "infeccao_grave_hospitalar",
     "infeccao_pele"
    ],
-   "principio_ativo": "Sulfato de gentamicina"
+   "principio_ativo": "Sulfato de gentamicina",
+   "contraindicacoes": "Hipersensibilidade a aminoglicosídeos, miastenia gravis. Cautela em insuficiência renal e idosos.",
+   "efeitos_colaterais": "Nefrotoxicidade e ototoxicidade (perda auditiva e alterações vestibulares), que podem ser irreversíveis. Bloqueio neuromuscular."
   },
   {
    "nome": "Heparina",
@@ -837,7 +923,9 @@
    "sintomas": [
     "trombose"
    ],
-   "principio_ativo": "Heparina sódica"
+   "principio_ativo": "Heparina sódica",
+   "contraindicacoes": "Sangramento ativo, plaquetopenia induzida por heparina, hemofilia, hipertensão grave não controlada, endocardite bacteriana.",
+   "efeitos_colaterais": "Sangramentos, hematomas, plaquetopenia induzida por heparina (HIT), osteoporose no uso prolongado e elevação de transaminases."
   },
   {
    "nome": "Hidralazina",
@@ -849,7 +937,9 @@
    "sintomas": [
     "crise_hipertensiva"
    ],
-   "principio_ativo": "Cloridrato de hidralazina"
+   "principio_ativo": "Cloridrato de hidralazina",
+   "contraindicacoes": "Taquicardia grave, lúpus eritematoso sistêmico, doença coronariana grave, estenose mitral reumática.",
+   "efeitos_colaterais": "Taquicardia reflexa, cefaleia, rubor, palpitações, retenção de líquidos. Uso prolongado: síndrome semelhante ao lúpus."
   },
   {
    "nome": "Hidrocortisona",
@@ -864,7 +954,9 @@
     "choque_circulatorio",
     "anafilaxia"
    ],
-   "principio_ativo": "Succinato sódico de hidrocortisona"
+   "principio_ativo": "Succinato sódico de hidrocortisona",
+   "contraindicacoes": "Infecções fúngicas sistêmicas não tratadas, hipersensibilidade. Cautela em diabetes e úlcera péptica.",
+   "efeitos_colaterais": "Hiperglicemia, retenção de sódio e água, hipocalemia, insônia, agitação. Uso prolongado: imunossupressão e supressão adrenal."
   },
   {
    "nome": "Hyplex B (Complexo B)",
@@ -877,7 +969,9 @@
     "deficiencia_vitaminica"
    ],
    "principio_ativo": "Vitaminas do complexo B: cloridrato de tiamina (B1), fosfato sódico de riboflavina (B2), nicotinamida (B3), dexpantenol (B5) e cloridrato de piridoxina (B6)",
-   "marca": true
+   "marca": true,
+   "contraindicacoes": "Hipersensibilidade a qualquer componente da fórmula.",
+   "efeitos_colaterais": "Geralmente bem tolerado. Coloração amarelada da urina, náuseas leves, dor no local da injeção e reações alérgicas raras."
   },
   {
    "nome": "Levofloxacino",
@@ -891,7 +985,9 @@
     "infeccao_urinaria",
     "infeccao_pele"
    ],
-   "principio_ativo": "Levofloxacino hemi-hidratado"
+   "principio_ativo": "Levofloxacino hemi-hidratado",
+   "contraindicacoes": "Hipersensibilidade a quinolonas, histórico de tendinite por quinolona, miastenia gravis. Evitar em gestantes e crianças.",
+   "efeitos_colaterais": "Náuseas, diarreia, cefaleia, insônia. Graves: ruptura de tendão, prolongamento do QT, neuropatia periférica e disglicemia."
   },
   {
    "nome": "Lidocaína",
@@ -904,7 +1000,9 @@
     "anestesia_local",
     "arritmia"
    ],
-   "principio_ativo": "Cloridrato de lidocaína (com ou sem epinefrina)"
+   "principio_ativo": "Cloridrato de lidocaína (com ou sem epinefrina)",
+   "contraindicacoes": "Hipersensibilidade a anestésicos tipo amida, bloqueio atrioventricular avançado, síndrome de Adams-Stokes. Não usar formulação com vasoconstritor em extremidades.",
+   "efeitos_colaterais": "Tontura, parestesias periorais, gosto metálico, zumbido. Em níveis tóxicos: convulsões, arritmias e parada cardiorrespiratória."
   },
   {
    "nome": "Meronem (Meropenem)",
@@ -919,7 +1017,9 @@
     "infeccao_abdominal"
    ],
    "principio_ativo": "Meropeném tri-hidratado",
-   "marca": true
+   "marca": true,
+   "contraindicacoes": "Hipersensibilidade a carbapenêmicos ou reação anafilática a betalactâmicos.",
+   "efeitos_colaterais": "Diarreia, náuseas, rash, cefaleia, elevação de enzimas hepáticas. Risco de convulsões, principalmente em insuficiência renal sem ajuste."
   },
   {
    "nome": "Metilprednisolona",
@@ -933,7 +1033,9 @@
     "alergia",
     "asma_broncoespasmo"
    ],
-   "principio_ativo": "Succinato sódico de metilprednisolona / acetato de metilprednisolona"
+   "principio_ativo": "Succinato sódico de metilprednisolona / acetato de metilprednisolona",
+   "contraindicacoes": "Infecções fúngicas sistêmicas não tratadas, hipersensibilidade. Cautela em diabetes, úlcera e infecção ativa.",
+   "efeitos_colaterais": "Hiperglicemia, retenção de líquidos, insônia, agitação, aumento do apetite. Uso prolongado: imunossupressão, osteoporose e miopatia."
   },
   {
    "nome": "Metoclopramida",
@@ -946,7 +1048,9 @@
     "nausea_vomito",
     "refluxo_ma_digestao"
    ],
-   "principio_ativo": "Cloridrato de metoclopramida"
+   "principio_ativo": "Cloridrato de metoclopramida",
+   "contraindicacoes": "Hemorragia, obstrução ou perfuração gastrointestinal, feocromocitoma, epilepsia, discinesia tardia prévia.",
+   "efeitos_colaterais": "Sonolência, inquietação. Efeitos extrapiramidais e distonia aguda (mais comuns em jovens), discinesia tardia com uso prolongado e elevação de prolactina."
   },
   {
    "nome": "Metronidazol",
@@ -959,21 +1063,25 @@
     "infeccao_abdominal",
     "infeccao_parasitaria"
    ],
-   "principio_ativo": "Metronidazol / benzoilmetronidazol (suspensão oral)"
+   "principio_ativo": "Metronidazol / benzoilmetronidazol (suspensão oral)",
+   "contraindicacoes": "Primeiro trimestre da gestação, hipersensibilidade a nitroimidazólicos. Evitar álcool durante e até 72h após o uso.",
+   "efeitos_colaterais": "Gosto metálico característico, náuseas, cefaleia, urina escura. Efeito dissulfiram com álcool (náusea intensa, rubor, taquicardia). Neuropatia no uso prolongado."
   },
   {
    "nome": "Noprosil",
    "controlado": false,
-   "classe": "Procinético / Antiemético (nome comercial)",
+   "classe": "Procinético / Antiemético (Noprosil é nome comercial)",
    "funcao": "Acelera o esvaziamento do estômago e reduz náuseas e vômitos",
    "uso_principal": "Tratamento de enjoos, vômitos, má digestão e refluxo em pacientes internados",
-   "macete": "Noprosil é marca de metoclopramida — antiemético, NÃO analgésico!",
+   "macete": "Noprosil é marca de metoclopramida: antiemético, NÃO analgésico!",
    "sintomas": [
     "nausea_vomito",
     "refluxo_ma_digestao"
    ],
    "principio_ativo": "Cloridrato de metoclopramida",
-   "marca": true
+   "marca": true,
+   "contraindicacoes": "Hemorragia, obstrução ou perfuração gastrointestinal, feocromocitoma, epilepsia, discinesia tardia prévia.",
+   "efeitos_colaterais": "Sonolência, inquietação. Efeitos extrapiramidais e distonia aguda (mais comuns em jovens), discinesia tardia com uso prolongado e elevação de prolactina."
   },
   {
    "nome": "Norepinefrina",
@@ -986,7 +1094,9 @@
     "choque_circulatorio",
     "hipotensao"
    ],
-   "principio_ativo": "Hemitartarato ou bitartarato de norepinefrina (noradrenalina)"
+   "principio_ativo": "Hemitartarato ou bitartarato de norepinefrina (noradrenalina)",
+   "contraindicacoes": "Hipovolemia não corrigida (deve ser tratada primeiro), trombose vascular periférica ou mesentérica.",
+   "efeitos_colaterais": "Isquemia de extremidades, hipertensão, bradicardia reflexa, arritmias. Necrose tecidual grave se extravasar — preferir acesso central."
   },
   {
    "nome": "Omeprazol",
@@ -999,7 +1109,9 @@
     "azia_ulcera",
     "refluxo_ma_digestao"
    ],
-   "principio_ativo": "Omeprazol / omeprazol sódico (injetável)"
+   "principio_ativo": "Omeprazol / omeprazol sódico (injetável)",
+   "contraindicacoes": "Hipersensibilidade a inibidores da bomba de prótons. Cautela com clopidogrel (reduz seu efeito).",
+   "efeitos_colaterais": "Cefaleia, náuseas, diarreia, dor abdominal. Uso prolongado: hipomagnesemia, deficiência de B12, aumento do risco de fraturas e infecção por C. difficile."
   },
   {
    "nome": "Ondansetrona",
@@ -1011,7 +1123,9 @@
    "sintomas": [
     "nausea_vomito"
    ],
-   "principio_ativo": "Cloridrato de ondansetrona di-hidratado"
+   "principio_ativo": "Cloridrato de ondansetrona di-hidratado",
+   "contraindicacoes": "Uso concomitante com apomorfina, síndrome do QT longo congênito, hipersensibilidade.",
+   "efeitos_colaterais": "Cefaleia (mais comum), constipação, rubor, elevação transitória de enzimas hepáticas e prolongamento do intervalo QT."
   },
   {
    "nome": "Oxacilina",
@@ -1025,7 +1139,9 @@
     "infeccao_ossea",
     "infeccao_grave_hospitalar"
    ],
-   "principio_ativo": "Oxacilina sódica"
+   "principio_ativo": "Oxacilina sódica",
+   "contraindicacoes": "Alergia a penicilinas. Cautela em insuficiência hepática.",
+   "efeitos_colaterais": "Flebite no local da infusão, rash, náuseas, elevação de enzimas hepáticas. Raros: nefrite intersticial e neutropenia."
   },
   {
    "nome": "Prometazina",
@@ -1038,7 +1154,9 @@
     "alergia",
     "nausea_vomito"
    ],
-   "principio_ativo": "Cloridrato de prometazina"
+   "principio_ativo": "Cloridrato de prometazina",
+   "contraindicacoes": "Menores de 2 anos, coma, depressão grave do SNC, hipersensibilidade a fenotiazinas. Evitar via subcutânea ou intra-arterial.",
+   "efeitos_colaterais": "Sedação intensa, boca seca, hipotensão, efeitos extrapiramidais. Necrose tecidual grave se extravasar ou se administrada por via inadequada."
   },
   {
    "nome": "Salbutamol",
@@ -1050,7 +1168,9 @@
    "sintomas": [
     "asma_broncoespasmo"
    ],
-   "principio_ativo": "Sulfato de salbutamol (albuterol)"
+   "principio_ativo": "Sulfato de salbutamol (albuterol)",
+   "contraindicacoes": "Hipersensibilidade. Cautela em taquiarritmias, cardiopatia isquêmica, hipertireoidismo e diabetes.",
+   "efeitos_colaterais": "Tremor de extremidades (muito característico), taquicardia, palpitações, cefaleia, agitação e hipocalemia com doses repetidas."
   },
   {
    "nome": "Simeticona",
@@ -1062,7 +1182,9 @@
    "sintomas": [
     "gases"
    ],
-   "principio_ativo": "Simeticona (dimeticona ativada)"
+   "principio_ativo": "Simeticona (dimeticona ativada)",
+   "contraindicacoes": "Hipersensibilidade. Obstrução ou perfuração intestinal.",
+   "efeitos_colaterais": "Praticamente sem efeitos adversos por não ser absorvida. Raramente: náuseas leves e reações alérgicas."
   },
   {
    "nome": "Vancomicina",
@@ -1074,7 +1196,9 @@
    "sintomas": [
     "infeccao_grave_hospitalar"
    ],
-   "principio_ativo": "Cloridrato de vancomicina"
+   "principio_ativo": "Cloridrato de vancomicina",
+   "contraindicacoes": "Hipersensibilidade a glicopeptídeos. Cautela em insuficiência renal e uso com outros nefrotóxicos.",
+   "efeitos_colaterais": "Síndrome do homem vermelho (rubor e prurido por infusão rápida), nefrotoxicidade, ototoxicidade, flebite e neutropenia no uso prolongado."
   },
   {
    "nome": "Amiodarona",
@@ -1086,7 +1210,9 @@
    "sintomas": [
     "arritmia"
    ],
-   "principio_ativo": "Cloridrato de amiodarona"
+   "principio_ativo": "Cloridrato de amiodarona",
+   "contraindicacoes": "Bradicardia grave, bloqueio atrioventricular avançado sem marcapasso, disfunção tireoidiana, hipersensibilidade ao iodo.",
+   "efeitos_colaterais": "Disfunção da tireoide (hipo ou hipertireoidismo), fibrose pulmonar, depósitos na córnea, fotossensibilidade, hepatotoxicidade e bradicardia."
   },
   {
    "nome": "Nitroprussiato",
@@ -1099,7 +1225,9 @@
     "crise_hipertensiva",
     "insuficiencia_cardiaca"
    ],
-   "principio_ativo": "Nitroprussiato de sódio di-hidratado"
+   "principio_ativo": "Nitroprussiato de sódio di-hidratado",
+   "contraindicacoes": "Hipertensão compensatória (coarctação de aorta), insuficiência hepática grave, atrofia óptica de Leber, deficiência de vitamina B12.",
+   "efeitos_colaterais": "Hipotensão excessiva, taquicardia reflexa, náuseas. Uso prolongado ou em dose alta: intoxicação por cianeto e tiocianato (acidose, confusão, convulsão)."
   },
   {
    "nome": "Clorpromazina",
@@ -1112,7 +1240,9 @@
     "agitacao_psicomotora",
     "ansiedade"
    ],
-   "principio_ativo": "Cloridrato de clorpromazina"
+   "principio_ativo": "Cloridrato de clorpromazina",
+   "contraindicacoes": "Depressão grave do SNC, coma, discrasias sanguíneas, hipersensibilidade a fenotiazinas.",
+   "efeitos_colaterais": "Sedação intensa, hipotensão postural, efeitos extrapiramidais, boca seca, fotossensibilidade. Graves: síndrome neuroléptica maligna e discinesia tardia."
   },
   {
    "nome": "Dexmedetomidina",
@@ -1124,7 +1254,9 @@
    "sintomas": [
     "sedacao_procedimento"
    ],
-   "principio_ativo": "Cloridrato de dexmedetomidina"
+   "principio_ativo": "Cloridrato de dexmedetomidina",
+   "contraindicacoes": "Bloqueio atrioventricular avançado, hipotensão grave não controlada, hipersensibilidade.",
+   "efeitos_colaterais": "Bradicardia, hipotensão (mais comuns), boca seca, náuseas. Hipertensão transitória com dose de ataque rápida."
   },
   {
    "nome": "Diazepam",
@@ -1138,7 +1270,9 @@
     "ansiedade",
     "dor_muscular_articular"
    ],
-   "principio_ativo": "Diazepam"
+   "principio_ativo": "Diazepam",
+   "contraindicacoes": "Insuficiência respiratória grave, apneia do sono, miastenia gravis, glaucoma de ângulo fechado, insuficiência hepática grave.",
+   "efeitos_colaterais": "Sedação, tontura, fraqueza muscular, amnésia. Depressão respiratória, principalmente com opioides ou álcool. Dependência com uso prolongado."
   },
   {
    "nome": "Etomidato",
@@ -1150,7 +1284,9 @@
    "sintomas": [
     "sedacao_procedimento"
    ],
-   "principio_ativo": "Etomidato"
+   "principio_ativo": "Etomidato",
+   "contraindicacoes": "Hipersensibilidade. Cautela em insuficiência adrenal e sepse (pode suprimir a função adrenal).",
+   "efeitos_colaterais": "Mioclonias (movimentos involuntários) na indução, dor à injeção, náuseas e vômitos, supressão adrenal transitória."
   },
   {
    "nome": "Fentanila",
@@ -1164,7 +1300,9 @@
     "dor_cronica",
     "sedacao_procedimento"
    ],
-   "principio_ativo": "Citrato de fentanila"
+   "principio_ativo": "Citrato de fentanila",
+   "contraindicacoes": "Hipersensibilidade a opioides, depressão respiratória sem suporte ventilatório, uso de IMAO nos últimos 14 dias.",
+   "efeitos_colaterais": "Depressão respiratória, rigidez torácica (com infusão rápida), bradicardia, hipotensão, náuseas, constipação e sedação."
   },
   {
    "nome": "Flumazenil",
@@ -1176,7 +1314,9 @@
    "sintomas": [
     "intoxicacao_benzo"
    ],
-   "principio_ativo": "Flumazenil"
+   "principio_ativo": "Flumazenil",
+   "contraindicacoes": "Pacientes que usam benzodiazepínico para controle de epilepsia ou hipertensão intracraniana, intoxicação por antidepressivo tricíclico.",
+   "efeitos_colaterais": "Náuseas, vômitos, agitação, tontura. Risco de convulsões e ressedação (efeito mais curto que o do benzodiazepínico)."
   },
   {
    "nome": "Fluoxetina",
@@ -1189,7 +1329,9 @@
     "depressao",
     "ansiedade"
    ],
-   "principio_ativo": "Cloridrato de fluoxetina"
+   "principio_ativo": "Cloridrato de fluoxetina",
+   "contraindicacoes": "Uso de IMAO nos últimos 14 dias, hipersensibilidade. Cautela em transtorno bipolar (risco de virada maníaca).",
+   "efeitos_colaterais": "Náuseas, insônia, agitação, cefaleia, disfunção sexual, perda de apetite. Risco de síndrome serotoninérgica e hiponatremia em idosos."
   },
   {
    "nome": "Haloperidol",
@@ -1201,7 +1343,9 @@
    "sintomas": [
     "agitacao_psicomotora"
    ],
-   "principio_ativo": "Haloperidol / decanoato de haloperidol (ação prolongada)"
+   "principio_ativo": "Haloperidol / decanoato de haloperidol (ação prolongada)",
+   "contraindicacoes": "Doença de Parkinson, depressão grave do SNC, coma, prolongamento do QT, hipersensibilidade.",
+   "efeitos_colaterais": "Efeitos extrapiramidais marcantes (rigidez, tremor, distonia aguda), sedação, prolongamento do QT. Graves: síndrome neuroléptica maligna e discinesia tardia."
   },
   {
    "nome": "Midazolam",
@@ -1215,7 +1359,9 @@
     "convulsao",
     "ansiedade"
    ],
-   "principio_ativo": "Maleato de midazolam / cloridrato de midazolam"
+   "principio_ativo": "Maleato de midazolam / cloridrato de midazolam",
+   "contraindicacoes": "Insuficiência respiratória grave sem suporte ventilatório, apneia do sono, glaucoma de ângulo fechado, choque não corrigido.",
+   "efeitos_colaterais": "Depressão respiratória (principal risco), hipotensão, sedação prolongada, amnésia, agitação paradoxal em idosos e crianças."
   },
   {
    "nome": "Morfina",
@@ -1228,7 +1374,9 @@
     "dor_intensa",
     "dor_pos_operatoria"
    ],
-   "principio_ativo": "Sulfato de morfina"
+   "principio_ativo": "Sulfato de morfina",
+   "contraindicacoes": "Depressão respiratória, asma aguda grave, íleo paralítico, hipersensibilidade a opioides, uso de IMAO.",
+   "efeitos_colaterais": "Depressão respiratória, constipação (não desenvolve tolerância), náuseas, vômitos, prurido, retenção urinária, sedação, miose e hipotensão."
   },
   {
    "nome": "Naloxona",
@@ -1240,7 +1388,9 @@
    "sintomas": [
     "intoxicacao_opioide"
    ],
-   "principio_ativo": "Cloridrato de naloxona"
+   "principio_ativo": "Cloridrato de naloxona",
+   "contraindicacoes": "Hipersensibilidade. Cautela em dependentes de opioides (precipita síndrome de abstinência aguda).",
+   "efeitos_colaterais": "Síndrome de abstinência aguda (agitação, taquicardia, hipertensão, náuseas, dor). Retorno da depressão respiratória quando o efeito acaba antes do opioide."
   },
   {
    "nome": "Propofol",
@@ -1252,7 +1402,9 @@
    "sintomas": [
     "sedacao_procedimento"
    ],
-   "principio_ativo": "Propofol (emulsão lipídica)"
+   "principio_ativo": "Propofol (emulsão lipídica)",
+   "contraindicacoes": "Hipersensibilidade ao propofol, à soja ou ao ovo. Cautela em hipovolemia e instabilidade hemodinâmica.",
+   "efeitos_colaterais": "Hipotensão (muito comum), depressão respiratória, apneia, dor à injeção, bradicardia. Uso prolongado em dose alta: síndrome da infusão de propofol."
   },
   {
    "nome": "Quetiapina",
@@ -1265,7 +1417,9 @@
     "agitacao_psicomotora",
     "depressao"
    ],
-   "principio_ativo": "Fumarato de quetiapina"
+   "principio_ativo": "Fumarato de quetiapina",
+   "contraindicacoes": "Hipersensibilidade. Cautela em idosos com demência (aumento de mortalidade), prolongamento do QT e diabetes.",
+   "efeitos_colaterais": "Sedação, tontura, hipotensão postural, ganho de peso, boca seca, hiperglicemia e dislipidemia."
   },
   {
    "nome": "Suxametônio",
@@ -1277,7 +1431,9 @@
    "sintomas": [
     "intubacao"
    ],
-   "principio_ativo": "Cloreto de suxametônio (succinilcolina)"
+   "principio_ativo": "Cloreto de suxametônio (succinilcolina)",
+   "contraindicacoes": "Hipercalemia, queimaduras extensas ou trauma após 24-48h, doenças neuromusculares, histórico de hipertermia maligna, deficiência de pseudocolinesterase.",
+   "efeitos_colaterais": "Fasciculações e mialgia pós-operatória, hipercalemia, bradicardia (principalmente em crianças). Grave: hipertermia maligna."
   },
   {
    "nome": "Tramadol",
@@ -1291,7 +1447,9 @@
     "dor_pos_operatoria",
     "dor_cronica"
    ],
-   "principio_ativo": "Cloridrato de tramadol"
+   "principio_ativo": "Cloridrato de tramadol",
+   "contraindicacoes": "Epilepsia não controlada, uso de IMAO, intoxicação por álcool ou depressores do SNC, hipersensibilidade.",
+   "efeitos_colaterais": "Náuseas, vômitos, tontura, sonolência, constipação, sudorese. Reduz o limiar convulsivo e pode causar síndrome serotoninérgica com antidepressivos."
   },
   {
    "nome": "Ácido fólico",
@@ -1304,7 +1462,9 @@
     "anemia",
     "deficiencia_vitaminica"
    ],
-   "principio_ativo": "Ácido fólico (folato / vitamina B9)"
+   "principio_ativo": "Ácido fólico (folato / vitamina B9)",
+   "contraindicacoes": "Hipersensibilidade. Não deve ser usado isoladamente em anemia por deficiência de vitamina B12 (pode mascarar o quadro neurológico).",
+   "efeitos_colaterais": "Geralmente bem tolerado. Raramente: náusea, distensão abdominal, reações alérgicas."
   },
   {
    "nome": "Albumina humana",
@@ -1317,7 +1477,9 @@
     "choque_circulatorio",
     "edema"
    ],
-   "principio_ativo": "Albumina humana"
+   "principio_ativo": "Albumina humana",
+   "contraindicacoes": "Insuficiência cardíaca grave, anemia grave, hipervolemia, hipersensibilidade à albumina.",
+   "efeitos_colaterais": "Sobrecarga de volume, edema pulmonar, calafrios, febre, urticária e reações alérgicas."
   },
   {
    "nome": "Aminofilina",
@@ -1330,7 +1492,9 @@
     "asma_broncoespasmo",
     "dpoc"
    ],
-   "principio_ativo": "Aminofilina (teofilina + etilenodiamina)"
+   "principio_ativo": "Aminofilina (teofilina + etilenodiamina)",
+   "contraindicacoes": "Hipersensibilidade a xantinas, arritmias graves não tratadas, úlcera péptica ativa, epilepsia não controlada.",
+   "efeitos_colaterais": "Náuseas, vômitos, taquicardia, tremores, insônia, agitação. Em níveis tóxicos: arritmias graves e convulsões."
   },
   {
    "nome": "Ampicilina",
@@ -1344,7 +1508,9 @@
     "infeccao_urinaria",
     "meningite"
    ],
-   "principio_ativo": "Ampicilina sódica"
+   "principio_ativo": "Ampicilina sódica",
+   "contraindicacoes": "Alergia a penicilinas. Cautela em mononucleose infecciosa (risco alto de rash).",
+   "efeitos_colaterais": "Diarreia, náuseas, rash cutâneo, candidíase, reações alérgicas incluindo anafilaxia."
   },
   {
    "nome": "Ampicilina + Sulbactam",
@@ -1358,7 +1524,9 @@
     "infeccao_respiratoria",
     "infeccao_pele"
    ],
-   "principio_ativo": "Ampicilina sódica + sulbactam sódico"
+   "principio_ativo": "Ampicilina sódica + sulbactam sódico",
+   "contraindicacoes": "Alergia a penicilinas ou betalactâmicos. Cautela em insuficiência renal (ajuste de dose).",
+   "efeitos_colaterais": "Diarreia, dor no local da injeção, rash, náuseas. Raros: colite pseudomembranosa e reação alérgica grave."
   },
   {
    "nome": "Anfotericina B",
@@ -1371,7 +1539,9 @@
     "infeccao_fungica",
     "infeccao_grave_hospitalar"
    ],
-   "principio_ativo": "Anfotericina B (desoxicolato ou lipossomal)"
+   "principio_ativo": "Anfotericina B (desoxicolato ou lipossomal)",
+   "contraindicacoes": "Hipersensibilidade. Cautela intensa em insuficiência renal — exige monitorização rigorosa.",
+   "efeitos_colaterais": "Nefrotoxicidade importante, hipocalemia, hipomagnesemia, febre, calafrios intensos durante a infusão, anemia e flebite."
   },
   {
    "nome": "Anlodipino",
@@ -1383,7 +1553,9 @@
    "sintomas": [
     "hipertensao_cronica"
    ],
-   "principio_ativo": "Besilato de anlodipino"
+   "principio_ativo": "Besilato de anlodipino",
+   "contraindicacoes": "Hipotensão grave, choque cardiogênico, estenose aórtica grave, hipersensibilidade.",
+   "efeitos_colaterais": "Edema de tornozelos (muito comum), cefaleia, rubor facial, tontura, palpitações e fadiga."
   },
   {
    "nome": "Beclometasona",
@@ -1396,7 +1568,9 @@
     "asma_broncoespasmo",
     "inflamacao"
    ],
-   "principio_ativo": "Dipropionato de beclometasona"
+   "principio_ativo": "Dipropionato de beclometasona",
+   "contraindicacoes": "Hipersensibilidade. Não deve ser usada para crise aguda de asma (não é medicamento de resgate).",
+   "efeitos_colaterais": "Candidíase oral, rouquidão, irritação de garganta. Enxaguar a boca após o uso reduz esses efeitos."
   },
   {
    "nome": "Bicarbonato de sódio",
@@ -1409,7 +1583,9 @@
     "acidose",
     "parada_cardiaca"
    ],
-   "principio_ativo": "Bicarbonato de sódio"
+   "principio_ativo": "Bicarbonato de sódio",
+   "contraindicacoes": "Alcalose metabólica ou respiratória, hipocalcemia, hipocalemia não corrigida, hipernatremia.",
+   "efeitos_colaterais": "Alcalose metabólica, hipernatremia, hipocalemia, sobrecarga de volume e necrose tecidual se extravasar."
   },
   {
    "nome": "Brometo de ipratrópio",
@@ -1422,7 +1598,9 @@
     "asma_broncoespasmo",
     "dpoc"
    ],
-   "principio_ativo": "Brometo de ipratrópio"
+   "principio_ativo": "Brometo de ipratrópio",
+   "contraindicacoes": "Hipersensibilidade à atropina e derivados. Cautela em glaucoma de ângulo fechado e hipertrofia prostática.",
+   "efeitos_colaterais": "Boca seca, gosto amargo, tosse, cefaleia. Se atingir os olhos na nebulização, pode causar visão borrada e piora do glaucoma."
   },
   {
    "nome": "Budesonida",
@@ -1436,7 +1614,9 @@
     "dpoc",
     "inflamacao"
    ],
-   "principio_ativo": "Budesonida"
+   "principio_ativo": "Budesonida",
+   "contraindicacoes": "Hipersensibilidade. Não é medicamento de resgate para crise aguda.",
+   "efeitos_colaterais": "Candidíase oral, rouquidão, irritação de garganta, tosse. Uso prolongado em altas doses: efeitos sistêmicos de corticoide."
   },
   {
    "nome": "Captopril",
@@ -1449,7 +1629,9 @@
     "hipertensao_cronica",
     "insuficiencia_cardiaca"
    ],
-   "principio_ativo": "Captopril"
+   "principio_ativo": "Captopril",
+   "contraindicacoes": "Gravidez (contraindicação absoluta), angioedema prévio por IECA, estenose bilateral de artéria renal, hipercalemia.",
+   "efeitos_colaterais": "Tosse seca persistente (muito característica), hipotensão, hipercalemia, alteração do paladar, elevação de creatinina. Raro: angioedema."
   },
   {
    "nome": "Caspofungina",
@@ -1462,7 +1644,9 @@
     "infeccao_fungica",
     "infeccao_grave_hospitalar"
    ],
-   "principio_ativo": "Acetato de caspofungina"
+   "principio_ativo": "Acetato de caspofungina",
+   "contraindicacoes": "Hipersensibilidade. Cautela em insuficiência hepática (ajuste de dose).",
+   "efeitos_colaterais": "Febre, cefaleia, flebite, náuseas, elevação de enzimas hepáticas e reações relacionadas à infusão."
   },
   {
    "nome": "Cefalexina",
@@ -1476,7 +1660,9 @@
     "infeccao_garganta_ouvido",
     "infeccao_urinaria"
    ],
-   "principio_ativo": "Cefalexina monoidratada"
+   "principio_ativo": "Cefalexina monoidratada",
+   "contraindicacoes": "Alergia a cefalosporinas. Cautela em alérgicos graves a penicilina.",
+   "efeitos_colaterais": "Diarreia, náuseas, dor abdominal, candidíase, rash cutâneo."
   },
   {
    "nome": "Cefuroxima",
@@ -1490,7 +1676,9 @@
     "infeccao_urinaria",
     "infeccao_pele"
    ],
-   "principio_ativo": "Cefuroxima sódica (injetável) / axetilcefuroxima (oral)"
+   "principio_ativo": "Cefuroxima sódica (injetável) / axetilcefuroxima (oral)",
+   "contraindicacoes": "Alergia a cefalosporinas ou anafilaxia prévia a betalactâmicos.",
+   "efeitos_colaterais": "Diarreia, náuseas, rash, candidíase e dor no local da aplicação."
   },
   {
    "nome": "Cetorolaco",
@@ -1504,7 +1692,9 @@
     "dor_pos_operatoria",
     "inflamacao"
    ],
-   "principio_ativo": "Cetorolaco de trometamina"
+   "principio_ativo": "Cetorolaco de trometamina",
+   "contraindicacoes": "Úlcera ativa, sangramento, insuficiência renal, distúrbios de coagulação, cirurgia com alto risco de sangramento, gestação e amamentação.",
+   "efeitos_colaterais": "Alto risco de sangramento gastrointestinal e lesão renal, especialmente se usado por mais de 5 dias. Dor epigástrica, tontura e edema."
   },
   {
    "nome": "Cianocobalamina (Vitamina B12)",
@@ -1517,7 +1707,9 @@
     "anemia",
     "deficiencia_vitaminica"
    ],
-   "principio_ativo": "Cianocobalamina"
+   "principio_ativo": "Cianocobalamina",
+   "contraindicacoes": "Hipersensibilidade ao cobalto ou à cianocobalamina. Doença de Leber (atrofia óptica hereditária).",
+   "efeitos_colaterais": "Bem tolerada. Raramente: dor no local da injeção, rash, diarreia e reações alérgicas."
   },
   {
    "nome": "Claritromicina",
@@ -1530,7 +1722,9 @@
     "infeccao_respiratoria",
     "azia_ulcera"
    ],
-   "principio_ativo": "Claritromicina (lactobionato de claritromicina, injetável)"
+   "principio_ativo": "Claritromicina (lactobionato de claritromicina, injetável)",
+   "contraindicacoes": "Hipersensibilidade a macrolídeos, prolongamento do QT, uso concomitante com estatinas de alto risco, gestação (evitar).",
+   "efeitos_colaterais": "Gosto metálico característico, náuseas, diarreia, dor abdominal. Prolongamento do QT e hepatotoxicidade."
   },
   {
    "nome": "Cloreto de potássio",
@@ -1542,7 +1736,9 @@
    "sintomas": [
     "reposicao_eletrolitica"
    ],
-   "principio_ativo": "Cloreto de potássio"
+   "principio_ativo": "Cloreto de potássio",
+   "contraindicacoes": "Hipercalemia, insuficiência renal grave, doença de Addison não tratada. NUNCA administrar em bolus ou sem diluição — risco de parada cardíaca.",
+   "efeitos_colaterais": "Dor e flebite no local da infusão, náuseas. Se infundido rápido ou concentrado: arritmias graves e parada cardíaca."
   },
   {
    "nome": "Cloreto de sódio hipertônico",
@@ -1555,7 +1751,9 @@
     "reposicao_eletrolitica",
     "pressao_intracraniana"
    ],
-   "principio_ativo": "Cloreto de sódio (soluções a 3%, 10% ou 20%)"
+   "principio_ativo": "Cloreto de sódio (soluções a 3%, 10% ou 20%)",
+   "contraindicacoes": "Hipernatremia, desidratação hipertônica, insuficiência cardíaca descompensada.",
+   "efeitos_colaterais": "Hipernatremia, sobrecarga de volume, flebite (idealmente por acesso central) e, se corrigido muito rápido, lesão neurológica grave."
   },
   {
    "nome": "Codeína",
@@ -1568,7 +1766,9 @@
     "dor_leve",
     "tosse"
    ],
-   "principio_ativo": "Fosfato de codeína"
+   "principio_ativo": "Fosfato de codeína",
+   "contraindicacoes": "Depressão respiratória, asma aguda grave, crianças menores de 12 anos, pós-amigdalectomia em pediatria, metabolizadores ultrarrápidos.",
+   "efeitos_colaterais": "Constipação, náuseas, sonolência, tontura. Depressão respiratória e dependência com uso prolongado."
   },
   {
    "nome": "Colistina",
@@ -1580,7 +1780,9 @@
    "sintomas": [
     "infeccao_grave_hospitalar"
    ],
-   "principio_ativo": "Colistimetato de sódio (polimixina E)"
+   "principio_ativo": "Colistimetato de sódio (polimixina E)",
+   "contraindicacoes": "Hipersensibilidade, miastenia gravis. Cautela extrema em insuficiência renal.",
+   "efeitos_colaterais": "Nefrotoxicidade importante e neurotoxicidade (parestesias, tontura, confusão). Bloqueio neuromuscular em doses altas."
   },
   {
    "nome": "Digoxina",
@@ -1593,7 +1795,9 @@
     "insuficiencia_cardiaca",
     "arritmia"
    ],
-   "principio_ativo": "Digoxina"
+   "principio_ativo": "Digoxina",
+   "contraindicacoes": "Bloqueio atrioventricular avançado, fibrilação ventricular, cardiomiopatia hipertrófica obstrutiva, intoxicação digitálica prévia.",
+   "efeitos_colaterais": "Náuseas, vômitos, anorexia, visão amarelada ou halos, confusão, arritmias. Hipocalemia aumenta muito o risco de intoxicação."
   },
   {
    "nome": "Diltiazem",
@@ -1607,7 +1811,9 @@
     "angina",
     "arritmia"
    ],
-   "principio_ativo": "Cloridrato de diltiazem"
+   "principio_ativo": "Cloridrato de diltiazem",
+   "contraindicacoes": "Bradicardia grave, bloqueio atrioventricular de 2º ou 3º grau sem marcapasso, insuficiência cardíaca descompensada, hipotensão grave.",
+   "efeitos_colaterais": "Bradicardia, hipotensão, edema periférico, cefaleia, constipação e tontura."
   },
   {
    "nome": "Domperidona",
@@ -1620,7 +1826,9 @@
     "nausea_vomito",
     "refluxo_ma_digestao"
    ],
-   "principio_ativo": "Domperidona"
+   "principio_ativo": "Domperidona",
+   "contraindicacoes": "Prolongamento do intervalo QT, hemorragia ou obstrução gastrointestinal, prolactinoma, insuficiência hepática moderada a grave.",
+   "efeitos_colaterais": "Boca seca, cefaleia, elevação de prolactina (galactorreia). Risco de arritmia por prolongamento do QT, especialmente em idosos."
   },
   {
    "nome": "Doxiciclina",
@@ -1633,7 +1841,9 @@
     "infeccao_respiratoria",
     "infeccao_pele"
    ],
-   "principio_ativo": "Hiclato de doxiciclina"
+   "principio_ativo": "Hiclato de doxiciclina",
+   "contraindicacoes": "Gestação, amamentação, crianças menores de 8 anos (afeta dentes e ossos), hipersensibilidade a tetraciclinas.",
+   "efeitos_colaterais": "Náuseas, esofagite (tomar com bastante água e permanecer sentado), fotossensibilidade importante e alteração de cor dos dentes em crianças."
   },
   {
    "nome": "Enalapril",
@@ -1646,7 +1856,9 @@
     "hipertensao_cronica",
     "insuficiencia_cardiaca"
    ],
-   "principio_ativo": "Maleato de enalapril"
+   "principio_ativo": "Maleato de enalapril",
+   "contraindicacoes": "Gravidez (contraindicação absoluta), angioedema prévio por IECA, estenose bilateral de artéria renal, hipercalemia.",
+   "efeitos_colaterais": "Tosse seca persistente, hipotensão, hipercalemia, tontura, elevação de creatinina. Raro: angioedema."
   },
   {
    "nome": "Espironolactona",
@@ -1660,7 +1872,9 @@
     "edema",
     "hipertensao_cronica"
    ],
-   "principio_ativo": "Espironolactona"
+   "principio_ativo": "Espironolactona",
+   "contraindicacoes": "Hipercalemia, insuficiência renal grave, doença de Addison, anúria, hipersensibilidade.",
+   "efeitos_colaterais": "Hipercalemia (principal risco), ginecomastia e dor mamária em homens, irregularidade menstrual, náuseas e tontura."
   },
   {
    "nome": "Ganciclovir",
@@ -1673,7 +1887,9 @@
     "infeccao_viral_herpes",
     "infeccao_grave_hospitalar"
    ],
-   "principio_ativo": "Ganciclovir sódico"
+   "principio_ativo": "Ganciclovir sódico",
+   "contraindicacoes": "Neutropenia, trombocitopenia ou anemia graves, hipersensibilidade. Gestação e amamentação.",
+   "efeitos_colaterais": "Mielossupressão importante (queda de neutrófilos e plaquetas), febre, náuseas, diarreia e alteração da função renal."
   },
   {
    "nome": "Glibenclamida",
@@ -1685,7 +1901,9 @@
    "sintomas": [
     "diabetes"
    ],
-   "principio_ativo": "Glibenclamida"
+   "principio_ativo": "Glibenclamida",
+   "contraindicacoes": "Diabetes tipo 1, cetoacidose, insuficiência renal ou hepática grave, gestação, hipersensibilidade a sulfonamidas.",
+   "efeitos_colaterais": "Hipoglicemia (principal risco, especialmente em idosos e jejum prolongado), ganho de peso, náuseas e rash."
   },
   {
    "nome": "Glucagon",
@@ -1697,7 +1915,9 @@
    "sintomas": [
     "hipoglicemia"
    ],
-   "principio_ativo": "Glucagon (glucagon humano recombinante)"
+   "principio_ativo": "Glucagon (glucagon humano recombinante)",
+   "contraindicacoes": "Feocromocitoma, insulinoma, hipersensibilidade.",
+   "efeitos_colaterais": "Náuseas e vômitos (comuns), hiperglicemia transitória, cefaleia e reações alérgicas."
   },
   {
    "nome": "Gluconato de cálcio",
@@ -1710,7 +1930,9 @@
     "hipercalemia",
     "reposicao_eletrolitica"
    ],
-   "principio_ativo": "Gluconato de cálcio"
+   "principio_ativo": "Gluconato de cálcio",
+   "contraindicacoes": "Hipercalcemia, intoxicação digitálica, fibrilação ventricular. Cautela em pacientes usando digoxina.",
+   "efeitos_colaterais": "Bradicardia e arritmias se infusão rápida, rubor, sensação de calor. Necrose tecidual grave se extravasar."
   },
   {
    "nome": "Hidroclorotiazida",
@@ -1723,7 +1945,9 @@
     "hipertensao_cronica",
     "edema"
    ],
-   "principio_ativo": "Hidroclorotiazida"
+   "principio_ativo": "Hidroclorotiazida",
+   "contraindicacoes": "Anúria, hipersensibilidade a sulfonamidas, hipocalemia ou hiponatremia graves não corrigidas.",
+   "efeitos_colaterais": "Hipocalemia, hiponatremia, hiperuricemia (crise de gota), hiperglicemia, hipotensão postural e fotossensibilidade."
   },
   {
    "nome": "Ibuprofeno",
@@ -1737,7 +1961,9 @@
     "febre",
     "inflamacao"
    ],
-   "principio_ativo": "Ibuprofeno"
+   "principio_ativo": "Ibuprofeno",
+   "contraindicacoes": "Úlcera péptica ativa, sangramento gastrointestinal, insuficiência renal ou cardíaca grave, terceiro trimestre da gestação, asma induzida por AINE.",
+   "efeitos_colaterais": "Dor epigástrica, náuseas, risco de úlcera e sangramento, lesão renal, retenção de líquidos e elevação da pressão arterial."
   },
   {
    "nome": "Insulina NPH",
@@ -1749,7 +1975,9 @@
    "sintomas": [
     "diabetes"
    ],
-   "principio_ativo": "Insulina humana NPH (isófana)"
+   "principio_ativo": "Insulina humana NPH (isófana)",
+   "contraindicacoes": "Hipoglicemia, hipersensibilidade à insulina ou aos excipientes.",
+   "efeitos_colaterais": "Hipoglicemia (principal), ganho de peso, lipodistrofia no local da aplicação, reações locais e hipocalemia."
   },
   {
    "nome": "Insulina Regular",
@@ -1761,7 +1989,9 @@
    "sintomas": [
     "diabetes"
    ],
-   "principio_ativo": "Insulina humana regular"
+   "principio_ativo": "Insulina humana regular",
+   "contraindicacoes": "Hipoglicemia, hipersensibilidade à insulina.",
+   "efeitos_colaterais": "Hipoglicemia (principal risco, com início mais rápido), hipocalemia, lipodistrofia e reações no local da aplicação."
   },
   {
    "nome": "Lactulose",
@@ -1773,7 +2003,9 @@
    "sintomas": [
     "constipacao"
    ],
-   "principio_ativo": "Lactulose"
+   "principio_ativo": "Lactulose",
+   "contraindicacoes": "Obstrução intestinal, galactosemia, perfuração gastrointestinal, hipersensibilidade.",
+   "efeitos_colaterais": "Flatulência, cólicas abdominais, distensão. Em excesso: diarreia com desidratação e perda de eletrólitos."
   },
   {
    "nome": "Levotiroxina",
@@ -1785,7 +2017,9 @@
    "sintomas": [
     "hipotireoidismo"
    ],
-   "principio_ativo": "Levotiroxina sódica"
+   "principio_ativo": "Levotiroxina sódica",
+   "contraindicacoes": "Tireotoxicose não tratada, infarto agudo do miocárdio, insuficiência adrenal não corrigida.",
+   "efeitos_colaterais": "Se dose excessiva: taquicardia, palpitações, tremor, perda de peso, insônia, intolerância ao calor e arritmias."
   },
   {
    "nome": "Linezolida",
@@ -1798,7 +2032,9 @@
     "infeccao_grave_hospitalar",
     "infeccao_pele"
    ],
-   "principio_ativo": "Linezolida"
+   "principio_ativo": "Linezolida",
+   "contraindicacoes": "Uso de IMAO nos últimos 14 dias, hipersensibilidade. Cautela com serotoninérgicos.",
+   "efeitos_colaterais": "Mielossupressão (principalmente plaquetopenia) com uso prolongado, náuseas, diarreia, cefaleia, neuropatia óptica e periférica e síndrome serotoninérgica."
   },
   {
    "nome": "Loperamida",
@@ -1810,7 +2046,9 @@
    "sintomas": [
     "diarreia"
    ],
-   "principio_ativo": "Cloridrato de loperamida"
+   "principio_ativo": "Cloridrato de loperamida",
+   "contraindicacoes": "Diarreia com sangue ou febre alta, colite pseudomembranosa, obstrução intestinal, crianças pequenas.",
+   "efeitos_colaterais": "Constipação, dor abdominal, náuseas, boca seca. Em doses altas: prolongamento do QT e arritmias graves."
   },
   {
    "nome": "Losartana",
@@ -1822,7 +2060,9 @@
    "sintomas": [
     "hipertensao_cronica"
    ],
-   "principio_ativo": "Losartana potássica"
+   "principio_ativo": "Losartana potássica",
+   "contraindicacoes": "Gravidez (contraindicação absoluta), estenose bilateral de artéria renal, hipercalemia, hipersensibilidade.",
+   "efeitos_colaterais": "Tontura, hipotensão, hipercalemia, elevação de creatinina. Não causa a tosse típica dos IECA."
   },
   {
    "nome": "Manitol",
@@ -1835,7 +2075,9 @@
     "pressao_intracraniana",
     "edema"
    ],
-   "principio_ativo": "Manitol (solução a 20%)"
+   "principio_ativo": "Manitol (solução a 20%)",
+   "contraindicacoes": "Anúria estabelecida, insuficiência cardíaca congestiva grave, edema pulmonar, sangramento intracraniano ativo, desidratação grave.",
+   "efeitos_colaterais": "Desidratação, distúrbios eletrolíticos, sobrecarga de volume inicial, cefaleia e efeito rebote de pressão intracraniana."
   },
   {
    "nome": "Metformina",
@@ -1847,7 +2089,9 @@
    "sintomas": [
     "diabetes"
    ],
-   "principio_ativo": "Cloridrato de metformina"
+   "principio_ativo": "Cloridrato de metformina",
+   "contraindicacoes": "Insuficiência renal grave, acidose metabólica, cetoacidose diabética, insuficiência hepática grave. Suspender antes de exames com contraste iodado.",
+   "efeitos_colaterais": "Náuseas, diarreia, dor abdominal, gosto metálico (comuns no início). Rara mas grave: acidose láctica. Deficiência de vitamina B12 no uso prolongado."
   },
   {
    "nome": "Metoprolol",
@@ -1860,7 +2104,9 @@
     "hipertensao_cronica",
     "arritmia"
    ],
-   "principio_ativo": "Succinato de metoprolol (liberação prolongada) / tartarato de metoprolol (injetável)"
+   "principio_ativo": "Succinato de metoprolol (liberação prolongada) / tartarato de metoprolol (injetável)",
+   "contraindicacoes": "Bradicardia grave, bloqueio atrioventricular de 2º ou 3º grau, choque cardiogênico, insuficiência cardíaca descompensada, asma grave.",
+   "efeitos_colaterais": "Bradicardia, hipotensão, fadiga, tontura, extremidades frias, broncoespasmo. Suspensão brusca causa efeito rebote com risco de isquemia."
   },
   {
    "nome": "N-acetilcisteína",
@@ -1873,7 +2119,9 @@
     "secrecao_espessa",
     "intoxicacao_paracetamol"
    ],
-   "principio_ativo": "Acetilcisteína"
+   "principio_ativo": "Acetilcisteína",
+   "contraindicacoes": "Hipersensibilidade. Cautela em asmáticos (risco de broncoespasmo na forma inalatória).",
+   "efeitos_colaterais": "Náuseas, vômitos, odor sulfuroso desagradável. Por via intravenosa: reação anafilactoide com rubor, broncoespasmo e hipotensão."
   },
   {
    "nome": "Nimesulida",
@@ -1886,7 +2134,9 @@
     "inflamacao",
     "dor_muscular_articular"
    ],
-   "principio_ativo": "Nimesulida"
+   "principio_ativo": "Nimesulida",
+   "contraindicacoes": "Insuficiência hepática, hepatopatia prévia por nimesulida, úlcera ativa, insuficiência renal grave, gestação, menores de 12 anos.",
+   "efeitos_colaterais": "Náuseas, dor epigástrica, risco de úlcera e sangramento. Hepatotoxicidade é o efeito mais preocupante — uso limitado a poucos dias."
   },
   {
    "nome": "Nistatina",
@@ -1898,7 +2148,9 @@
    "sintomas": [
     "infeccao_fungica"
    ],
-   "principio_ativo": "Nistatina"
+   "principio_ativo": "Nistatina",
+   "contraindicacoes": "Hipersensibilidade à nistatina.",
+   "efeitos_colaterais": "Bem tolerada por não ser absorvida. Náuseas, gosto desagradável, irritação oral e diarreia em doses altas."
   },
   {
    "nome": "Nitrofurantoína",
@@ -1910,7 +2162,9 @@
    "sintomas": [
     "infeccao_urinaria"
    ],
-   "principio_ativo": "Nitrofurantoína"
+   "principio_ativo": "Nitrofurantoína",
+   "contraindicacoes": "Insuficiência renal (clearance baixo reduz eficácia e aumenta toxicidade), gestação a termo, recém-nascidos, deficiência de G6PD.",
+   "efeitos_colaterais": "Náuseas, urina de cor escura, cefaleia. Uso prolongado: fibrose pulmonar, neuropatia periférica e hepatotoxicidade."
   },
   {
    "nome": "Nitroglicerina",
@@ -1922,7 +2176,9 @@
    "sintomas": [
     "angina"
    ],
-   "principio_ativo": "Nitroglicerina (trinitrato de glicerila)"
+   "principio_ativo": "Nitroglicerina (trinitrato de glicerila)",
+   "contraindicacoes": "Uso de inibidores de fosfodiesterase (sildenafila e similares) nas últimas 24-48h, hipotensão grave, infarto de ventrículo direito, hipertensão intracraniana.",
+   "efeitos_colaterais": "Cefaleia pulsátil (muito característica), hipotensão, tontura, rubor, taquicardia reflexa. Tolerância com uso contínuo."
   },
   {
    "nome": "Óleo mineral",
@@ -1934,7 +2190,9 @@
    "sintomas": [
     "constipacao"
    ],
-   "principio_ativo": "Óleo mineral (parafina líquida)"
+   "principio_ativo": "Óleo mineral (parafina líquida)",
+   "contraindicacoes": "Crianças pequenas, pacientes acamados ou com dificuldade de deglutição (risco de pneumonia aspirativa), obstrução intestinal, gestação.",
+   "efeitos_colaterais": "Escape anal oleoso, cólicas. Uso prolongado: má absorção de vitaminas lipossolúveis (A, D, E, K). Risco de pneumonia lipoídica por aspiração."
   },
   {
    "nome": "Oseltamivir",
@@ -1946,7 +2204,9 @@
    "sintomas": [
     "gripe"
    ],
-   "principio_ativo": "Fosfato de oseltamivir"
+   "principio_ativo": "Fosfato de oseltamivir",
+   "contraindicacoes": "Hipersensibilidade. Cautela em insuficiência renal (ajuste de dose).",
+   "efeitos_colaterais": "Náuseas e vômitos (mais comuns, reduzidos se tomado com alimento), cefaleia. Raros: alterações neuropsiquiátricas, especialmente em crianças."
   },
   {
    "nome": "Pantoprazol",
@@ -1959,7 +2219,9 @@
     "azia_ulcera",
     "refluxo_ma_digestao"
    ],
-   "principio_ativo": "Pantoprazol sódico sesqui-hidratado"
+   "principio_ativo": "Pantoprazol sódico sesqui-hidratado",
+   "contraindicacoes": "Hipersensibilidade a inibidores da bomba de prótons.",
+   "efeitos_colaterais": "Cefaleia, diarreia, náuseas. Uso prolongado: hipomagnesemia, deficiência de B12, risco de fraturas e infecção por C. difficile."
   },
   {
    "nome": "Paracetamol",
@@ -1972,7 +2234,9 @@
     "febre",
     "dor_leve"
    ],
-   "principio_ativo": "Paracetamol (acetaminofeno)"
+   "principio_ativo": "Paracetamol (acetaminofeno)",
+   "contraindicacoes": "Insuficiência hepática grave, hipersensibilidade. Cautela em etilistas e desnutridos (menor reserva hepática).",
+   "efeitos_colaterais": "Bem tolerado nas doses corretas. Em superdose: hepatotoxicidade grave, que pode ser fatal — respeitar a dose máxima diária rigorosamente."
   },
   {
    "nome": "Piperacilina + Tazobactam",
@@ -1985,7 +2249,9 @@
     "infeccao_grave_hospitalar",
     "infeccao_abdominal"
    ],
-   "principio_ativo": "Piperacilina sódica + tazobactam sódico"
+   "principio_ativo": "Piperacilina sódica + tazobactam sódico",
+   "contraindicacoes": "Alergia a penicilinas ou betalactâmicos. Cautela em insuficiência renal (ajuste de dose).",
+   "efeitos_colaterais": "Diarreia, rash, náuseas, febre. Risco de nefrotoxicidade aumentado quando associado à vancomicina. Neutropenia no uso prolongado."
   },
   {
    "nome": "Polimixina B",
@@ -1997,7 +2263,9 @@
    "sintomas": [
     "infeccao_grave_hospitalar"
    ],
-   "principio_ativo": "Sulfato de polimixina B"
+   "principio_ativo": "Sulfato de polimixina B",
+   "contraindicacoes": "Hipersensibilidade, miastenia gravis. Cautela extrema em insuficiência renal.",
+   "efeitos_colaterais": "Nefrotoxicidade e neurotoxicidade (parestesias, tontura, ataxia). Bloqueio neuromuscular e dor no local da infusão."
   },
   {
    "nome": "Prednisolona",
@@ -2011,7 +2279,9 @@
     "alergia",
     "asma_broncoespasmo"
    ],
-   "principio_ativo": "Fosfato sódico de prednisolona"
+   "principio_ativo": "Fosfato sódico de prednisolona",
+   "contraindicacoes": "Infecções fúngicas sistêmicas não tratadas, hipersensibilidade. Cautela em diabetes, úlcera e infecção ativa.",
+   "efeitos_colaterais": "Hiperglicemia, aumento do apetite, agitação, insônia, retenção de líquidos. Uso prolongado: imunossupressão, osteoporose e atraso do crescimento em crianças."
   },
   {
    "nome": "Prednisona",
@@ -2024,7 +2294,9 @@
     "inflamacao",
     "alergia"
    ],
-   "principio_ativo": "Prednisona"
+   "principio_ativo": "Prednisona",
+   "contraindicacoes": "Infecções fúngicas sistêmicas não tratadas, hipersensibilidade. Cautela em diabetes, hipertensão e úlcera péptica.",
+   "efeitos_colaterais": "Hiperglicemia, ganho de peso, retenção de líquidos, insônia, alterações de humor. Uso prolongado: síndrome de Cushing, osteoporose e supressão adrenal — não suspender abruptamente."
   },
   {
    "nome": "Propranolol",
@@ -2039,7 +2311,9 @@
     "ansiedade",
     "arritmia"
    ],
-   "principio_ativo": "Cloridrato de propranolol"
+   "principio_ativo": "Cloridrato de propranolol",
+   "contraindicacoes": "Asma, bradicardia grave, bloqueio atrioventricular avançado, choque cardiogênico, insuficiência cardíaca descompensada.",
+   "efeitos_colaterais": "Broncoespasmo (risco importante em asmáticos), bradicardia, fadiga, extremidades frias, mascaramento dos sinais de hipoglicemia. Efeito rebote se suspenso abruptamente."
   },
   {
    "nome": "Protamina",
@@ -2052,7 +2326,9 @@
     "intoxicacao_heparina",
     "sangramento"
    ],
-   "principio_ativo": "Sulfato ou cloridrato de protamina"
+   "principio_ativo": "Sulfato ou cloridrato de protamina",
+   "contraindicacoes": "Hipersensibilidade. Cautela em pacientes que usam insulina NPH (contém protamina) ou alérgicos a peixe.",
+   "efeitos_colaterais": "Hipotensão, bradicardia, rubor e dispneia se infusão rápida. Reação anafilactoide grave e hipertensão pulmonar. Em excesso, tem efeito anticoagulante próprio."
   },
   {
    "nome": "Ranitidina",
@@ -2065,7 +2341,9 @@
     "azia_ulcera",
     "refluxo_ma_digestao"
    ],
-   "principio_ativo": "Cloridrato de ranitidina"
+   "principio_ativo": "Cloridrato de ranitidina",
+   "contraindicacoes": "Hipersensibilidade. Cautela em insuficiência renal e hepática. Uso restrito em vários países por questões de qualidade do produto.",
+   "efeitos_colaterais": "Cefaleia, tontura, constipação ou diarreia. Raros: confusão em idosos, elevação de enzimas hepáticas e trombocitopenia."
   },
   {
    "nome": "Sinvastatina",
@@ -2077,7 +2355,9 @@
    "sintomas": [
     "colesterol"
    ],
-   "principio_ativo": "Sinvastatina"
+   "principio_ativo": "Sinvastatina",
+   "contraindicacoes": "Doença hepática ativa, gestação e amamentação, uso com inibidores potentes do CYP3A4 (alguns antifúngicos e macrolídeos).",
+   "efeitos_colaterais": "Mialgia (dor muscular, mais comum), elevação de enzimas hepáticas, cefaleia, distúrbios gastrointestinais. Rara mas grave: rabdomiólise."
   },
   {
    "nome": "Sulfametoxazol + Trimetoprima",
@@ -2090,7 +2370,9 @@
     "infeccao_urinaria",
     "infeccao_respiratoria"
    ],
-   "principio_ativo": "Sulfametoxazol + trimetoprima (cotrimoxazol)"
+   "principio_ativo": "Sulfametoxazol + trimetoprima (cotrimoxazol)",
+   "contraindicacoes": "Hipersensibilidade a sulfonamidas, insuficiência renal ou hepática grave, anemia megaloblástica por deficiência de folato, gestação a termo, recém-nascidos.",
+   "efeitos_colaterais": "Náuseas, rash, hipercalemia, elevação de creatinina. Graves: síndrome de Stevens-Johnson, agranulocitose e anemia aplásica."
   },
   {
    "nome": "Sulfato de magnésio",
@@ -2104,7 +2386,9 @@
     "convulsao",
     "reposicao_eletrolitica"
    ],
-   "principio_ativo": "Sulfato de magnésio hepta-hidratado"
+   "principio_ativo": "Sulfato de magnésio hepta-hidratado",
+   "contraindicacoes": "Bloqueio atrioventricular, miastenia gravis, insuficiência renal grave, hipermagnesemia.",
+   "efeitos_colaterais": "Rubor, sensação de calor, sonolência, hipotensão. Em excesso: perda do reflexo patelar, depressão respiratória e parada cardíaca — o antídoto é o gluconato de cálcio."
   },
   {
    "nome": "Sulfato ferroso",
@@ -2116,7 +2400,9 @@
    "sintomas": [
     "anemia"
    ],
-   "principio_ativo": "Sulfato ferroso hepta-hidratado"
+   "principio_ativo": "Sulfato ferroso hepta-hidratado",
+   "contraindicacoes": "Hemocromatose, hemossiderose, anemias não ferroprivas, hipersensibilidade.",
+   "efeitos_colaterais": "Náuseas, dor epigástrica, constipação ou diarreia, fezes escuras (esperado). Superdose em crianças é altamente tóxica."
   },
   {
    "nome": "Teicoplanina",
@@ -2128,7 +2414,9 @@
    "sintomas": [
     "infeccao_grave_hospitalar"
    ],
-   "principio_ativo": "Teicoplanina"
+   "principio_ativo": "Teicoplanina",
+   "contraindicacoes": "Hipersensibilidade a glicopeptídeos. Cautela em insuficiência renal.",
+   "efeitos_colaterais": "Rash, febre, dor no local da aplicação. Menos nefrotoxicidade que a vancomicina. Raros: ototoxicidade e trombocitopenia."
   },
   {
    "nome": "Verapamil",
@@ -2142,7 +2430,9 @@
     "arritmia",
     "angina"
    ],
-   "principio_ativo": "Cloridrato de verapamil"
+   "principio_ativo": "Cloridrato de verapamil",
+   "contraindicacoes": "Bradicardia grave, bloqueio atrioventricular avançado, insuficiência cardíaca descompensada, síndrome de Wolff-Parkinson-White com fibrilação atrial, uso com betabloqueador venoso.",
+   "efeitos_colaterais": "Constipação (muito característica), bradicardia, hipotensão, edema periférico, cefaleia e bloqueio atrioventricular."
   },
   {
    "nome": "Voriconazol",
@@ -2155,7 +2445,9 @@
     "infeccao_fungica",
     "infeccao_grave_hospitalar"
    ],
-   "principio_ativo": "Voriconazol"
+   "principio_ativo": "Voriconazol",
+   "contraindicacoes": "Hipersensibilidade a azólicos, uso com medicamentos que prolongam o QT, gestação.",
+   "efeitos_colaterais": "Distúrbios visuais transitórios característicos (visão borrada, alteração de cores), hepatotoxicidade, fotossensibilidade, alucinações e prolongamento do QT."
   },
   {
    "nome": "Ácido valpróico",
@@ -2169,7 +2461,9 @@
     "depressao",
     "enxaqueca"
    ],
-   "principio_ativo": "Ácido valpróico / valproato de sódio / divalproato de sódio"
+   "principio_ativo": "Ácido valpróico / valproato de sódio / divalproato de sódio",
+   "contraindicacoes": "Gravidez (altamente teratogênico), doença hepática ativa, distúrbios do ciclo da ureia, hipersensibilidade.",
+   "efeitos_colaterais": "Náuseas, ganho de peso, tremor, queda de cabelo, sonolência. Graves: hepatotoxicidade, pancreatite, trombocitopenia, hiperamonemia."
   },
   {
    "nome": "Alfentanila",
@@ -2182,7 +2476,9 @@
     "dor_intensa",
     "sedacao_procedimento"
    ],
-   "principio_ativo": "Cloridrato de alfentanila"
+   "principio_ativo": "Cloridrato de alfentanila",
+   "contraindicacoes": "Hipersensibilidade a opioides, depressão respiratória sem suporte ventilatório, uso concomitante de IMAO.",
+   "efeitos_colaterais": "Depressão respiratória, rigidez torácica, bradicardia, hipotensão, náusea, vômito e sedação."
   },
   {
    "nome": "Amitriptilina",
@@ -2196,7 +2492,9 @@
     "dor_cronica",
     "enxaqueca"
    ],
-   "principio_ativo": "Cloridrato de amitriptilina"
+   "principio_ativo": "Cloridrato de amitriptilina",
+   "contraindicacoes": "Infarto recente, arritmias graves, glaucoma de ângulo fechado, retenção urinária, uso de IMAO nos últimos 14 dias.",
+   "efeitos_colaterais": "Boca seca, constipação, retenção urinária, visão borrada, sonolência, ganho de peso, hipotensão postural e arritmias."
   },
   {
    "nome": "Atracúrio",
@@ -2209,7 +2507,9 @@
     "intubacao",
     "sedacao_procedimento"
    ],
-   "principio_ativo": "Besilato de atracúrio"
+   "principio_ativo": "Besilato de atracúrio",
+   "contraindicacoes": "Hipersensibilidade. Só deve ser usado com via aérea garantida e ventilação assistida disponível.",
+   "efeitos_colaterais": "Liberação de histamina causando rubor, hipotensão e broncoespasmo. Paralisia prolongada se dose excessiva."
   },
   {
    "nome": "Bupivacaína",
@@ -2221,7 +2521,9 @@
    "sintomas": [
     "anestesia_local"
    ],
-   "principio_ativo": "Cloridrato de bupivacaína (com ou sem epinefrina)"
+   "principio_ativo": "Cloridrato de bupivacaína (com ou sem epinefrina)",
+   "contraindicacoes": "Hipersensibilidade a anestésicos locais tipo amida. NUNCA administrar por via intravenosa (cardiotoxicidade grave).",
+   "efeitos_colaterais": "Hipotensão e bradicardia em raquianestesia. Se injetada em vaso: convulsões, arritmias graves e parada cardíaca de difícil reversão."
   },
   {
    "nome": "Buprenorfina",
@@ -2235,7 +2537,9 @@
     "dor_intensa",
     "dependencia_opioide"
    ],
-   "principio_ativo": "Cloridrato de buprenorfina"
+   "principio_ativo": "Cloridrato de buprenorfina",
+   "contraindicacoes": "Hipersensibilidade, depressão respiratória grave, insuficiência hepática grave.",
+   "efeitos_colaterais": "Náuseas, vômitos, sonolência, cefaleia, constipação, sudorese. Depressão respiratória menos intensa que outros opioides."
   },
   {
    "nome": "Carbamazepina",
@@ -2249,7 +2553,9 @@
     "depressao",
     "dor_cronica"
    ],
-   "principio_ativo": "Carbamazepina"
+   "principio_ativo": "Carbamazepina",
+   "contraindicacoes": "Bloqueio atrioventricular, depressão da medula óssea, porfiria, uso de IMAO nos últimos 14 dias.",
+   "efeitos_colaterais": "Tontura, sonolência, visão dupla, ataxia, hiponatremia. Graves: síndrome de Stevens-Johnson, agranulocitose e hepatotoxicidade."
   },
   {
    "nome": "Cetamina",
@@ -2262,7 +2568,9 @@
     "sedacao_procedimento",
     "dor_intensa"
    ],
-   "principio_ativo": "Cloridrato de cetamina (ketamina)"
+   "principio_ativo": "Cloridrato de cetamina (ketamina)",
+   "contraindicacoes": "Hipertensão grave não controlada, hipertensão intracraniana, aneurisma, psicose ativa, eclâmpsia.",
+   "efeitos_colaterais": "Alucinações e agitação na recuperação (fenômeno de emergência), aumento da pressão arterial e frequência cardíaca, hipersalivação, náuseas e nistagmo."
   },
   {
    "nome": "Clonazepam",
@@ -2275,7 +2583,9 @@
     "convulsao",
     "ansiedade"
    ],
-   "principio_ativo": "Clonazepam"
+   "principio_ativo": "Clonazepam",
+   "contraindicacoes": "Insuficiência respiratória grave, apneia do sono, glaucoma de ângulo fechado, miastenia gravis, insuficiência hepática grave.",
+   "efeitos_colaterais": "Sonolência, tontura, fadiga, alteração de coordenação, dependência com uso prolongado. Depressão respiratória se associado a outros depressores."
   },
   {
    "nome": "Fenobarbital",
@@ -2288,7 +2598,9 @@
     "convulsao",
     "sedacao_procedimento"
    ],
-   "principio_ativo": "Fenobarbital / fenobarbital sódico (injetável)"
+   "principio_ativo": "Fenobarbital / fenobarbital sódico (injetável)",
+   "contraindicacoes": "Porfiria, insuficiência respiratória grave, insuficiência hepática grave, hipersensibilidade a barbitúricos.",
+   "efeitos_colaterais": "Sedação intensa, ataxia, alteração cognitiva, agitação paradoxal em crianças e idosos. Depressão respiratória e dependência."
   },
   {
    "nome": "Levetiracetam",
@@ -2300,7 +2612,9 @@
    "sintomas": [
     "convulsao"
    ],
-   "principio_ativo": "Levetiracetam"
+   "principio_ativo": "Levetiracetam",
+   "contraindicacoes": "Hipersensibilidade. Cautela em insuficiência renal (ajuste de dose) e histórico psiquiátrico.",
+   "efeitos_colaterais": "Sonolência, astenia, tontura, alterações comportamentais (irritabilidade, agressividade, humor deprimido) — o efeito mais característico."
   },
   {
    "nome": "Lorazepam",
@@ -2314,7 +2628,9 @@
     "insonia",
     "sedacao_procedimento"
    ],
-   "principio_ativo": "Lorazepam"
+   "principio_ativo": "Lorazepam",
+   "contraindicacoes": "Insuficiência respiratória grave, apneia do sono, glaucoma de ângulo fechado, miastenia gravis.",
+   "efeitos_colaterais": "Sedação, tontura, fraqueza, amnésia anterógrada. Depressão respiratória com outros depressores e dependência no uso prolongado."
   },
   {
    "nome": "Metadona",
@@ -2327,7 +2643,9 @@
     "dor_cronica",
     "dependencia_opioide"
    ],
-   "principio_ativo": "Cloridrato de metadona"
+   "principio_ativo": "Cloridrato de metadona",
+   "contraindicacoes": "Depressão respiratória grave, prolongamento do QT, uso de IMAO, íleo paralítico.",
+   "efeitos_colaterais": "Prolongamento do QT com risco de arritmia grave, depressão respiratória, constipação, sedação e sudorese. Acúmulo por meia-vida longa e variável."
   },
   {
    "nome": "Olanzapina",
@@ -2341,7 +2659,9 @@
     "agitacao_psicomotora",
     "depressao"
    ],
-   "principio_ativo": "Olanzapina / pamoato de olanzapina"
+   "principio_ativo": "Olanzapina / pamoato de olanzapina",
+   "contraindicacoes": "Hipersensibilidade. Cautela em idosos com demência (aumento de mortalidade), glaucoma de ângulo fechado, diabetes.",
+   "efeitos_colaterais": "Ganho de peso importante, sedação, hiperglicemia, dislipidemia, boca seca e hipotensão postural. Menos extrapiramidal que os típicos."
   },
   {
    "nome": "Oxicodona",
@@ -2354,7 +2674,9 @@
     "dor_cronica",
     "dor_intensa"
    ],
-   "principio_ativo": "Cloridrato de oxicodona"
+   "principio_ativo": "Cloridrato de oxicodona",
+   "contraindicacoes": "Depressão respiratória, asma aguda grave, íleo paralítico, hipersensibilidade a opioides.",
+   "efeitos_colaterais": "Constipação, náuseas, sonolência, tontura, prurido. Depressão respiratória, dependência e tolerância com uso prolongado."
   },
   {
    "nome": "Pancurônio",
@@ -2367,7 +2689,9 @@
     "intubacao",
     "sedacao_procedimento"
    ],
-   "principio_ativo": "Brometo de pancurônio"
+   "principio_ativo": "Brometo de pancurônio",
+   "contraindicacoes": "Hipersensibilidade. Só com via aérea garantida e ventilação assistida. Cautela em insuficiência renal (eliminação prejudicada).",
+   "efeitos_colaterais": "Taquicardia (efeito vagolítico característico), hipertensão. Paralisia prolongada, especialmente em disfunção renal ou hepática."
   },
   {
    "nome": "Risperidona",
@@ -2380,7 +2704,9 @@
     "psicose",
     "agitacao_psicomotora"
    ],
-   "principio_ativo": "Risperidona"
+   "principio_ativo": "Risperidona",
+   "contraindicacoes": "Hipersensibilidade. Cautela em idosos com demência (aumento de mortalidade), doença de Parkinson e prolongamento do QT.",
+   "efeitos_colaterais": "Efeitos extrapiramidais dose-dependentes, elevação importante de prolactina (galactorreia, irregularidade menstrual), sedação, ganho de peso e hipotensão postural."
   },
   {
    "nome": "Rocurônio",
@@ -2392,7 +2718,9 @@
    "sintomas": [
     "intubacao"
    ],
-   "principio_ativo": "Brometo de rocurônio"
+   "principio_ativo": "Brometo de rocurônio",
+   "contraindicacoes": "Hipersensibilidade. Só com via aérea garantida e ventilação assistida disponível.",
+   "efeitos_colaterais": "Bem tolerado hemodinamicamente. Paralisia prolongada em disfunção hepática. Raras reações anafiláticas. Dor à injeção em paciente acordado."
   },
   {
    "nome": "Sertralina",
@@ -2405,7 +2733,9 @@
     "depressao",
     "ansiedade"
    ],
-   "principio_ativo": "Cloridrato de sertralina"
+   "principio_ativo": "Cloridrato de sertralina",
+   "contraindicacoes": "Uso de IMAO nos últimos 14 dias, uso com pimozida, hipersensibilidade. Cautela em transtorno bipolar.",
+   "efeitos_colaterais": "Náuseas, diarreia, insônia, cefaleia, disfunção sexual. Risco de síndrome serotoninérgica, hiponatremia em idosos e sangramento com anticoagulantes."
   },
   {
    "nome": "Sufentanila",
@@ -2418,7 +2748,568 @@
     "dor_intensa",
     "sedacao_procedimento"
    ],
-   "principio_ativo": "Citrato de sufentanila"
+   "principio_ativo": "Citrato de sufentanila",
+   "contraindicacoes": "Hipersensibilidade a opioides, depressão respiratória sem suporte ventilatório, uso de IMAO.",
+   "efeitos_colaterais": "Depressão respiratória, rigidez torácica, bradicardia, hipotensão, náuseas e sedação prolongada."
+  },
+  {
+   "nome": "Espinheira-santa",
+   "controlado": false,
+   "fitoterapico": true,
+   "classe": "Fitoterápico antiulceroso / Protetor gástrico",
+   "funcao": "Reduz a secreção ácida e protege a mucosa do estômago",
+   "uso_principal": "Dispepsia, gastrite e prevenção de úlcera — consta na RENAFITO/SUS",
+   "contraindicacoes": "Gestação e amamentação (pode reduzir a produção de leite), crianças menores de 12 anos.",
+   "efeitos_colaterais": "Náuseas, boca seca e desconforto gástrico leve.",
+   "macete": "Espinheira-santa é a 'aliada natural' do estômago!",
+   "principio_ativo": "Maytenus ilicifolia",
+   "sintomas": [
+    "azia_ulcera",
+    "refluxo_ma_digestao"
+   ]
+  },
+  {
+   "nome": "Guaco",
+   "controlado": false,
+   "fitoterapico": true,
+   "classe": "Fitoterápico broncodilatador / Expectorante",
+   "funcao": "Ajuda a fluidificar a secreção e aliviar a tosse",
+   "uso_principal": "Tosse produtiva e afecções respiratórias leves — disponível no SUS",
+   "contraindicacoes": "Uso com anticoagulantes (contém cumarina), gestação, distúrbios de coagulação, hepatopatias.",
+   "efeitos_colaterais": "Náuseas, vômitos e diarreia em doses altas. Aumento do risco de sangramento.",
+   "macete": "Guaco é o 'xarope da mata' para a tosse!",
+   "principio_ativo": "Mikania glomerata",
+   "sintomas": [
+    "tosse",
+    "secrecao_espessa"
+   ]
+  },
+  {
+   "nome": "Alcachofra",
+   "controlado": false,
+   "fitoterapico": true,
+   "classe": "Fitoterápico colagogo / Hepatoprotetor",
+   "funcao": "Estimula a produção de bile e auxilia a digestão de gorduras",
+   "uso_principal": "Dispepsia funcional e distúrbios digestivos leves",
+   "contraindicacoes": "Obstrução das vias biliares, cálculo biliar, alergia a plantas da família Asteraceae.",
+   "efeitos_colaterais": "Flatulência, cólicas, diarreia e reações alérgicas.",
+   "macete": "Alcachofra ajuda o fígado e a digestão da gordura!",
+   "principio_ativo": "Cynara scolymus",
+   "sintomas": [
+    "refluxo_ma_digestao"
+   ]
+  },
+  {
+   "nome": "Aroeira",
+   "controlado": false,
+   "fitoterapico": true,
+   "classe": "Fitoterápico anti-inflamatório / Cicatrizante",
+   "funcao": "Ação anti-inflamatória e cicatrizante, principalmente de uso tópico/ginecológico",
+   "uso_principal": "Cervicite, vaginite e processos inflamatórios locais — consta no SUS",
+   "contraindicacoes": "Gestação e amamentação, hipersensibilidade, uso oral prolongado.",
+   "efeitos_colaterais": "Irritação local, ardência e reações alérgicas de contato.",
+   "macete": "Aroeira é cicatrizante de uso local!",
+   "principio_ativo": "Schinus terebinthifolius",
+   "sintomas": [
+    "inflamacao",
+    "cicatrizacao"
+   ]
+  },
+  {
+   "nome": "Unha-de-gato",
+   "controlado": false,
+   "fitoterapico": true,
+   "classe": "Fitoterápico anti-inflamatório / Imunomodulador",
+   "funcao": "Reduz processos inflamatórios e modula a resposta imunológica",
+   "uso_principal": "Osteoartrite e processos inflamatórios crônicos",
+   "contraindicacoes": "Gestação, amamentação, transplantados, doenças autoimunes, uso com imunossupressores.",
+   "efeitos_colaterais": "Náuseas, diarreia, tontura e hipotensão.",
+   "macete": "Unha-de-gato 'arranha' a inflamação das juntas!",
+   "principio_ativo": "Uncaria tomentosa",
+   "sintomas": [
+    "inflamacao",
+    "dor_muscular_articular"
+   ]
+  },
+  {
+   "nome": "Plantago",
+   "controlado": false,
+   "fitoterapico": true,
+   "classe": "Fitoterápico laxante formador de bolo fecal",
+   "funcao": "Absorve água e aumenta o volume das fezes, facilitando a evacuação",
+   "uso_principal": "Constipação intestinal crônica — consta no SUS",
+   "contraindicacoes": "Obstrução intestinal, estenose do trato digestivo, dificuldade de deglutição, ingestão hídrica insuficiente.",
+   "efeitos_colaterais": "Flatulência, distensão abdominal. Sem líquido suficiente, pode causar obstrução.",
+   "macete": "Plantago 'incha' as fezes e faz o intestino andar!",
+   "principio_ativo": "Plantago ovata",
+   "sintomas": [
+    "constipacao"
+   ]
+  },
+  {
+   "nome": "Cáscara sagrada",
+   "controlado": false,
+   "fitoterapico": true,
+   "classe": "Fitoterápico laxante estimulante",
+   "funcao": "Estimula os movimentos intestinais, promovendo a evacuação",
+   "uso_principal": "Constipação intestinal ocasional",
+   "contraindicacoes": "Gestação, amamentação, crianças menores de 12 anos, obstrução ou inflamação intestinal, dor abdominal de causa desconhecida.",
+   "efeitos_colaterais": "Cólicas, diarreia, perda de potássio. Uso prolongado causa dependência do intestino.",
+   "macete": "Cáscara 'chicoteia' o intestino — só uso curto!",
+   "principio_ativo": "Rhamnus purshiana",
+   "sintomas": [
+    "constipacao"
+   ]
+  },
+  {
+   "nome": "Sene",
+   "controlado": false,
+   "fitoterapico": true,
+   "classe": "Fitoterápico laxante estimulante",
+   "funcao": "Aumenta o peristaltismo e a secreção de água no intestino",
+   "uso_principal": "Constipação ocasional, preparo intestinal",
+   "contraindicacoes": "Obstrução intestinal, doença inflamatória intestinal, apendicite, gestação, crianças pequenas.",
+   "efeitos_colaterais": "Cólicas intensas, diarreia, hipocalemia. Uso crônico causa cólon atônico.",
+   "macete": "Sene é laxante forte — nunca de uso contínuo!",
+   "principio_ativo": "Cassia angustifolia",
+   "sintomas": [
+    "constipacao"
+   ]
+  },
+  {
+   "nome": "Hipérico / Erva-de-são-joão",
+   "controlado": false,
+   "fitoterapico": true,
+   "classe": "Fitoterápico antidepressivo leve",
+   "funcao": "Atua sobre neurotransmissores ligados ao humor",
+   "uso_principal": "Depressão leve a moderada",
+   "contraindicacoes": "Uso com antidepressivos, anticoagulantes, anticoncepcionais, imunossupressores e antirretrovirais. Gestação e transtorno bipolar.",
+   "efeitos_colaterais": "Fotossensibilidade, insônia, agitação, distúrbios gastrointestinais. Risco de síndrome serotoninérgica.",
+   "macete": "ATENÇÃO: é o campeão de interações medicamentosas!",
+   "principio_ativo": "Hypericum perforatum",
+   "sintomas": [
+    "depressao"
+   ]
+  },
+  {
+   "nome": "Valeriana",
+   "controlado": false,
+   "fitoterapico": true,
+   "classe": "Fitoterápico sedativo leve / Ansiolítico",
+   "funcao": "Facilita o relaxamento e melhora a qualidade do sono",
+   "uso_principal": "Insônia leve e ansiedade",
+   "contraindicacoes": "Uso com benzodiazepínicos, álcool ou outros depressores. Gestação, amamentação, crianças menores de 3 anos, hepatopatias.",
+   "efeitos_colaterais": "Sonolência diurna, cefaleia, tontura, desconforto gástrico. Potencializa sedativos.",
+   "macete": "Valeriana 'embala' o sono naturalmente!",
+   "principio_ativo": "Valeriana officinalis",
+   "sintomas": [
+    "insonia",
+    "ansiedade"
+   ]
+  },
+  {
+   "nome": "Passiflora / Maracujá",
+   "controlado": false,
+   "fitoterapico": true,
+   "classe": "Fitoterápico ansiolítico leve",
+   "funcao": "Reduz ansiedade e promove relaxamento",
+   "uso_principal": "Ansiedade leve e insônia — consta no SUS",
+   "contraindicacoes": "Uso com sedativos e depressores do SNC, gestação, hipotensão.",
+   "efeitos_colaterais": "Sonolência, tontura, confusão e hipotensão em doses altas.",
+   "macete": "Maracujá acalma sem tirar o dia da pessoa!",
+   "principio_ativo": "Passiflora incarnata",
+   "sintomas": [
+    "ansiedade",
+    "insonia"
+   ]
+  },
+  {
+   "nome": "Camomila",
+   "controlado": false,
+   "fitoterapico": true,
+   "classe": "Fitoterápico antiespasmódico / Calmante leve",
+   "funcao": "Alivia espasmos digestivos e promove leve sedação",
+   "uso_principal": "Cólicas leves, dispepsia e ansiedade leve — consta no SUS",
+   "contraindicacoes": "Alergia a plantas da família Asteraceae. Cautela com anticoagulantes.",
+   "efeitos_colaterais": "Reações alérgicas, sonolência leve. Pode aumentar o efeito de anticoagulantes.",
+   "macete": "Camomila acalma a barriga e a cabeça!",
+   "principio_ativo": "Matricaria recutita",
+   "sintomas": [
+    "colica",
+    "ansiedade",
+    "refluxo_ma_digestao"
+   ]
+  },
+  {
+   "nome": "Ginkgo biloba",
+   "controlado": false,
+   "fitoterapico": true,
+   "classe": "Fitoterápico vasodilatador cerebral / Antiagregante",
+   "funcao": "Melhora a circulação cerebral e periférica",
+   "uso_principal": "Déficit cognitivo leve e insuficiência vascular periférica",
+   "contraindicacoes": "Uso com anticoagulantes ou antiagregantes, distúrbios de coagulação, pré-operatório (suspender antes da cirurgia), epilepsia.",
+   "efeitos_colaterais": "Cefaleia, tontura, distúrbios gastrointestinais. Risco importante de sangramento.",
+   "macete": "Ginkgo 'afina' o sangue — cuidado com anticoagulantes!",
+   "principio_ativo": "Ginkgo biloba",
+   "sintomas": [
+    "deficit_cognitivo",
+    "insuficiencia_venosa"
+   ]
+  },
+  {
+   "nome": "Ginseng",
+   "controlado": false,
+   "fitoterapico": true,
+   "classe": "Fitoterápico adaptógeno / Estimulante",
+   "funcao": "Melhora disposição, resistência física e sensação de fadiga",
+   "uso_principal": "Fadiga e astenia",
+   "contraindicacoes": "Hipertensão não controlada, insônia, uso com anticoagulantes e antidiabéticos, gestação.",
+   "efeitos_colaterais": "Insônia, nervosismo, taquicardia, hipertensão e alteração da glicemia.",
+   "macete": "Ginseng dá 'gás', mas mexe com pressão e glicose!",
+   "principio_ativo": "Panax ginseng",
+   "sintomas": [
+    "fadiga"
+   ]
+  },
+  {
+   "nome": "Alho",
+   "controlado": false,
+   "fitoterapico": true,
+   "classe": "Fitoterápico hipolipemiante / Antiagregante",
+   "funcao": "Auxilia no controle do colesterol e tem efeito antiagregante",
+   "uso_principal": "Adjuvante em dislipidemia leve",
+   "contraindicacoes": "Uso com anticoagulantes, distúrbios de coagulação, pré-operatório, gestação em doses altas.",
+   "efeitos_colaterais": "Halitose, desconforto gástrico, refluxo. Aumento do risco de sangramento.",
+   "macete": "Alho é bom pro colesterol, mas afina o sangue!",
+   "principio_ativo": "Allium sativum",
+   "sintomas": [
+    "colesterol"
+   ]
+  },
+  {
+   "nome": "Gengibre",
+   "controlado": false,
+   "fitoterapico": true,
+   "classe": "Fitoterápico antiemético / Anti-inflamatório",
+   "funcao": "Reduz náuseas e tem ação anti-inflamatória leve",
+   "uso_principal": "Náuseas, enjoo de movimento e dispepsia — consta no SUS",
+   "contraindicacoes": "Uso com anticoagulantes, cálculo biliar, distúrbios de coagulação, gestação em doses altas.",
+   "efeitos_colaterais": "Azia, desconforto gástrico. Em doses altas: risco de sangramento.",
+   "macete": "Gengibre é o 'antiemético da cozinha'!",
+   "principio_ativo": "Zingiber officinale",
+   "sintomas": [
+    "nausea_vomito",
+    "inflamacao"
+   ]
+  },
+  {
+   "nome": "Boldo",
+   "controlado": false,
+   "fitoterapico": true,
+   "classe": "Fitoterápico colagogo / Digestivo",
+   "funcao": "Estimula a secreção biliar e auxilia a digestão",
+   "uso_principal": "Dispepsia e desconforto digestivo — consta no SUS",
+   "contraindicacoes": "Obstrução biliar, hepatopatia grave, gestação, amamentação, uso com anticoagulantes.",
+   "efeitos_colaterais": "Desconforto gástrico, diarreia. Uso prolongado: hepatotoxicidade.",
+   "macete": "Boldo é o clássico 'chá pós-feijoada'!",
+   "principio_ativo": "Peumus boldus",
+   "sintomas": [
+    "refluxo_ma_digestao"
+   ]
+  },
+  {
+   "nome": "Hortelã-pimenta",
+   "controlado": false,
+   "fitoterapico": true,
+   "classe": "Fitoterápico antiespasmódico / Carminativo",
+   "funcao": "Relaxa a musculatura intestinal e reduz gases",
+   "uso_principal": "Síndrome do intestino irritável e dispepsia",
+   "contraindicacoes": "Refluxo gastroesofágico, hérnia de hiato, obstrução biliar, lactentes.",
+   "efeitos_colaterais": "Piora do refluxo, azia, reações alérgicas.",
+   "macete": "Hortelã relaxa o intestino e solta os gases!",
+   "principio_ativo": "Mentha piperita",
+   "sintomas": [
+    "colica",
+    "gases"
+   ]
+  },
+  {
+   "nome": "Babosa / Aloe vera",
+   "controlado": false,
+   "fitoterapico": true,
+   "classe": "Fitoterápico cicatrizante (uso tópico)",
+   "funcao": "Promove cicatrização e hidratação da pele",
+   "uso_principal": "Queimaduras leves, feridas superficiais e psoríase — uso tópico",
+   "contraindicacoes": "Uso oral (laxante irritante, risco tóxico), gestação, feridas profundas ou cirúrgicas.",
+   "efeitos_colaterais": "Uso tópico: irritação e dermatite. Uso oral: cólicas, diarreia e hipocalemia.",
+   "macete": "Babosa é para a pele, não para beber!",
+   "principio_ativo": "Aloe vera",
+   "sintomas": [
+    "cicatrizacao"
+   ]
+  },
+  {
+   "nome": "Cavalinha",
+   "controlado": false,
+   "fitoterapico": true,
+   "classe": "Fitoterápico diurético",
+   "funcao": "Aumenta a eliminação de urina",
+   "uso_principal": "Retenção leve de líquidos",
+   "contraindicacoes": "Insuficiência cardíaca ou renal, uso com diuréticos, gestação, deficiência de tiamina.",
+   "efeitos_colaterais": "Perda de potássio, desidratação e irritação gástrica.",
+   "macete": "Cavalinha é diurético — cuidado com o potássio!",
+   "principio_ativo": "Equisetum arvense",
+   "sintomas": [
+    "edema"
+   ]
+  },
+  {
+   "nome": "Salgueiro branco",
+   "controlado": false,
+   "fitoterapico": true,
+   "classe": "Fitoterápico analgésico / Anti-inflamatório",
+   "funcao": "Contém salicina, precursor natural do ácido salicílico",
+   "uso_principal": "Dor lombar e processos inflamatórios leves",
+   "contraindicacoes": "Alergia a salicilatos, úlcera péptica, uso com anticoagulantes e AINEs, crianças (risco de Reye), asma por AINE.",
+   "efeitos_colaterais": "Desconforto gástrico, náuseas, risco de sangramento e reações alérgicas.",
+   "macete": "Salgueiro é a 'aspirina da natureza'!",
+   "principio_ativo": "Salix alba",
+   "sintomas": [
+    "dor_leve",
+    "inflamacao",
+    "dor_muscular_articular"
+   ]
+  },
+  {
+   "nome": "Garra-do-diabo",
+   "controlado": false,
+   "fitoterapico": true,
+   "classe": "Fitoterápico anti-inflamatório / Analgésico",
+   "funcao": "Reduz dor e inflamação articular",
+   "uso_principal": "Osteoartrite e dor lombar",
+   "contraindicacoes": "Úlcera péptica ativa, cálculo biliar, gestação, uso com anticoagulantes e antiarrítmicos.",
+   "efeitos_colaterais": "Desconforto gástrico, diarreia, cefaleia. Pode afetar o ritmo cardíaco.",
+   "macete": "Garra-do-diabo 'agarra' a dor da artrose!",
+   "principio_ativo": "Harpagophytum procumbens",
+   "sintomas": [
+    "dor_muscular_articular",
+    "inflamacao"
+   ]
+  },
+  {
+   "nome": "Isoflavona de soja",
+   "controlado": false,
+   "fitoterapico": true,
+   "classe": "Fitoterápico fitoestrógeno",
+   "funcao": "Atua de forma semelhante ao estrogênio em receptores específicos",
+   "uso_principal": "Sintomas do climatério (fogachos) — consta no SUS",
+   "contraindicacoes": "Câncer de mama ou útero hormônio-dependente, gestação, uso com tamoxifeno e anticoagulantes.",
+   "efeitos_colaterais": "Desconforto gastrointestinal, cefaleia e sangramento vaginal irregular.",
+   "macete": "Isoflavona ajuda nos calorões da menopausa!",
+   "principio_ativo": "Glycine max",
+   "sintomas": [
+    "climaterio"
+   ]
+  },
+  {
+   "nome": "Castanha-da-índia",
+   "controlado": false,
+   "fitoterapico": true,
+   "classe": "Fitoterápico venotônico",
+   "funcao": "Melhora o tônus venoso e reduz o edema de membros",
+   "uso_principal": "Insuficiência venosa crônica e varizes",
+   "contraindicacoes": "Insuficiência renal ou hepática, gestação, uso com anticoagulantes, feridas abertas.",
+   "efeitos_colaterais": "Náuseas, prurido, cefaleia. Risco de sangramento com anticoagulantes.",
+   "macete": "Castanha-da-índia fortalece a veia da perna!",
+   "principio_ativo": "Aesculus hippocastanum",
+   "sintomas": [
+    "insuficiencia_venosa",
+    "edema"
+   ]
+  },
+  {
+   "nome": "Sucupira",
+   "controlado": false,
+   "fitoterapico": true,
+   "classe": "Fitoterápico anti-inflamatório",
+   "funcao": "Ação anti-inflamatória e analgésica em processos articulares",
+   "uso_principal": "Dores articulares e processos inflamatórios crônicos",
+   "contraindicacoes": "Gestação, amamentação, uso com anticoagulantes, hepatopatias.",
+   "efeitos_colaterais": "Desconforto gástrico, náuseas e reações alérgicas.",
+   "macete": "Sucupira é muito usada popularmente para artrite!",
+   "principio_ativo": "Pterodon emarginatus",
+   "sintomas": [
+    "dor_muscular_articular",
+    "inflamacao"
+   ]
+  },
+  {
+   "nome": "Confrei",
+   "controlado": false,
+   "fitoterapico": true,
+   "classe": "Fitoterápico cicatrizante (uso EXCLUSIVAMENTE tópico)",
+   "funcao": "Auxilia na cicatrização de lesões superficiais",
+   "uso_principal": "Contusões e lesões superficiais — apenas uso externo",
+   "contraindicacoes": "Uso oral proibido (alcaloides pirrolizidínicos hepatotóxicos), gestação, amamentação, feridas abertas.",
+   "efeitos_colaterais": "Uso oral: hepatotoxicidade grave e doença veno-oclusiva. Tópico: dermatite de contato.",
+   "macete": "Confrei NUNCA por via oral: é hepatotóxico!",
+   "principio_ativo": "Symphytum officinale",
+   "sintomas": [
+    "cicatrizacao"
+   ]
+  },
+  {
+   "nome": "Melissa / Erva-cidreira",
+   "controlado": false,
+   "fitoterapico": true,
+   "classe": "Fitoterápico calmante leve",
+   "funcao": "Promove relaxamento e alívio de ansiedade leve",
+   "uso_principal": "Ansiedade leve, insônia e desconforto digestivo — consta no SUS",
+   "contraindicacoes": "Hipotireoidismo, uso com sedativos e hormônios tireoidianos, gestação.",
+   "efeitos_colaterais": "Sonolência, tontura. Pode interferir na função tireoidiana.",
+   "macete": "Erva-cidreira é o calmante do dia a dia!",
+   "principio_ativo": "Melissa officinalis",
+   "sintomas": [
+    "ansiedade",
+    "insonia"
+   ]
+  },
+  {
+   "nome": "Cranberry",
+   "controlado": false,
+   "fitoterapico": true,
+   "classe": "Fitoterápico adjuvante urinário",
+   "funcao": "Dificulta a aderência de bactérias à parede da bexiga",
+   "uso_principal": "Prevenção de infecção urinária recorrente",
+   "contraindicacoes": "Uso com varfarina, cálculo renal de oxalato, diabetes (formulações açucaradas).",
+   "efeitos_colaterais": "Desconforto gástrico, diarreia. Aumenta o efeito anticoagulante da varfarina.",
+   "macete": "Cranberry previne, mas não trata infecção urinária!",
+   "principio_ativo": "Vaccinium macrocarpon",
+   "sintomas": [
+    "infeccao_urinaria"
+   ]
+  }
+ ],
+ "interacoes": [
+  {
+   "fitoterapico": "Hipérico (erva-de-são-joão)",
+   "medicamentos": "Fluoxetina, Sertralina, Amitriptilina, Tramadol",
+   "risco": "Síndrome serotoninérgica — agitação, febre, rigidez, taquicardia. Risco potencialmente fatal."
+  },
+  {
+   "fitoterapico": "Hipérico (erva-de-são-joão)",
+   "medicamentos": "Ciclosporina, anticoncepcionais, Amiodarona, Verapamil, Digoxina",
+   "risco": "Indutor enzimático potente: reduz o nível sanguíneo de vários medicamentos, causando falha terapêutica."
+  },
+  {
+   "fitoterapico": "Hipérico (erva-de-são-joão)",
+   "medicamentos": "Heparina, Enoxaparina",
+   "risco": "Altera a resposta anticoagulante de forma imprevisível."
+  },
+  {
+   "fitoterapico": "Ginkgo biloba",
+   "medicamentos": "Heparina, Enoxaparina, Cetoprofeno, Diclofenaco, Ibuprofeno",
+   "risco": "Efeito antiagregante somado — aumento significativo do risco de sangramento."
+  },
+  {
+   "fitoterapico": "Alho (em altas doses)",
+   "medicamentos": "Heparina, Enoxaparina",
+   "risco": "Efeito antiagregante aditivo, elevando o risco de sangramento."
+  },
+  {
+   "fitoterapico": "Gengibre (em altas doses)",
+   "medicamentos": "Heparina, Enoxaparina",
+   "risco": "Potencializa o efeito anticoagulante e o risco de sangramento."
+  },
+  {
+   "fitoterapico": "Guaco",
+   "medicamentos": "Heparina, Enoxaparina",
+   "risco": "Contém cumarina — soma efeito anticoagulante e aumenta o risco hemorrágico."
+  },
+  {
+   "fitoterapico": "Camomila (uso intenso)",
+   "medicamentos": "Heparina, Enoxaparina",
+   "risco": "Pode potencializar o efeito anticoagulante."
+  },
+  {
+   "fitoterapico": "Salgueiro branco",
+   "medicamentos": "Heparina, Enoxaparina, AINEs (Diclofenaco, Cetoprofeno)",
+   "risco": "Contém salicina — soma o risco de sangramento gastrointestinal."
+  },
+  {
+   "fitoterapico": "Castanha-da-índia",
+   "medicamentos": "Heparina, Enoxaparina",
+   "risco": "Potencializa o efeito anticoagulante."
+  },
+  {
+   "fitoterapico": "Cranberry",
+   "medicamentos": "Anticoagulantes orais",
+   "risco": "Aumenta o efeito anticoagulante, elevando o risco de sangramento."
+  },
+  {
+   "fitoterapico": "Valeriana",
+   "medicamentos": "Diazepam, Midazolam, Clonazepam, Lorazepam, Fenobarbital",
+   "risco": "Sedação aditiva — risco de depressão respiratória e sedação excessiva."
+  },
+  {
+   "fitoterapico": "Passiflora",
+   "medicamentos": "Diazepam, Midazolam, Propofol, Morfina, Fentanila",
+   "risco": "Potencializa a depressão do sistema nervoso central."
+  },
+  {
+   "fitoterapico": "Melissa (erva-cidreira)",
+   "medicamentos": "Levotiroxina",
+   "risco": "Pode interferir na função tireoidiana e reduzir a eficácia da reposição hormonal."
+  },
+  {
+   "fitoterapico": "Ginseng",
+   "medicamentos": "Glibenclamida, Metformina, Insulina",
+   "risco": "Altera a glicemia de forma imprevisível — risco de hipoglicemia ou descontrole."
+  },
+  {
+   "fitoterapico": "Ginseng",
+   "medicamentos": "Captopril, Enalapril, Losartana, Anlodipino",
+   "risco": "Pode elevar a pressão arterial e reduzir o efeito anti-hipertensivo."
+  },
+  {
+   "fitoterapico": "Cavalinha",
+   "medicamentos": "Furosemida, Hidroclorotiazida",
+   "risco": "Efeito diurético somado — risco de desidratação e hipocalemia grave."
+  },
+  {
+   "fitoterapico": "Cáscara sagrada / Sene (uso crônico)",
+   "medicamentos": "Digoxina, Deslanol, Furosemida",
+   "risco": "Perda de potássio aumenta muito o risco de intoxicação digitálica e arritmias."
+  },
+  {
+   "fitoterapico": "Alcachofra / Boldo",
+   "medicamentos": "Medicamentos de metabolismo hepático",
+   "risco": "Alteram o fluxo biliar e o metabolismo hepático, podendo modificar níveis de outros medicamentos."
+  },
+  {
+   "fitoterapico": "Unha-de-gato",
+   "medicamentos": "Corticosteroides (Prednisona, Dexametasona), imunossupressores",
+   "risco": "Efeito imunomodulador oposto — pode reduzir a eficácia da imunossupressão."
+  },
+  {
+   "fitoterapico": "Isoflavona de soja",
+   "medicamentos": "Levotiroxina, tamoxifeno",
+   "risco": "Reduz a absorção da levotiroxina e pode interferir na terapia hormonal."
+  },
+  {
+   "fitoterapico": "Hortelã-pimenta",
+   "medicamentos": "Omeprazol, Pantoprazol, Ranitidina",
+   "risco": "Pode piorar o refluxo, contrapondo o efeito do tratamento antiácido."
+  },
+  {
+   "fitoterapico": "Plantago",
+   "medicamentos": "Qualquer medicamento oral",
+   "risco": "A fibra reduz a absorção — administrar os medicamentos com intervalo de pelo menos 2 horas."
+  },
+  {
+   "fitoterapico": "Confrei (via oral)",
+   "medicamentos": "Qualquer hepatotóxico (Paracetamol, Nimesulida, Ácido valpróico)",
+   "risco": "Hepatotoxicidade somada — uso oral do confrei é proibido."
   }
  ]
 }
