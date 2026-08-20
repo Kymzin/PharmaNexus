@@ -16,6 +16,10 @@ class PxColors {
   static const offWhite = Color(0xFFF6F8F9); // fundo
   static const controlled = Color(0xFFB4452C); // alerta semântico (controlados)
   static const controlledBg = Color(0xFFFBEDE8);
+  static const herbal = Color(0xFF3E7D54); // fitoterápicos
+  static const herbalBg = Color(0xFFEAF3EC);
+  static const warn = Color(0xFF9A6B12); // contraindicações
+  static const warnBg = Color(0xFFFBF3E2);
 }
 
 void main() => runApp(const PharmaNexusApp());
@@ -70,20 +74,30 @@ class PharmaNexusApp extends StatelessWidget {
 // ---------- Dados ----------
 class Med {
   final String nome, classe, funcao, uso, macete, principioAtivo;
-  final bool controlado;
+  final String contraindicacoes, efeitosColaterais;
+  final bool controlado, fitoterapico;
 
   /// true quando o nome do registro é um nome comercial, não a substância.
   final bool ehMarca;
   final List<String> sintomas;
   Med(this.nome, this.classe, this.funcao, this.uso, this.macete, this.principioAtivo,
-      this.controlado, this.ehMarca, this.sintomas);
+      this.contraindicacoes, this.efeitosColaterais, this.controlado, this.fitoterapico,
+      this.ehMarca, this.sintomas);
 
   factory Med.fromJson(Map<String, dynamic> j) => Med(
         j['nome'], j['classe'], j['funcao'], j['uso_principal'], j['macete'],
         j['principio_ativo'] ?? '',
-        j['controlado'] == true, j['marca'] == true,
+        j['contraindicacoes'] ?? '', j['efeitos_colaterais'] ?? '',
+        j['controlado'] == true, j['fitoterapico'] == true, j['marca'] == true,
         List<String>.from(j['sintomas'] ?? []),
       );
+}
+
+class Interacao {
+  final String fitoterapico, medicamentos, risco;
+  Interacao(this.fitoterapico, this.medicamentos, this.risco);
+  factory Interacao.fromJson(Map<String, dynamic> j) =>
+      Interacao(j['fitoterapico'], j['medicamentos'], j['risco']);
 }
 
 class Sintoma {
@@ -117,7 +131,8 @@ class AppData {
   final List<Sintoma> sintomas;
   final List<CasoClinico> casos;
   final List<QuizQ> quiz;
-  AppData(this.meds, this.sintomas, this.casos, this.quiz);
+  final List<Interacao> interacoes;
+  AppData(this.meds, this.sintomas, this.casos, this.quiz, this.interacoes);
 
   static Future<AppData> load() async {
     final medJson = jsonDecode(await rootBundle.loadString('assets/data/medicamentos.json'));
@@ -128,6 +143,7 @@ class AppData {
       (medJson['sintomas'] as List).map((e) => Sintoma.fromJson(e)).toList(),
       (casosJson['casos'] as List).map((e) => CasoClinico.fromJson(e)).toList(),
       (casosJson['quiz'] as List).map((e) => QuizQ.fromJson(e)).toList(),
+      ((medJson['interacoes'] ?? []) as List).map((e) => Interacao.fromJson(e)).toList(),
     );
   }
 }
@@ -240,9 +256,11 @@ class _SplashGateState extends State<SplashGate> {
                         'farmácia. As recomendações são baseadas exclusivamente na apostila de '
                         'medicamentos (AMP e FR) e têm finalidade pedagógica — não constituem '
                         'prescrição médica, diagnóstico clínico ou orientação para uso real em '
-                        'pacientes. Toda decisão sobre dispensação, prescrição ou administração '
-                        'de medicamentos deve ser tomada por profissional de saúde habilitado, '
-                        'seguindo os protocolos da instituição e a legislação vigente.',
+                        'pacientes. As contraindicações e os efeitos colaterais listados são os '
+                        'principais para fins de estudo e não substituem a bula oficial. Toda '
+                        'decisão sobre dispensação, prescrição ou administração de medicamentos '
+                        'deve ser tomada por profissional de saúde habilitado, seguindo os '
+                        'protocolos da instituição e a legislação vigente.',
                         style: TextStyle(
                             color: Colors.white.withOpacity(0.9), fontSize: 13, height: 1.5),
                       ),
@@ -297,6 +315,7 @@ class _HomeShellState extends State<HomeShell> {
     final pages = [
       BibliotecaPage(data: widget.data),
       AssistentePage(data: widget.data),
+      InteracoesPage(data: widget.data),
       CasosPage(data: widget.data),
       QuizPage(data: widget.data),
     ];
@@ -307,7 +326,13 @@ class _HomeShellState extends State<HomeShell> {
         title: Row(children: [
           const NexusLogo(size: 26),
           const SizedBox(width: 10),
-          Text(['Biblioteca', 'Assistente de Sintomas', 'Casos Clínicos', 'Quiz'][_tab]),
+          Text([
+            'Biblioteca',
+            'Assistente de Sintomas',
+            'Interações',
+            'Casos Clínicos',
+            'Quiz'
+          ][_tab]),
         ]),
       ),
       body: wide
@@ -325,6 +350,7 @@ class _HomeShellState extends State<HomeShell> {
                 destinations: const [
                   NavigationRailDestination(icon: Icon(Icons.menu_book_outlined), selectedIcon: Icon(Icons.menu_book, color: PxColors.petrol), label: Text('Biblioteca')),
                   NavigationRailDestination(icon: Icon(Icons.hub_outlined), selectedIcon: Icon(Icons.hub, color: PxColors.petrol), label: Text('Assistente')),
+                  NavigationRailDestination(icon: Icon(Icons.spa_outlined), selectedIcon: Icon(Icons.spa, color: PxColors.petrol), label: Text('Interações')),
                   NavigationRailDestination(icon: Icon(Icons.psychology_outlined), selectedIcon: Icon(Icons.psychology, color: PxColors.petrol), label: Text('Casos')),
                   NavigationRailDestination(icon: Icon(Icons.quiz_outlined), selectedIcon: Icon(Icons.quiz, color: PxColors.petrol), label: Text('Quiz')),
                 ],
@@ -341,6 +367,7 @@ class _HomeShellState extends State<HomeShell> {
               destinations: const [
                 NavigationDestination(icon: Icon(Icons.menu_book_outlined), selectedIcon: Icon(Icons.menu_book, color: PxColors.petrol), label: 'Biblioteca'),
                 NavigationDestination(icon: Icon(Icons.hub_outlined), selectedIcon: Icon(Icons.hub, color: PxColors.petrol), label: 'Assistente'),
+                NavigationDestination(icon: Icon(Icons.spa_outlined), selectedIcon: Icon(Icons.spa, color: PxColors.petrol), label: 'Interações'),
                 NavigationDestination(icon: Icon(Icons.psychology_outlined), selectedIcon: Icon(Icons.psychology, color: PxColors.petrol), label: 'Casos'),
                 NavigationDestination(icon: Icon(Icons.quiz_outlined), selectedIcon: Icon(Icons.quiz, color: PxColors.petrol), label: 'Quiz'),
               ],
@@ -366,22 +393,87 @@ class PxContent extends StatelessWidget {
 }
 
 // ---------- Widgets compartilhados ----------
-class ControlledBadge extends StatelessWidget {
-  const ControlledBadge({super.key});
+class PxBadge extends StatelessWidget {
+  final String texto;
+  final IconData icone;
+  final Color cor, fundo;
+  const PxBadge(
+      {super.key,
+      required this.texto,
+      required this.icone,
+      required this.cor,
+      required this.fundo});
+
   @override
   Widget build(BuildContext context) => Container(
         padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
         decoration: BoxDecoration(
-          color: PxColors.controlledBg,
+          color: fundo,
           borderRadius: BorderRadius.circular(20),
-          border: Border.all(color: PxColors.controlled.withOpacity(0.5)),
+          border: Border.all(color: cor.withOpacity(0.5)),
         ),
-        child: const Row(mainAxisSize: MainAxisSize.min, children: [
-          Icon(Icons.lock_outline, size: 12, color: PxColors.controlled),
-          SizedBox(width: 4),
-          Text('CONTROLADO',
-              style: TextStyle(
-                  fontSize: 10, fontWeight: FontWeight.w700, color: PxColors.controlled)),
+        child: Row(mainAxisSize: MainAxisSize.min, children: [
+          Icon(icone, size: 12, color: cor),
+          const SizedBox(width: 4),
+          Text(texto,
+              style: TextStyle(fontSize: 10, fontWeight: FontWeight.w700, color: cor)),
+        ]),
+      );
+}
+
+class ControlledBadge extends StatelessWidget {
+  const ControlledBadge({super.key});
+  @override
+  Widget build(BuildContext context) => const PxBadge(
+      texto: 'CONTROLADO',
+      icone: Icons.lock_outline,
+      cor: PxColors.controlled,
+      fundo: PxColors.controlledBg);
+}
+
+class HerbalBadge extends StatelessWidget {
+  const HerbalBadge({super.key});
+  @override
+  Widget build(BuildContext context) => const PxBadge(
+      texto: 'FITOTERÁPICO',
+      icone: Icons.eco_outlined,
+      cor: PxColors.herbal,
+      fundo: PxColors.herbalBg);
+}
+
+/// Bloco de destaque para contraindicações e efeitos colaterais.
+class AvisoBloco extends StatelessWidget {
+  final String titulo, texto;
+  final IconData icone;
+  final Color cor, fundo;
+  const AvisoBloco(
+      {super.key,
+      required this.titulo,
+      required this.texto,
+      required this.icone,
+      required this.cor,
+      required this.fundo});
+
+  @override
+  Widget build(BuildContext context) => Container(
+        margin: const EdgeInsets.only(top: 8),
+        padding: const EdgeInsets.all(10),
+        decoration: BoxDecoration(
+          color: fundo,
+          borderRadius: BorderRadius.circular(10),
+          border: Border.all(color: cor.withOpacity(0.35)),
+        ),
+        child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+          Row(children: [
+            Icon(icone, size: 15, color: cor),
+            const SizedBox(width: 6),
+            Text(titulo,
+                style: TextStyle(fontSize: 11.5, fontWeight: FontWeight.w800, color: cor)),
+          ]),
+          const SizedBox(height: 5),
+          Text(texto,
+              style: const TextStyle(
+                  fontSize: 13, height: 1.45, color: PxColors.deepBlue)),
         ]),
       );
 }
@@ -411,6 +503,7 @@ class MedCard extends StatelessWidget {
                       fontSize: 16,
                       color: PxColors.deepBlue)),
             ),
+            if (med.fitoterapico) const HerbalBadge(),
             if (med.controlado) const ControlledBadge(),
           ]),
           subtitle: Padding(
@@ -420,16 +513,20 @@ class MedCard extends StatelessWidget {
               children: [
                 Text(med.classe,
                     style: TextStyle(fontSize: 13, color: PxColors.petrol.withOpacity(0.9))),
-                if (med.ehMarca)
+                if (med.ehMarca || med.fitoterapico)
                   Padding(
                     padding: const EdgeInsets.only(top: 3),
                     child: Row(children: [
-                      const Icon(Icons.science_outlined, size: 13, color: PxColors.cyan),
+                      Icon(med.fitoterapico ? Icons.spa_outlined : Icons.science_outlined,
+                          size: 13,
+                          color: med.fitoterapico ? PxColors.herbal : PxColors.cyan),
                       const SizedBox(width: 4),
                       Expanded(
                         child: Text(med.principioAtivo,
                             style: TextStyle(
                                 fontSize: 12,
+                                fontStyle:
+                                    med.fitoterapico ? FontStyle.italic : FontStyle.normal,
                                 fontWeight: FontWeight.w600,
                                 color: PxColors.deepBlue.withOpacity(0.75))),
                       ),
@@ -444,9 +541,25 @@ class MedCard extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  if (med.principioAtivo.isNotEmpty) _field('Princípio ativo', med.principioAtivo),
+                  if (med.principioAtivo.isNotEmpty)
+                    _field(med.fitoterapico ? 'Nome científico' : 'Princípio ativo',
+                        med.principioAtivo),
                   _field('Função', med.funcao),
                   _field('Principal uso', med.uso),
+                  if (med.contraindicacoes.isNotEmpty)
+                    AvisoBloco(
+                        titulo: 'CONTRAINDICAÇÕES',
+                        texto: med.contraindicacoes,
+                        icone: Icons.block,
+                        cor: PxColors.controlled,
+                        fundo: PxColors.controlledBg),
+                  if (med.efeitosColaterais.isNotEmpty)
+                    AvisoBloco(
+                        titulo: 'EFEITOS COLATERAIS',
+                        texto: med.efeitosColaterais,
+                        icone: Icons.warning_amber_rounded,
+                        cor: PxColors.warn,
+                        fundo: PxColors.warnBg),
                   Container(
                     margin: const EdgeInsets.only(top: 8),
                     padding: const EdgeInsets.all(10),
@@ -521,13 +634,15 @@ class BibliotecaPage extends StatefulWidget {
 
 class _BibliotecaPageState extends State<BibliotecaPage> {
   String _busca = '';
-  int _filtro = 0; // 0 todos, 1 não controlados, 2 controlados
+  int _filtro = 0; // 0 todos, 1 não controlados, 2 controlados, 3 fitoterápicos
 
   @override
   Widget build(BuildContext context) {
     var meds = widget.data.meds.where((m) {
+      if (_filtro != 3 && m.fitoterapico) return false;
       if (_filtro == 1 && m.controlado) return false;
       if (_filtro == 2 && !m.controlado) return false;
+      if (_filtro == 3 && !m.fitoterapico) return false;
       if (_busca.isEmpty) return true;
       final q = _removeAccents(_busca.toLowerCase());
       return _removeAccents(
@@ -551,15 +666,21 @@ class _BibliotecaPageState extends State<BibliotecaPage> {
           ),
         ),
       ),
-      Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 6),
-        child: Row(children: [
-          _chip('Todos (${widget.data.meds.length})', 0),
-          const SizedBox(width: 8),
-          _chip('Não controlados', 1),
-          const SizedBox(width: 8),
-          _chip('Controlados', 2),
-        ]),
+      SizedBox(
+        height: 44,
+        child: ListView(
+          scrollDirection: Axis.horizontal,
+          padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 4),
+          children: [
+            _chip('Medicamentos (${widget.data.meds.where((m) => !m.fitoterapico).length})', 0),
+            const SizedBox(width: 8),
+            _chip('Não controlados', 1),
+            const SizedBox(width: 8),
+            _chip('Controlados', 2),
+            const SizedBox(width: 8),
+            _chip('Fitoterápicos (${widget.data.meds.where((m) => m.fitoterapico).length})', 3),
+          ],
+        ),
       ),
       Expanded(
         child: meds.isEmpty
@@ -631,6 +752,7 @@ class _AssistentePageState extends State<AssistentePage> {
           child: const Text(
             'Selecione os sintomas/quadro do paciente fictício. O PharmaNexus cruza a seleção '
             'com a apostila e mostra os medicamentos relacionados — com a justificativa. '
+            'Fitoterápicos aparecem sinalizados com selo verde. '
             'Ferramenta de estudo: não substitui avaliação profissional.',
             style: TextStyle(fontSize: 12.5, color: PxColors.deepBlue, height: 1.45),
           ),
@@ -698,7 +820,131 @@ class _AssistentePageState extends State<AssistentePage> {
   }
 }
 
-// ---------- Aba 3: Casos clínicos ----------
+// ---------- Aba 3: Interações fitoterápico × medicamento ----------
+class InteracoesPage extends StatefulWidget {
+  final AppData data;
+  const InteracoesPage({super.key, required this.data});
+  @override
+  State<InteracoesPage> createState() => _InteracoesPageState();
+}
+
+class _InteracoesPageState extends State<InteracoesPage> {
+  String _busca = '';
+
+  String _sa(String s) {
+    const from = 'áàãâäéèêëíìîïóòõôöúùûüçñ';
+    const to = 'aaaaaeeeeiiiiooooouuuucn';
+    s = s.toLowerCase();
+    for (var i = 0; i < from.length; i++) {
+      s = s.replaceAll(from[i], to[i]);
+    }
+    return s;
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final q = _sa(_busca);
+    final lista = widget.data.interacoes
+        .where((i) =>
+            q.isEmpty ||
+            _sa('${i.fitoterapico} ${i.medicamentos} ${i.risco}').contains(q))
+        .toList();
+
+    return Column(children: [
+      Padding(
+        padding: const EdgeInsets.fromLTRB(14, 12, 14, 4),
+        child: TextField(
+          onChanged: (v) => setState(() => _busca = v),
+          decoration: InputDecoration(
+            hintText: 'Buscar por planta ou medicamento…',
+            prefixIcon: const Icon(Icons.search, color: PxColors.petrol),
+            filled: true,
+            fillColor: Colors.white,
+            contentPadding: const EdgeInsets.symmetric(vertical: 0, horizontal: 12),
+            border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(12), borderSide: BorderSide.none),
+          ),
+        ),
+      ),
+      Padding(
+        padding: const EdgeInsets.fromLTRB(14, 6, 14, 6),
+        child: Container(
+          padding: const EdgeInsets.all(12),
+          decoration: BoxDecoration(
+            color: PxColors.deepBlue.withOpacity(0.06),
+            borderRadius: BorderRadius.circular(12),
+          ),
+          child: const Text(
+            'Muitos pacientes não consideram chá ou planta medicinal como “remédio” e não '
+            'relatam espontaneamente. Sempre pergunte — várias dessas combinações aumentam '
+            'risco de sangramento, sedação ou falha do tratamento.',
+            style: TextStyle(fontSize: 12.5, color: PxColors.deepBlue, height: 1.45),
+          ),
+        ),
+      ),
+      Expanded(
+        child: lista.isEmpty
+            ? const Center(child: Text('Nenhuma interação encontrada.'))
+            : ListView.builder(
+                padding: const EdgeInsets.only(bottom: 16),
+                itemCount: lista.length,
+                itemBuilder: (_, i) {
+                  final it = lista[i];
+                  return Card(
+                    margin: const EdgeInsets.symmetric(horizontal: 14, vertical: 6),
+                    child: Padding(
+                      padding: const EdgeInsets.all(14),
+                      child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                        Row(children: [
+                          const Icon(Icons.spa_outlined, size: 17, color: PxColors.herbal),
+                          const SizedBox(width: 6),
+                          Expanded(
+                            child: Text(it.fitoterapico,
+                                style: const TextStyle(
+                                    fontFamily: 'Manrope',
+                                    fontWeight: FontWeight.w700,
+                                    fontSize: 15,
+                                    color: PxColors.herbal)),
+                          ),
+                        ]),
+                        const Padding(
+                          padding: EdgeInsets.symmetric(vertical: 6),
+                          child: Row(children: [
+                            Icon(Icons.close, size: 13, color: PxColors.cyan),
+                            SizedBox(width: 6),
+                            Text('interage com',
+                                style: TextStyle(fontSize: 11.5, color: PxColors.cyan)),
+                          ]),
+                        ),
+                        Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                          const Icon(Icons.medication_outlined,
+                              size: 17, color: PxColors.deepBlue),
+                          const SizedBox(width: 6),
+                          Expanded(
+                            child: Text(it.medicamentos,
+                                style: const TextStyle(
+                                    fontWeight: FontWeight.w600,
+                                    fontSize: 14,
+                                    color: PxColors.deepBlue)),
+                          ),
+                        ]),
+                        AvisoBloco(
+                            titulo: 'RISCO',
+                            texto: it.risco,
+                            icone: Icons.warning_amber_rounded,
+                            cor: PxColors.controlled,
+                            fundo: PxColors.controlledBg),
+                      ]),
+                    ),
+                  );
+                },
+              ),
+      ),
+    ]);
+  }
+}
+
+// ---------- Aba 4: Casos clínicos ----------
 class CasosPage extends StatelessWidget {
   final AppData data;
   const CasosPage({super.key, required this.data});
