@@ -479,6 +479,96 @@
    ],
    "correta": 0,
    "explicacao": "A Colistina (assim como a Polimixina B) é polipeptídica, reservada para casos extremos em que praticamente nenhum outro antibiótico é eficaz contra Gram-negativos multirresistentes. Macete: “Última opção quando nada mais funciona!”"
+  },
+  {
+   "id": 33,
+   "titulo": "Sangramento em paciente com Enoxaparina",
+   "nivel": "Avançado",
+   "cenario": "Paciente internado em uso de Enoxaparina para prevenção de trombose relata que vem tomando cápsulas de Ginkgo biloba por conta própria há meses, para “melhorar a memória”. Apresenta hematomas extensos.",
+   "pergunta": "Qual é o problema por trás desse quadro?",
+   "opcoes": [
+    "Interação Ginkgo × Enoxaparina — efeito antiagregante somado",
+    "Dose insuficiente de Enoxaparina",
+    "O Ginkgo anula o efeito da Enoxaparina",
+    "Não há relação entre os dois"
+   ],
+   "correta": 0,
+   "explicacao": "O Ginkgo biloba tem ação antiagregante plaquetária. Somado ao anticoagulante, aumenta muito o risco hemorrágico. O uso do fitoterápico deve ser comunicado à equipe e suspenso. Macete: “Ginkgo ‘afina’ o sangue — cuidado com anticoagulantes!”"
+  },
+  {
+   "id": 34,
+   "titulo": "Falha terapêutica inesperada",
+   "nivel": "Avançado",
+   "cenario": "Paciente em uso de Amiodarona e anticoncepcional relata que começou a tomar erva-de-são-joão para “tristeza”. Os exames mostram níveis baixos do medicamento e houve falha do anticoncepcional.",
+   "pergunta": "Qual fitoterápico é o responsável?",
+   "opcoes": [
+    "Camomila",
+    "Boldo",
+    "Hipérico (erva-de-são-joão)",
+    "Espinheira-santa"
+   ],
+   "correta": 2,
+   "explicacao": "O Hipérico é potente indutor enzimático hepático: acelera o metabolismo de vários medicamentos, reduzindo seus níveis no sangue e causando falha terapêutica — inclusive de anticoncepcionais. Macete: “ATENÇÃO: é o campeão de interações medicamentosas!”"
+  },
+  {
+   "id": 35,
+   "titulo": "Sedação excessiva no pós-procedimento",
+   "nivel": "Intermediário",
+   "cenario": "Paciente recebeu Midazolam para sedação em procedimento e demora muito mais que o esperado para acordar. A familiar informa que ela toma chá forte de valeriana todas as noites.",
+   "pergunta": "O que explica o quadro?",
+   "opcoes": [
+    "Sedação aditiva entre Valeriana e Midazolam",
+    "Reação alérgica ao Midazolam",
+    "A valeriana reduz o efeito do Midazolam",
+    "Dose excessiva de Flumazenil"
+   ],
+   "correta": 0,
+   "explicacao": "A Valeriana potencializa benzodiazepínicos e outros depressores do SNC, prolongando a sedação e aumentando o risco de depressão respiratória. Sempre pergunte sobre chás e plantas medicinais antes de sedar."
+  },
+  {
+   "id": 36,
+   "titulo": "Agitação e febre em paciente com Fluoxetina",
+   "nivel": "Avançado",
+   "cenario": "Paciente em uso de Fluoxetina inicia por conta própria erva-de-são-joão. Evolui com agitação, tremores, febre, rigidez muscular e taquicardia.",
+   "pergunta": "Qual é a suspeita clínica?",
+   "opcoes": [
+    "Crise hipertensiva",
+    "Síndrome serotoninérgica",
+    "Reação alérgica grave",
+    "Intoxicação digitálica"
+   ],
+   "correta": 1,
+   "explicacao": "O Hipérico tem ação serotoninérgica. Associado a um antidepressivo ISRS (Fluoxetina, Sertralina), pode desencadear síndrome serotoninérgica — quadro potencialmente fatal, com agitação, febre, rigidez e taquicardia."
+  },
+  {
+   "id": 37,
+   "titulo": "Arritmia em paciente cardiopata",
+   "nivel": "Avançado",
+   "cenario": "Paciente em uso de Digoxina faz uso crônico de laxante à base de cáscara sagrada. Apresenta náuseas, visão amarelada e arritmia no monitor.",
+   "pergunta": "Qual é a relação entre os dois?",
+   "opcoes": [
+    "A cáscara aumenta a absorção da Digoxina",
+    "Hipocalemia induzida pelo laxante, favorecendo intoxicação digitálica",
+    "A cáscara bloqueia o efeito da Digoxina",
+    "Não há relação — é efeito isolado da Digoxina"
+   ],
+   "correta": 1,
+   "explicacao": "Laxantes estimulantes (cáscara sagrada, sene) causam perda de potássio no uso crônico. A hipocalemia aumenta muito a toxicidade dos digitálicos — visão amarelada e arritmia são sinais clássicos de intoxicação digitálica."
+  },
+  {
+   "id": 38,
+   "titulo": "Falha na absorção de medicamentos",
+   "nivel": "Intermediário",
+   "cenario": "Paciente constipado usa Plantago (psyllium) três vezes ao dia, sempre junto com todos os seus medicamentos de uso contínuo. Os níveis dos medicamentos vêm caindo.",
+   "pergunta": "Qual é a orientação correta?",
+   "opcoes": [
+    "Suspender definitivamente o Plantago",
+    "Dobrar a dose dos medicamentos",
+    "Espaçar o Plantago dos demais medicamentos em pelo menos 2 horas",
+    "Administrar todos com menos água"
+   ],
+   "correta": 2,
+   "explicacao": "A fibra do Plantago forma um gel que reduz a absorção dos medicamentos tomados junto. O intervalo de pelo menos 2 horas resolve o problema sem precisar suspender nenhum dos tratamentos."
   }
  ],
  "quiz": [
@@ -855,6 +945,94 @@
    ],
    "correta": 0,
    "explicacao": "Quebra as bolhas de gás no intestino, aliviando distensão abdominal e desconforto."
+  },
+  {
+   "pergunta": "Qual fitoterápico é conhecido como o “campeão de interações medicamentosas”?",
+   "opcoes": [
+    "Camomila",
+    "Hipérico (erva-de-são-joão)",
+    "Boldo",
+    "Espinheira-santa"
+   ],
+   "correta": 1,
+   "explicacao": "O Hipérico é potente indutor enzimático e altera o nível de dezenas de medicamentos, além do risco de síndrome serotoninérgica."
+  },
+  {
+   "pergunta": "Um paciente em uso de Enoxaparina deve evitar qual grupo de fitoterápicos?",
+   "opcoes": [
+    "Ginkgo, alho e gengibre",
+    "Espinheira-santa e camomila",
+    "Plantago e alcachofra",
+    "Nistatina e boldo"
+   ],
+   "correta": 0,
+   "explicacao": "Ginkgo, alho e gengibre têm efeito antiagregante, somando risco de sangramento ao anticoagulante."
+  },
+  {
+   "pergunta": "A Valeriana associada ao Midazolam pode causar:",
+   "opcoes": [
+    "Redução do efeito sedativo",
+    "Sedação excessiva e depressão respiratória",
+    "Elevação da pressão arterial",
+    "Nenhuma interação relevante"
+   ],
+   "correta": 1,
+   "explicacao": "A valeriana potencializa depressores do SNC, prolongando a sedação."
+  },
+  {
+   "pergunta": "Qual fitoterápico NÃO deve ser usado por via oral por ser hepatotóxico?",
+   "opcoes": [
+    "Guaco",
+    "Confrei",
+    "Camomila",
+    "Gengibre"
+   ],
+   "correta": 1,
+   "explicacao": "O confrei contém alcaloides pirrolizidínicos, hepatotóxicos — seu uso é restrito à via tópica."
+  },
+  {
+   "pergunta": "O Plantago (psyllium) deve ser administrado:",
+   "opcoes": [
+    "Junto com todos os medicamentos orais",
+    "Com intervalo de pelo menos 2 horas dos demais medicamentos",
+    "Apenas por via injetável",
+    "Somente em jejum absoluto sem água"
+   ],
+   "correta": 1,
+   "explicacao": "A fibra reduz a absorção de outros medicamentos, exigindo espaçamento de pelo menos 2 horas."
+  },
+  {
+   "pergunta": "Qual fitoterápico é indicado para dispepsia e gastrite, constando na RENAFITO/SUS?",
+   "opcoes": [
+    "Cavalinha",
+    "Espinheira-santa",
+    "Ginseng",
+    "Sene"
+   ],
+   "correta": 1,
+   "explicacao": "A espinheira-santa é o fitoterápico antiulceroso padrão da rede pública."
+  },
+  {
+   "pergunta": "O uso crônico de cáscara sagrada em paciente que usa Digoxina é perigoso porque:",
+   "opcoes": [
+    "Aumenta a absorção da Digoxina",
+    "Causa perda de potássio, favorecendo intoxicação digitálica",
+    "Bloqueia o efeito da Digoxina completamente",
+    "Não há risco relevante"
+   ],
+   "correta": 1,
+   "explicacao": "Laxantes estimulantes causam hipocalemia, que aumenta muito a toxicidade dos digitálicos."
+  },
+  {
+   "pergunta": "Qual é o principal risco do Guaco em paciente anticoagulado?",
+   "opcoes": [
+    "Hipoglicemia",
+    "Sangramento, por conter cumarina",
+    "Crise hipertensiva",
+    "Insuficiência renal aguda"
+   ],
+   "correta": 1,
+   "explicacao": "O guaco contém cumarina, que soma efeito anticoagulante e eleva o risco hemorrágico."
   }
  ]
 }
